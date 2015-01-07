@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+PSQL_IP=$(docker inspect bubbler_db | grep IPAddress | awk '{ print $2 }' | tr -d ',"')
+psql -h $PSQL_IP -p 5432 -d postgres -U postgres

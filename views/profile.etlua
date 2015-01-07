@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html class="no-touch">
+<% render("views.core.head") %>
+  <body>
+<% render("views.core.header") %>
+<% render("views.profile.profile_content") %>
+<% render("views.core.footer") %>
+<% render("views.core.post_modal") %>
+<% render("views.core.js") %>
+  </body>
+</html>

@@ -1,0 +1,628 @@
+    <section id="main" role="main">
+      <!-- START jumbotron -->
+      <section class="jumbotron nm" data-stellar-background-ratio="0.4" style="min-height:400px;">
+        <div style="position:absolute;bottom:10px;right:10px;z-index:1005">
+          Source: <a href="javascript:void(0);">Google</a>
+        </div>
+        <!-- pattern + overlay -->
+        <div class="overlay pattern">
+        </div>
+        <!--/ pattern + overlay -->
+        <div class="container school-image" style="padding-top:5%;">
+          <div class="row row-centered">
+            <div class="col-lg-12 col-centered">
+              <h1 class=" text-white text-center "><%= things %></h1>
+              <h4 class="thin text-white text-center">Stockton, CA</h4>
+            </div>
+            <div class="col-lg-6 col-centered">
+                <input class="form-control text-center" placeholder="Search for something">
+              </div>
+          </div>
+        </div>
+      </section>
+      <!--/ END jumbotron -->
+      <!-- START Template Container -->
+      <div class="container" style="border-left: 1px solid #e1e1e1;border-right: 1px solid #e1e1e1;background: #f5f5f5;">
+        <!-- Page Header -->
+        <div class="page-header page-header-block">
+          <div class="page-header-section">
+            <h4 class="title semibold">University of Southern California</h4>
+          </div>
+          <div class="page-header-section">
+            <!-- Toolbar -->
+            <div class="toolbar">
+              <ol class="breadcrumb breadcrumb-transparent nm">
+                <li><a href="javascript:void(0);">Component</a></li>
+                <li class="active">Widget</li>
+              </ol>
+            </div>
+            <!--/ Toolbar -->
+          </div>
+        </div>
+        <!-- Page Header -->
+        <!-- section header -->
+        <div class="section-header">
+          <h5 class="semibold title mb15">Wheater Widget</h5>
+        </div>
+        <!--/ section header -->
+        <!-- START row -->
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-lg-4">
+            <!-- START Table layout -->
+            <div class="table-layout">
+              <div class="col-xs-7 widget panel">
+                <!-- Thumbnail -->
+                <div class="thumbnail">
+                  <!-- media -->
+                  <div class="media">
+                    <!-- indicator -->
+                    <div class="indicator"><span class="spinner"></span></div>
+                    <!--/ indicator -->
+                    <img data-toggle="unveil" src="../image/background/400x250/background5.jpg" data-src="../image/background/400x250/background5.jpg" alt="Photo" height="0" width="0" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 0px 100px;" class="unveiled">
+                  </div>
+                  <!--/ media -->
+                </div>
+                <!--/ Thumbnail -->
+              </div>
+              <div class="col-xs-5 widget panel">
+                <div class="panel-body text-center">
+                  <h4>Brisbane <br><small>Australia</small></h4>
+                  <h1 class="bold text-success">21°</h1>
+                  <h5 class="semibold text-muted">Hello Windy!</h5>
+                </div>
+              </div>
+            </div>
+            <!--/ END Table layout -->
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4">
+            <!-- START Widget Panel -->
+            <div class="widget panel">
+              <!-- Thumbnail -->
+              <div class="thumbnail">
+                <!-- media -->
+                <div class="media">
+                  <!-- indicator -->
+                  <div class="indicator"><span class="spinner"></span></div>
+                  <!--/ indicator -->
+                  <!-- meta -->
+                  <span class="meta top">
+                    <h3 class="semibold nm text-center">Rainy</h3>
+                    <p class="nm text-center">California</p>
+                    <h4 class="semibold nm text-center"><i class="ico-location6"></i> San Franscisco</h4>
+                  </span>
+                  <!--/ meta -->
+                  <img data-toggle="unveil" src="../image/background/400x250/background9.jpg" data-src="../image/background/400x250/background9.jpg" alt="Photo" height="0" width="0" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 0px 100px;" class="unveiled">
+                </div>
+                <!--/ media -->
+              </div>
+              <!--/ Thumbnail -->
+              <!-- panel body -->
+              <div class="panel-body">
+                <!-- Nav section -->
+                <ul class="nav nav-section nav-justified">
+                  <li><a href="javascript:void(0);" class="text-default"><i class="ico-weather-lightning"></i><br>Mon</a></li>
+                  <li><a href="javascript:void(0);" class="text-default"><i class="ico-windy"></i><br>Tue</a></li>
+                  <li><a href="javascript:void(0);" class="text-default"><i class="ico-sun"></i><br>Wed</a></li>
+                  <li><a href="javascript:void(0);" class="text-default"><i class="ico-weather-snow"></i><br>Thu</a></li>
+                </ul>
+                <!--/ Nav section -->
+              </div>
+              <!--/ panel body -->
+            </div>
+            <!--/ END Widget Panel -->
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4">
+            <!-- START Table layout -->
+            <div class="table-layout mb15">
+              <div class="col-xs-6 widget panel bgcolor-info">
+                <div class="panel-body">
+                  <h1 class="semibold text-center mt0">18°</h1>
+                  <h4 class="semibold text-center nm">California</h4>
+                </div>
+              </div>
+              <div class="col-xs-6 widget panel">
+                <div class="panel-body text-center">
+                  <i class="ico-snowflake" style="font-size:46px;"></i>
+                  <ul class="list-table mt15">
+                    <li class="text-center">
+                      <i class="ico-droplet"></i>
+                      <p class="nm">1.3MM</p>
+                    </li>
+                    <li class="text-center">
+                      <i class="ico-flag5"></i>
+                      <p class="nm">10MPH</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--/ END Table layout -->
+            <!-- START Table layout -->
+            <div class="table-layout">
+              <div class="col-xs-6 widget panel panel-minimal bgcolor-inverse">
+                <div class="panel-body">
+                  <h1 class="semibold text-center mt0">18°</h1>
+                  <h4 class="semibold text-center nm">California</h4>
+                </div>
+              </div>
+              <div class="col-xs-6 widget panel panel-minimal">
+                <div class="panel-body text-center bgcolor-white">
+                  <i class="ico-snowflake" style="font-size:46px;"></i>
+                </div>
+                <div class="panel-body text-center bgcolor-success">
+                  <ul class="list-table">
+                    <li class="text-center">
+                      <i class="ico-droplet"></i>
+                      <p class="nm">1.3MM</p>
+                    </li>
+                    <li class="text-center">
+                      <i class="ico-flag5"></i>
+                      <p class="nm">10MPH</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--/ END Table layout -->
+          </div>
+        </div>
+        <!--/ END row -->
+        <!-- START row -->
+        <div class="row">
+          <div class="col-lg-3">
+            <!-- START Widget Panel -->
+            <div class="widget panel bgcolor-primary">
+              <!-- panel body -->
+              <div class="panel-body">
+                <div class="clearfix">
+                  <p class="pull-left semibold">Copenhagen, DK</p>
+                  <p class="pull-right semibold">
+                    <span class="mr5">°F</span>
+                    <span>°C</span>
+                  </p>
+                </div>
+                <div class="text-center mt15 mb15">
+                  <h1 class="semibold">
+                    <i class="ico-windy"></i>
+                    <span class="">22°</span>
+                  </h1>
+                </div>
+                <div class="clearfix">
+                  <p class="pull-left semibold nm">
+                    <i class="ico-arrow-down5"></i> 21°
+                  </p>
+                  <p class="pull-right semibold nm">
+                    <i class="ico-arrow-up5"></i> 27°
+                  </p>
+                </div>
+              </div>
+              <!--/ panel body -->
+            </div>
+            <!--/ END Widget Panel -->
+          </div>
+          <div class="col-lg-3">
+            <!-- START Widget Panel -->
+            <div class="widget panel bgcolor-warning">
+              <!-- panel body -->
+              <div class="panel-body">
+                <div class="clearfix">
+                  <p class="pull-left semibold">Perth, AU</p>
+                  <p class="pull-right semibold">
+                    <span class="mr5">°F</span>
+                    <span>°C</span>
+                  </p>
+                </div>
+                <div class="text-center mt15 mb15">
+                  <h1 class="semibold">
+                    <i class="ico-sun22"></i>
+                    <span class="">32°</span>
+                  </h1>
+                </div>
+                <div class="clearfix">
+                  <p class="pull-left semibold nm">
+                    <i class="ico-arrow-down5"></i> 31°
+                  </p>
+                  <p class="pull-right semibold nm">
+                    <i class="ico-arrow-up5"></i> 37°
+                  </p>
+                </div>
+              </div>
+              <!--/ panel body -->
+            </div>
+            <!--/ END Widget Panel -->
+          </div>
+        </div>
+        <!--/ END row -->
+        <hr>
+        <!-- horizontal line -->
+        <!-- section header -->
+        <div class="section-header">
+          <h5 class="semibold title mb15">Social Widget</h5>
+        </div>
+        <!--/ section header -->
+        <!-- START row -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <!-- START Widget Panel -->
+            <div class="widget panel">
+              <!-- panel body -->
+              <div class="panel-body bgcolor-success">
+                <ul class="list-unstyled mt15 mb15">
+                  <li class="text-center">
+                    <img class="img-circle img-bordered" src="/static/img/avatar6.jpg" alt="" width="65px" height="65px">
+                  </li>
+                  <li class="text-center">
+                    <h5 class="semibold mb0">William Ross</h5>
+                    <span>CEO of a Company</span>
+                  </li>
+                </ul>
+              </div>
+              <!--/ panel body -->
+              <!-- panel body -->
+              <div class="panel-body">
+                <!-- Nav section -->
+                <ul class="nav nav-section nav-justified">
+                  <li>
+                    <div class="section">
+                      <h4 class="nm"><i class="ico-earth"></i></h4>
+                      <p class="nm">Website</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="section">
+                      <h4 class="nm"><i class="ico-brain"></i></h4>
+                      <p class="nm">Skills</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="section">
+                      <h4 class="nm"><i class="ico-vcard"></i></h4>
+                      <p class="nm">Portfolio</p>
+                    </div>
+                  </li>
+                </ul>
+                <!--/ Nav section -->
+              </div>
+              <!--/ panel body -->
+            </div>
+            <!--/ END Widget Panel -->
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4">
+            <!-- START Widget Panel -->
+            <div class="widget panel">
+              <!-- panel body -->
+              <div class="panel-body">
+                <ul class="list-table">
+                  <li style="width:70px;">
+                    <img class="img-circle img-bordered" src="/static/img/avatar6.jpg" alt="" width="65px" height="65px">
+                  </li>
+                  <li class="text-left">
+                    <h5 class="semibold ellipsis">
+                      Quinlan Snow<br>
+                      <small class="text-muted">@QSnow</small>
+                    </h5>
+                  </li>
+                  <li class="text-right"><button class="btn btn-info"><span class="ico-twitter"></span> Follow</button></li>
+                </ul>
+                <!-- Nav section -->
+                <ul class="nav nav-section nav-justified mt15">
+                  <li>
+                    <div class="section">
+                      <h4 class="nm">12.5k</h4>
+                      <p class="nm text-muted">Followers</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="section">
+                      <h4 class="nm">1853</h4>
+                      <p class="nm text-muted">Following</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="section">
+                      <h4 class="nm">3451</h4>
+                      <p class="nm text-muted">Tweets</p>
+                    </div>
+                  </li>
+                </ul>
+                <!--/ Nav section -->
+              </div>
+              <!--/ panel body -->
+            </div>
+            <!--/ END Widget Panel -->
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4">
+            <!-- START Widget Panel -->
+            <div class="widget panel">
+              <!-- thumbnail -->
+              <div class="thumbnail">
+                <!-- media -->
+                <div class="media">
+                  <!-- indicator -->
+                  <div class="indicator"><span class="spinner"></span></div>
+                  <!--/ indicator -->
+                  <!-- meta -->
+                  <div class="meta bottom text-center">
+                    <img class="img-circle img-bordered-teal mb10" src="/static/img/avatar6.jpg" alt="" width="75px" height="75px">
+                    <p class="nm">California</p>
+                    <h4 class="semibold nm"><span class="iconmoon-location-6"></span> San Franscisco</h4>
+                  </div>
+                  <!--/ meta -->
+                  <img data-toggle="unveil" src="../image/background/400x250/background4.jpg" data-src="../image/background/400x250/background4.jpg" alt="Cover" width="0" height="0" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 100px 0px;" class="unveiled">
+                </div>
+                <!--/ media -->
+              </div>
+              <!--/ thumbnail -->
+              <div class="panel-body">
+                <!-- Nav section -->
+                <ul class="nav nav-section nav-justified">
+                  <li>
+                    <div class="section">
+                      <p class="nm text-muted">Followers</p>
+                      <h4 class="nm">12.5k</h4>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="section">
+                      <p class="nm text-muted">Following</p>
+                      <h4 class="nm">1853</h4>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="section">
+                      <p class="nm text-muted">Tweets</p>
+                      <h4 class="nm">3451</h4>
+                    </div>
+                  </li>
+                </ul>
+                <!--/ Nav section -->
+              </div>
+              <!--/ panel body -->
+            </div>
+            <!--/ END Widget Panel -->
+          </div>
+        </div>
+        <!--/ END row -->
+        <!-- START row -->
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-lg-4">
+            <!-- START Widget Panel -->
+            <div class="widget panel">
+              <!-- panel body -->
+              <div class="panel-body">
+                <h4 class="mb0">Latest Tweet <i class="ico-twitter text-info pull-right"></i></h4>
+                <hr>
+                <ul class="list-table">
+                  <li style="width:70px;">
+                    <img class="img-circle img-bordered-primary" src="/static/img/avatar6.jpg" alt="" width="65px" height="65px">
+                  </li>
+                  <li class="text-left">
+                    <h5 class="semibold ellipsis nm">Colt Jenkins</h5>
+                    <p class="text-muted nm">5k followers</p>
+                  </li>
+                  <li class="text-right"><button class="btn btn-sm btn-success">Follow</button></li>
+                </ul>
+              </div>
+              <!--/ panel body -->
+              <!-- List group -->
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <p class="nm">Lorem ipsum dolor sit amet, consectetur <a href="javascript:void(0);">#adipisicing</a> elit, sed do eiusmod.</p>
+                  <small class="text-muted">1 day ago</small>
+                </li>
+                <li class="list-group-item">
+                  <p class="nm">Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui <a href="javascript:void(0);">@officia</a> deserunt mollit anim id est laborum.
+                  </p>
+                  <small class="text-muted">2 day ago</small>
+                </li>
+                <li class="list-group-item">
+                  <p class="nm">Duis aute irure dolor in <a href="javascript:void(0);">tweet.er</a> in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur.
+                  </p>
+                  <small class="text-muted">3 day ago</small>
+                </li>
+              </ul>
+              <!-- List group -->
+            </div>
+            <!--/ END Widget Panel -->
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4">
+            <!-- START Widget Panel -->
+            <div class="widget panel">
+              <!-- thumbnail -->
+              <div class="thumbnail">
+                <!-- media -->
+                <div class="media">
+                  <!-- indicator -->
+                  <div class="indicator"><span class="spinner"></span></div>
+                  <!--/ indicator -->
+                  <img data-toggle="unveil" src="http://maps.googleapis.com/maps/api/staticmap?center=-15.800513,-47.91378&amp;zoom=11&amp;size=400x250&amp;sensor=false" data-src="http://maps.googleapis.com/maps/api/staticmap?center=-15.800513,-47.91378&amp;zoom=11&amp;size=400x250&amp;sensor=false" alt="Cover" width="100%" class="unveiled">
+                </div>
+                <!--/ media -->
+              </div>
+              <!--/ thumbnail -->
+              <!-- panel body -->
+              <div class="panel-body" style="margin-top:-55px;z-index:2;">
+                <ul class="list-unstyled">
+                  <li class="text-center">
+                    <img class="img-circle img-bordered" src="/static/img/avatar6.jpg" alt="" width="75px" height="75px">
+                    <br>
+                    <h5 class="semibold mb0">Orli Waller</h5>
+                    <p class="nm text-muted">Front-end Developer</p>
+                  </li>
+                </ul>
+              </div>
+              <!--/ panel body -->
+              <!-- panel ribbon -->
+              <a href="javascript:void(0);" class="panel-ribbon panel-ribbon-primary"><i class="ico-info"></i></a>
+              <!--/ panel ribbon -->
+              <!-- table -->
+              <table class="table">
+                <thead></thead>
+                <tbody>
+                  <tr>
+                    <td width="50%">Web development</td>
+                    <td>
+                      <div class="progress progress-xs nm">
+                        <div class="progress-bar" style="width: 60%"></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="50%">Server patching</td>
+                    <td>
+                      <div class="progress progress-xs nm">
+                        <div class="progress-bar progress-bar-warning" style="width: 40%"></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="50%">Mobile framework</td>
+                    <td>
+                      <div class="progress progress-xs nm">
+                        <div class="progress-bar progress-bar-success" style="width: 90%"></div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!--/ table -->
+            </div>
+            <!--/ END Widget Panel -->
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4">
+            <!-- START Widget Panel -->
+            <div class="widget panel">
+              <!-- panel ribbon -->
+              <a href="javascript:void(0);" class="panel-ribbon panel-ribbon-danger pull-right"><i class="ico-heart4"></i></a>
+              <!--/ panel ribbon -->
+              <!-- panel body -->
+              <div class="panel-body">
+                <ul class="list-unstyled">
+                  <li class="text-center">
+                    <img class="img-circle img-bordered-danger" src="/static/img/avatar6.jpg" alt="" width="75px" height="75px">
+                    <br>
+                    <h5 class="semibold mb0">Orli Waller</h5>
+                    <p class="nm text-muted">Front-end Developer</p>
+                  </li>
+                </ul>
+                <hr>
+                <!-- blockquote -->
+                <blockquote class="mt10 text-muted text-center">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                  <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                </blockquote>
+                <!--/ blockquote -->
+              </div>
+              <!--/ panel body -->
+            </div>
+            <!--/ END Widget Panel -->
+          </div>
+        </div>
+        <!--/ END row -->
+        <!-- START row -->
+        <div class="row">
+          <div class="col-md-3">
+            <!-- START Widget Panel -->
+            <div class="widget panel">
+              <!-- panel body -->
+              <div class="panel-body">
+                <ul class="list-unstyled">
+                  <li class="text-center mb15">
+                    <img class="img-rounded img-bordered-primary" src="/static/img/avatar6.jpg" alt="" width="100px" height="100px">
+                  </li>
+                  <li class="text-center mb10">
+                    <h4 class="semibold ellipsis nm">Colt Jenkins</h4>
+                    <p class="text-muted nm">Nullam Ut Nisi Corporation</p>
+                  </li>
+                  <li class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                  </li>
+                </ul>
+              </div>
+              <!--/ panel body -->
+            </div>
+            <!--/ END Widget Panel -->
+          </div>
+          <div class="col-md-3">
+            <!-- START Widget Panel -->
+            <div class="widget panel">
+              <!-- panel body -->
+              <div class="panel-body">
+                <ul class="list-unstyled">
+                  <li class="text-center mb15">
+                    <img class="img-circle img-bordered-primary" src="/static/img/avatar6.jpg" alt="" width="100px" height="100px">
+                  </li>
+                  <li class="text-center mb10">
+                    <h4 class="semibold ellipsis nm text-primary">Deborah Workman</h4>
+                    <p class="text-muted nm">Ultrices Industries</p>
+                  </li>
+                  <li class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                  </li>
+                </ul>
+              </div>
+              <!--/ panel body -->
+            </div>
+            <!--/ END Widget Panel -->
+          </div>
+          <div class="col-md-3">
+            <!-- START Widget Panel -->
+            <div class="widget panel">
+              <!-- panel body -->
+              <div class="panel-body">
+                <ul class="list-unstyled">
+                  <li class="text-center mb15">
+                    <img class="img-circle img-bordered-primary" src="/static/img/avatar6.jpg" alt="" width="100px" height="100px">
+                  </li>
+                  <li class="text-center mb10">
+                    <h4 class="semibold ellipsis nm text-primary">Uriah Benjamin</h4>
+                    <p class="text-muted nm">Elit Company</p>
+                  </li>
+                  <li class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                  </li>
+                </ul>
+              </div>
+              <!--/ panel body -->
+            </div>
+            <!--/ END Widget Panel -->
+          </div>
+          <div class="col-md-3">
+            <!-- START Widget Panel -->
+            <div class="widget panel">
+              <!-- panel body -->
+              <div class="panel-body">
+                <ul class="list-unstyled">
+                  <li class="text-center mb15">
+                    <img class="img-rounded img-bordered-primary" src="/static/img/avatar6.jpg" alt="" width="100px" height="100px">
+                  </li>
+                  <li class="text-center mb10">
+                    <h4 class="semibold ellipsis nm">MacKenzie Huffman</h4>
+                    <p class="text-muted nm">Sodales Company</p>
+                  </li>
+                  <li class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                  </li>
+                </ul>
+              </div>
+              <!--/ panel body -->
+            </div>
+            <!--/ END Widget Panel -->
+          </div>
+        </div>
+        <!--/ END row -->
+        <hr>
+        <!-- horizontal line -->
+        <!-- section header -->
+        <div class="section-header">
+          <h5 class="semibold title mb15">Misc Widget</h5>
+        </div>
+        <!--/ section header -->
+      </div>
+      <!--/ END Template Container -->
+      <!-- START To Top Scroller -->
+      <a href="#" class="totop animation" data-toggle="waypoints totop" data-showanim="bounceIn" data-hideanim="bounceOut" data-offset="50%"><i class="ico-angle-up"></i></a>
+      <!--/ END To Top Scroller -->
+    </section>

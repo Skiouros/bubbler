@@ -1,0 +1,374 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Bubbler | Discover More</title>
+    <meta name="description" content="Bubbler is an online book & housing exchange network made exclusively for college students.">
+    <meta name="keywords" content="Bubbler, Books, Exchange, Housing, Sell, Buy, Whales">
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/css/bootstrap.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.0/css/toastr.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/static/css/landing_core.css" type="text/css" media="all" />
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2pre/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body id="landing-page">
+    <header>
+      <nav class="navigation navigation-header">
+        <div class="container">
+          <div class="navigation-brand">
+            <div class="brand-logo">
+              <a href="/" class="logo"></a>
+            </div>
+            <button class="navigation-toggle visible-xs" type="button" data-toggle="dropdown" data-target=".navigation-navbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navigation-navbar">
+            <ul class="navigation-bar navigation-bar-left">
+              <li class="active"><a href="#landing-page">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#features-list">Features</a></li>
+              <li><a href="#guarantee">Feedback</a></li>
+              <li><a href="#footer">Contact</a></li>
+            </ul>
+            <ul class="navigation-bar navigation-bar-right">
+                <li class="featured"><a href="<%= url_for 'user_login' %>">Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="hero" class="static-header register-version light clearfix">
+      <div class="overlay pattern">
+        </div>
+      <div class="text-heading">
+        <h1 class="animated hiding txt-shadow" data-animation="bounceInDown" data-delay="0"><span class="highlight">Discover</span> More.</h1>
+        <p class="animated hiding txt-shadow" data-animation="fadeInDown" data-delay="500">Bubbler is an online book & housing exchange network made exclusively for college students.</p>
+      </div>
+      <div class="container">
+        <div class="signup-wrapper animated hiding" data-animation="bounceInUp" data-delay="0">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="row">
+                  <form class="form-inline form-register form-register-small" method="post" action="<%= url_for 'user_register' %>">
+              <div class="col-lg-10">
+                <div class="row">
+              <div class="col-lg-3">
+                <div class="form-group">
+                  <input type="text" class="form-control required" name="fullname" id="fullname" placeholder="Full Name" style="min-width:215px;width:100%">
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="form-group">
+                  <input type="email" class="form-control required email" name="email" id="email" placeholder="College Email" style="min-width:215px;width:100%">
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="form-group password-wrapper">
+                  <input type="password" class="form-control required" name="password" id="password" placeholder="Password" style="min-width:215px;width:100%">
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="form-group password-wrapper">
+                  <input type="text" class="form-control required" name="college" id="college" placeholder="College You Attend" style="min-width:215px;width:100%">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="row">
+              <div class="col-lg-10">
+                <div class="form-group submit-wrap">
+                  <input type="hidden" name="small-form"/>
+                  <button type="submit" class="btn btn-primary btn-md">Join The Network!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+            </form>
+          </div>
+          </div>
+          </div>
+          <h3 class="animated hiding txt-shadow" data-animation="bounceInDown" data-delay="0">People In The Network: <span class="highlight">10,337</span></h3>
+        </div>
+      </div>
+    </div>
+    <div id="clients">
+      <div class="container">
+          <div class="section-header animated hiding" data-animation="fadeInDown">
+          <h3><span class="highlight">Bubbler</span> - Discover More.</h3>
+        </div>
+      </div>
+      </div>
+    <a id="showHere"></a>
+    <section id="about" class="section dark">
+      <div class="container">
+        <div class="section-content row">
+          <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">
+            <img src="/static/img/people.jpg" class="img-responsive" alt="process 3" />
+          </div>
+          <div class="col-sm-6 animated hiding" data-animation="fadeInRight">
+            <br/>
+            <article class="center">
+              <h3>It's So Easy To <span class="highlight">Use</span></h3>
+              <div class="sub-title">"Do you know if anyone has this book?"</div>
+              <p>
+                Bubbler is the easiest way for you to exchange books and housing around your campus and others also! <br/>The day's of asking around and advertising by word of mouth are over.<br/>
+                You don't have time to do it so let us do it for you!
+              </p>
+              <br/>
+              <a href="javascript:void(0);" class="btn btn-secondary animated hiding scroll-top" data-animation="bounceIn" data-delay="700">Sign Up Today!</a>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <hr class="clearfix" style="margin-top:0px"/>
+    <section id="feedback-controls" class="section light">
+      <div class="container">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="flex-manual">
+            <div class="col-xs-12 col-sm-4 wrap">
+              <div class="switch flex-active">
+                <img alt="client" src="/static/img/avatars/avatar4.jpg" class="sm-pic img-circle pull-left" width="70" height="70">
+                <p>
+                  <span>AMY WARNER</span><br/><span class="highlight">@amywarner</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 wrap">
+              <div class="switch pull-left">
+                <img alt="client" src="/static/img/avatars/avatar2.jpg" class="sm-pic img-circle pull-left" width="70" height="70">
+                <p>
+                  <span class="highlight">JOHN DOESOME</span><br/><span class="highlight">@johndoesome</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 wrap">
+              <div class="switch">
+                <img alt="client" src="/static/img/avatars/avatar6.jpg" class="sm-pic img-circle pull-left" width="70" height="70">
+                <p>
+                  <span class="highlight">PETER MOOSOME</span><br/><span class="highlight">@petermoosome</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="feedback" class="section light">
+      <div class="overlay pattern"></div>
+      <div class="container">
+        <div class="section-header animated hiding" data-animation="fadeInDown">
+          <h2><span class="highlight">USER</span> TESTIMONIES</h2>
+        </div>
+        <div class="section-content">
+          <div class="col-sm-10 col-sm-offset-1">
+            <div class="flexslider testimonials-slider center animated hiding" data-animation="fadeInTop">
+              <ul class="slides">
+                <li>
+                  <div class="testimonial resp-center clearfix">
+                    <blockquote>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non bibendum metus. Aenean vel rutrum velit. Duis aliquet augue non augue volutpat, ut viverra est sagittis. Duis elementum mi mauris, nec rhoncus dolor consectetur vitae lorem ipsum.
+                    </blockquote>
+                  </div>
+                </li>
+                <li>
+                  <div class="testimonial resp-center clearfix">
+                    <blockquote>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non bibendum metus. Aenean vel rutrum velit. Duis aliquet augue non augue volutpat, ut viverra est sagittis. Duis elementum mi mauris, nec rhoncus dolor consectetur vitae lorem ipsum.
+                    </blockquote>
+                  </div>
+                </li>
+                <li>
+                  <div class="testimonial resp-center clearfix">
+                    <blockquote>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non bibendum metus. Aenean vel rutrum velit. Duis aliquet augue non augue volutpat, ut viverra est sagittis. Duis elementum mi mauris, nec rhoncus dolor consectetur vitae lorem ipsum.
+                    </blockquote>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="features-list" class="section dark">
+      <div class="section-header animated hiding" data-animation="fadeInDown">
+          <h2><span class="highlight">FEATURED</span> HIGHLIGHTS</h2>
+        </div>
+      <div class="container animated hiding" data-animation="fadeInDown">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <article class="center">
+              <i class="icon icon-faces-users-04 icon-active"></i>
+              <span class="h7">It's Exclusive</span>
+              <p class="thin">Thats right, you are only dealing with colleagues, not random people from craiglist.</p>
+            </article>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <article class="center">
+              <i class="icon icon-graphic-design-13 icon-active"></i>
+              <span class="h7">Free To Use</span>
+              <p class="thin">Share Bubbler with your colleagues and tell them how awesome it is!<br/> Some limitations apply.</p>
+            </article>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <article class="center">
+              <i class="icon icon-documents-bookmarks-14 icon-active"></i>
+              <span class="h7">Books</span>
+              <p class="thin">Find the book you need, the same day, from a student on a campus.</p>
+            </article>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <article class="center">
+              <i class="icon icon-realestate-living-14 icon-active"></i>
+              <span class="h7">Housing</span>
+              <p class="thin">Find the right place for you, close to campus, from a colleague you can relate to.</p>
+            </article>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <article class="center">
+              <i class="icon icon-chat-messages-12 icon-active"></i>
+              <span class="h7">Let's Meet Up</span>
+              <p class="thin">Use our messaging system to communicate with the buyer or seller.</p>
+            </article>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <article class="center">
+              <i class="icon icon-seo-icons-02 icon-active"></i>
+              <span class="h7">We'll Let You Know</span>
+              <p class="thin">Let us know what you are looking for and we will email you when it's listed!</p>
+            </article>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <article class="center">
+              <i class="icon icon-seo-icons-27 icon-active"></i>
+              <span class="h7">Your Profile</span>
+              <p class="thin">Your profile is your bubble. Expand your bubble by listing today!</p>
+            </article>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <article class="center">
+              <i class="icon icon-badges-votes-16 icon-active"></i>
+              <span class="h7">Limitations</span>
+              <p class="thin">Currently, we allow up to 5 book and 1 housing listings a month, but hey, it's free!</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="guarantee" class="long-block light">
+      <div class="container">
+        <div class="col-md-12 col-lg-9">
+          <i class="icon icon-seo-icons-24 pull-left"></i>
+          <article class="pull-left">
+            <h2>WE WANT YOUR <strong>FEEDBACK</strong></h2>
+            <p class="thin">Let us know about your experience  with Bubbler! <br/>Share your ideas with us on how we can make it be even better!</p>
+          </article>
+        </div>
+        <div class="col-md-12 col-lg-3">
+          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#feedbackModal">Click Here!</button>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="footer">
+      <div class="overlay pattern"></div>
+      <div class="container">
+        <div class="footer-content row">
+          <div class="col-xs-12 col-sm-12 col-lg-4">
+            <div class="logo-wrapper">
+              <!-- <img src="/static/landing/assets/img/logo.png" alt="logo" /> -->
+            </div>
+            <p>Bubbler is an online book & housing exchange network made exclusively for college students.</p>
+            <p>Special thanks to <a href="//www.wdwlive.com">WDWLive</a> for the background image.</p>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-lg-4 social-wrap">
+            <div class="footer-title">Company Info</div>
+            <ul class="list-inline socials">
+              <li><a href="#"><span>Blog</span></a></li>
+              <li><a href="#"><span>Press Release</span></a></li>
+              <li><a href="#"><span>Terms</span></a></li>
+              <li><a href="#"><span>Privacy</span></a></li>
+            </ul>
+            <div class="footer-title">Connect With Us</div>
+            <ul class="list-inline socials" style="margin-bottom:25px">
+              <li><a href="#"><span class="icon icon-socialmedia-07"></span></a></li>
+              <li><a href="#"><span class="icon icon-socialmedia-26"></span></a></li>
+              <li><a href="#"><span class="icon icon-socialmedia-08"></span></a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-lg-4">
+            <div class="footer-title" style="text-align:left">Contact Us</div>
+            <div class="col-sm-12">
+            <ul class="list-unstyled">
+              <li>
+                <span class="icon icon-chat-messages-14"></span>
+                <a href="mailto:info@bubbler.in" style="padding-left:30px">info@bubbler.in</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright"><%= copyright %></div>
+    </footer>
+    <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center highlight">Thank You For Your Help!</h4>
+            <p class="text-center">Your feedback is very important to us. <br/>Let us know on how and or what we can improve on.</p>
+          </div>
+          <div class="modal-body">
+            <form class="form">
+              <div class="form-group">
+                <label for="recipient-name" class="control-label">Your Name:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="control-label">Your Email:</label>
+                <input type="email" class="form-control" id="recipient-email">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="control-label">Message:</label>
+                <textarea style="min-height:150px" class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <![endif]-->
+    <!--[if (gte IE 9) | (!IE)]><!-->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!--<![endif]-->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.0/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.0/js/toastr.min.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.appear.js"></script>
+    <script type="text/javascript" src="/static/js/headhesive.min.js"></script>
+    <script type="text/javascript" src="/static/js/landing.min.js"></script>
+  </body>
+</html>

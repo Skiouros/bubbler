@@ -1,0 +1,388 @@
+    <!-- START Template Main -->
+    <section id="main" role="main">
+      <!-- START jumbotron -->
+      <section class="jumbotron nm" data-stellar-background-ratio="0.4" style="min-height:320px;">
+        <!-- pattern + overlay -->
+        <div class="overlay pattern pattern10">
+        </div>
+        <!--/ pattern + overlay -->
+        <div class="container" style="padding-top:5%;">
+          <h1 class="thin text-white text-center font-alt">Welcome To My Bubble!</h1>
+          <h4 class="thin text-white text-center">Feel free to look around and let me know what you would want to buy!</h4>
+        </div>
+      </section>
+      <!--/ END jumbotron -->
+      <!-- START Template Container -->
+      <div class="container" style="background: #f9f9f9;border-left: 1px solid #d9d9d9;border-right: 1px solid #d9d9d9;">
+        <!-- START Row -->
+        <div class="row">
+          <!-- Right Side / Bottom side -->
+          <div class="col-md-3" >
+            <div class="panel panel-minimal nm">
+              <div class="panel-body pt0 pb0">
+                <ul class="list-table">
+                  <li style="width:55px;">
+                    <img class="img-circle" src="../image/avatar/avatar6.jpg" alt="" width="45px" height="45px">
+                  </li>
+                  <li class="text-left">
+                    <h5 class="semibold ellipsis">
+                      <%- profile %><br>
+                      <small class="text-muted">@mcerv_jr</small>
+                    </h5>
+                  </li>
+                </ul>
+              </div>
+              <ul class="nav nav-justified mt15">
+                <li class="text-center">
+                  <h4 class="nm">100</h4>
+                  <p class="nm text-muted">Followers</p>
+                </li>
+                <li class="text-center">
+                  <h4 class="nm">153</h4>
+                  <p class="nm text-muted">Following</p>
+                </li>
+                <li class="text-center">
+                  <h4 class="nm">53</h4>
+                  <p class="nm text-muted">Posts</p>
+                </li>
+              </ul>
+              <!--/ END Twitter Widget -->
+              <hr>
+              <!--horizontal line -->
+              <!-- START Bio -->
+              <div class="panel-toolbar-wrapper">
+                <div class="panel-toolbar">
+                  <h5 class="semibold nm text-info"><i class="ico-info2 mr5"></i>About Me</h5>
+                </div>
+                <div class="panel-toolbar text-right" data-toggle="class">
+                  <button class="btn btn-sm btn-success" data-toggle="class"><i class="ico-user-plus2"></i> Follow Me</button>
+                </div>
+              </div>
+              <div class="panel-body pt0">
+                <p class="semibold mb0">Bio</p>
+                <div class="col-lg-12 mb5" style="padding-left: 0px;padding-right: 0px;">
+                  <div class="mr5">
+                    I enjoy long walks on the beach. I also have a very particular set of skills.
+                  </div>
+                </div>
+                <p class="semibold mb0">College Campus</p>
+                <div class="col-lg-12 mb5" style="padding-left: 0px;padding-right: 0px;">
+                  <div class="mr5">
+                    <a href="#">University of the Pacific</a>
+                  </div>
+                </div>
+                <p class="semibold mb0">Major</p>
+                <div class="col-lg-12 mb5" style="padding-left: 0px;padding-right: 0px;">
+                  <div class="mr5">
+                    Computer Science
+                  </div>
+                </div>
+                <a href="#" class="btn btn-sm btn-primary mt15"><i class="ico-envelope"></i> Send Me A Message!</a>
+              </div>
+              <!--/ END Bio -->
+              <hr>
+              <!--horizontal line -->
+              <!-- START Friend lists -->
+              <!-- <div class="panel-toolbar-wrapper">
+                <div class="panel-toolbar">
+                    <h5 class="semibold nm text-info"><i class="ico-users3 mr5"></i>Friend lists</h5>
+                </div>
+                <div class="panel-toolbar text-right">
+                    <button class="btn btn-sm btn-default"><i class="ico-plus"></i></button>
+                </div>
+                </div>
+                <div class="panel-body pt0">
+                <div class="media-list media-list-contact">
+                    <a href="page-message-rich.html" class="media">
+                        <span class="media-object pull-left">
+                            <img src="../image/avatar/avatar1.jpg" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Autumn Barker</span>
+                            <span class="media-meta">Sint Maarten</span>
+                        </span>
+                    </a>
+                
+                    <a href="page-message-rich.html" class="media">
+                        <span class="media-object pull-left">
+                            <img src="../image/avatar/avatar2.jpg" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Giselle Horn</span>
+                            <span class="media-meta">Saudi Arabia</span>
+                        </span>
+                    </a>
+                
+                    <a href="page-message-rich.html" class="media">
+                        <span class="media-object pull-left">
+                            <img src="../image/avatar/avatar.png" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-danger mr5"></span> Austin Shields</span>
+                            <span class="media-meta">Ghana</span>
+                        </span>
+                    </a>
+                
+                    <a href="page-message-rich.html" class="media">
+                        <span class="media-object pull-left">
+                            <img src="../image/avatar/avatar.png" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-danger mr5"></span> Caryn Gibson</span>
+                            <span class="media-meta">Rwanda</span>
+                        </span>
+                    </a>
+                
+                    <a href="page-message-rich.html" class="media">
+                        <span class="media-object pull-left">
+                            <img src="../image/avatar/avatar3.jpg" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Nash Evans</span>
+                            <span class="media-meta">Somalia</span>
+                        </span>
+                    </a>
+                </div>
+                <p class="nm"><a href="javascript:void(0);" class="semibold">View all</a></p>
+                </div> -->
+              <!--/ END Friend lists -->
+            </div>
+          </div>
+          <!--/ Right side / bottom side -->
+          <!-- Left Side / Top side -->
+          <div class="col-md-9">
+            <div class="container">
+              <div class="col-lg-1 col-md-1 col-sm-4 col-xs-4">
+                <img src="..//image/icons/bloggingservices.png" alt=""  style="width: 50px;height: 45px" class="img-responsive">
+              </div>
+              <div class="col-lg-11 col-md-11 col-sm-8 col-xs-8">
+                <h2 class="mt5 font-alt">My Books</h2>
+              </div>
+            </div>
+            <hr/>
+            <!-- START Row -->
+            <div id="masonry">
+              <!-- Blog post #6 -->
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 post">
+                <article class="panel overflow-hidden">
+                  <!-- Thumbnail -->
+                  <header class="thumbnail">
+                    <!-- media -->
+                    <div class="media">
+                      <!-- indicator -->
+                      <div class="indicator"><span class="spinner"></span></div>
+                      <!--/ indicator -->
+                      <!-- toolbar overlay -->
+                      <div class="overlay">
+                        <div class="toolbar">
+                          <a href="book.html" class="btn btn-info"><i class="ico-book2"></i></a>
+                        </div>
+                      </div>
+                      <!--/ toolbar overlay -->
+                      <img  src="../image/books/books.jpg" alt="Photo" height="230px" >
+                    </div>
+                    <!--/ media -->
+                  </header>
+                  <!--/ Thumbnail -->
+                  <!-- Content -->
+                  <section class="panel-body">
+                    <!-- heading -->
+                    <h4 class="font-alt mt0 ellipsis"><a href="javascript:void(0);" class="text-default">Book Title &#8230;</a></h4>
+                    <!--/ heading -->
+                    <!-- text -->
+                    <div class="text-default">
+                      <p>Author</p>
+                    </div>
+                    <!--/ text -->
+                    <!-- Meta & button -->
+                    <!-- meta -->
+                    <p class="meta mb15">
+                      <!-- date -->
+                      <span class="text-muted">Price: </span>
+                      <a href="javascript:void(0);"> $59.99</a>
+                      <br/>
+                      <span class="text-muted">Quantity: </span>
+                      <a href="javascript:void(0);"> 1</a>
+                      <br/>
+                      <span class="text-muted">Posted on: </span>
+                      <a href="javascript:void(0);"> Jul 15, 2013</a><!-- author -->
+                    </p>
+                    <!--/ meta -->
+                    <a href="book.html" class="btn btn-success">View This Book</a>
+                    <!-- Meta & button -->
+                  </section>
+                  <!--/ Content -->
+                </article>
+              </div>
+              <!--/ Blog post #6 -->
+              <!-- Blog post #6 -->
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 post">
+                <article class="panel overflow-hidden">
+                  <!-- Thumbnail -->
+                  <header class="thumbnail">
+                    <!-- media -->
+                    <div class="media">
+                      <!-- indicator -->
+                      <div class="indicator"><span class="spinner"></span></div>
+                      <!--/ indicator -->
+                      <!-- toolbar overlay -->
+                      <div class="overlay">
+                        <div class="toolbar">
+                          <a href="book.html" class="btn btn-danger"><i class="ico-heart6"></i></a>
+                        </div>
+                      </div>
+                      <!--/ toolbar overlay -->
+                      <img src="../image/books/college.jpg" alt="Photo" height="230px">
+                    </div>
+                    <!--/ media -->
+                  </header>
+                  <!--/ Thumbnail -->
+                  <!-- Content -->
+                  <section class="panel-body">
+                    <!-- heading -->
+                    <h4 class="font-alt mt0 ellipsis"><a href="javascript:void(0);" class="text-default">Book Title &#8230;</a></h4>
+                    <!--/ heading -->
+                    <!-- text -->
+                    <div class="text-default">
+                      <p>Author</p>
+                    </div>
+                    <!--/ text -->
+                    <!-- Meta & button -->
+                    <!-- meta -->
+                    <p class="meta mb15">
+                      <!-- date -->
+                      <span class="text-muted">Price: </span>
+                      <a href="javascript:void(0);"> $59.99</a>
+                      <br/>
+                      <span class="text-muted">Quantity: </span>
+                      <a href="javascript:void(0);"> 1</a>
+                      <br/>
+                      <span class="text-muted">Posted on: </span>
+                      <a href="javascript:void(0);"> Jul 15, 2013</a><!-- author -->
+                    </p>
+                    <!--/ meta -->
+                    <a href="book.html" class="btn btn-success">View This Book</a>
+                    <!-- Meta & button -->
+                  </section>
+                  <!--/ Content -->
+                </article>
+              </div>
+              <!--/ Blog post #6 -->
+              <!-- Blog post #6 -->
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 post">
+                <article class="panel overflow-hidden">
+                  <!-- Thumbnail -->
+                  <header class="thumbnail">
+                    <!-- media -->
+                    <div class="media">
+                      <!-- indicator -->
+                      <div class="indicator"><span class="spinner"></span></div>
+                      <!--/ indicator -->
+                      <!-- toolbar overlay -->
+                      <div class="overlay">
+                        <div class="toolbar">
+                          <a href="book.html" class="btn btn-danger"><i class="ico-heart6"></i></a>
+                        </div>
+                      </div>
+                      <!--/ toolbar overlay -->
+                      <img src="../image/books/math-books.jpg" alt="Photo" height="230px">
+                    </div>
+                    <!--/ media -->
+                  </header>
+                  <!--/ Thumbnail -->
+                  <!-- Content -->
+                  <section class="panel-body">
+                    <!-- heading -->
+                    <h4 class="font-alt mt0 ellipsis"><a href="javascript:void(0);" class="text-default">Book Title &#8230;</a></h4>
+                    <!--/ heading -->
+                    <!-- text -->
+                    <div class="text-default">
+                      <p>Author</p>
+                    </div>
+                    <!--/ text -->
+                    <!-- Meta & button -->
+                    <!-- meta -->
+                    <p class="meta mb15">
+                      <!-- date -->
+                      <span class="text-muted">Price: </span>
+                      <a href="javascript:void(0);"> $59.99</a>
+                      <br/>
+                      <span class="text-muted">Quantity: </span>
+                      <a href="javascript:void(0);"> 1</a>
+                      <br/>
+                      <span class="text-muted">Posted on: </span>
+                      <a href="javascript:void(0);"> Jul 15, 2013</a><!-- author -->
+                    </p>
+                    <!--/ meta -->
+                    <a href="book.html" class="btn btn-success">View This Book</a>
+                    <!-- Meta & button -->
+                  </section>
+                  <!--/ Content -->
+                </article>
+              </div>
+              <!--/ Blog post #6 -->
+              <!-- Blog post #6 -->
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 post">
+                <article class="panel overflow-hidden">
+                  <!-- Thumbnail -->
+                  <header class="thumbnail">
+                    <!-- media -->
+                    <div class="media">
+                      <!-- indicator -->
+                      <div class="indicator"><span class="spinner"></span></div>
+                      <!--/ indicator -->
+                      <!-- toolbar overlay -->
+                      <div class="overlay">
+                        <div class="toolbar">
+                          <a href="book.html" class="btn btn-danger"><i class="ico-heart6"></i></a>
+                        </div>
+                      </div>
+                      <!--/ toolbar overlay -->
+                      <img data-toggle="unveil" src="../image/background/blog/placeholder.jpg" data-src="../image/background/blog/blog5.jpg" alt="Photo" height="230px">
+                    </div>
+                    <!--/ media -->
+                  </header>
+                  <!--/ Thumbnail -->
+                  <!-- Content -->
+                  <section class="panel-body">
+                    <!-- heading -->
+                    <h4 class="font-alt mt0 ellipsis"><a href="javascript:void(0);" class="text-default">Book Title &#8230;</a></h4>
+                    <!--/ heading -->
+                    <!-- text -->
+                    <div class="text-default">
+                      <p>Author</p>
+                    </div>
+                    <!--/ text -->
+                    <!-- Meta & button -->
+                    <!-- meta -->
+                    <p class="meta mb15">
+                      <!-- date -->
+                      <span class="text-muted">Price: </span>
+                      <a href="javascript:void(0);"> $59.99</a>
+                      <br/>
+                      <span class="text-muted">Quantity: </span>
+                      <a href="javascript:void(0);"> 1</a>
+                      <br/>
+                      <span class="text-muted">Posted on: </span>
+                      <a href="javascript:void(0);"> Jul 15, 2013</a><!-- author -->
+                    </p>
+                    <!--/ meta -->
+                    <a href="book.html" class="btn btn-success">View This Book</a>
+                    <!-- Meta & button -->
+                  </section>
+                  <!--/ Content -->
+                </article>
+              </div>
+              <!--/ Blog post #6 -->
+            </div>
+            <!--/ END Row -->
+          </div>
+          <!--/ Left Side / Top side -->
+        </div>
+        <!--/ END Row -->
+      </div>
+      <!--/ END Template Container -->
+      <!-- START To Top Scroller -->
+      <a href="page-timeline-v1.html#" class="totop animation" data-toggle="waypoints totop" data-showanim="bounceIn" data-hideanim="bounceOut" data-offset="50%"><i class="ico-angle-up"></i></a>
+      <!--/ END To Top Scroller -->
+    </section>

@@ -1,0 +1,263 @@
+        <div id="filter_housing_modal" class="modal fade" style="display: none;" aria-hidden="true">
+          <div class="modal-dialog modal-lg" style="z-index: 9999;
+            ">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <div class="mb15 mt15" ><img src="/static/img/icons/proofreading.png" alt="" width="65px" height="65px"></div>
+                <h3 class="semibold modal-title text-primary">Filter results by:</h3>
+              </div>
+              <div class="modal-body con-bg">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="row">
+                      <div class="col-lg-12 mt15">
+                        <div class="form-group">
+                          <label class="col-sm-3 control-label fsize14">Type</label>
+                          <div class="col-sm-9">
+                            <div class="row">
+                              <div class="col-lg-4">
+                                <span class="checkbox custom-checkbox custom-checkbox-primary">
+                                <input type="checkbox" name="customcheckbox1" id="customcheckbox1">
+                                <label for="customcheckbox1">&nbsp;&nbsp;Hardcover</label>
+                                </span>
+                              </div>
+                              <div class="col-lg-4">
+                                <span class="checkbox custom-checkbox custom-checkbox-primary">
+                                <input type="checkbox" name="customcheckbox1" id="customcheckbox2">
+                                <label for="customcheckbox2">&nbsp;&nbsp;Paperback</label>
+                                </span>
+                              </div>
+                              <div class="col-lg-4">
+                                <span class="checkbox custom-checkbox custom-checkbox-primary">
+                                <input type="checkbox" name="customcheckbox1" id="customcheckbox3">
+                                <label for="customcheckbox3">&nbsp;&nbsp;Digital Copy</label>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                      <div class="col-lg-12 mt15">
+                        <div class="form-group">
+                          <label class="col-sm-3 control-label fsize14">Purchase</label>
+                          <div class="col-sm-9">
+                            <div class="row">
+                              <div class="col-lg-3">
+                                <span class="checkbox custom-checkbox custom-checkbox-primary">
+                                <input type="checkbox" name="customcheckbox1" id="customcheckbox1">
+                                <label for="customcheckbox1">&nbsp;&nbsp;Cash</label>
+                                </span>
+                              </div>
+                              <div class="col-lg-3">
+                                <span class="checkbox custom-checkbox custom-checkbox-primary">
+                                <input type="checkbox" name="customcheckbox1" id="customcheckbox2">
+                                <label for="customcheckbox2">&nbsp;&nbsp;Credit Card</label>
+                                </span>
+                              </div>
+                              <div class="col-lg-3">
+                                <span class="checkbox custom-checkbox custom-checkbox-primary">
+                                <input type="checkbox" name="customcheckbox1" id="customcheckbox3">
+                                <label for="customcheckbox3">&nbsp;&nbsp;Paypal</label>
+                                </span>
+                              </div>
+                              <div class="col-lg-3">
+                                <span class="checkbox custom-checkbox custom-checkbox-primary">
+                                <input type="checkbox" name="customcheckbox1" id="customcheckbox3">
+                                <label for="customcheckbox3">&nbsp;&nbsp;Other</label>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                      <div class="col-lg-12 mt15">
+                        <div class="form-group">
+                          <label class="col-sm-3 control-label fsize14">Condition</label>
+                          <div class="col-sm-9">
+                            <div class="row">
+                              <div class="col-lg-3">
+                                <span class="checkbox custom-checkbox custom-checkbox-primary">
+                                <input type="checkbox" name="customcheckbox1" id="customcheckbox1">
+                                <label for="customcheckbox1">&nbsp;&nbsp;New</label>
+                                </span>
+                              </div>
+                              <div class="col-lg-3">
+                                <span class="checkbox custom-checkbox custom-checkbox-primary">
+                                <input type="checkbox" name="customcheckbox1" id="customcheckbox3">
+                                <label for="customcheckbox3">&nbsp;&nbsp;Good</label>
+                                </span>
+                              </div>
+                              <div class="col-lg-3">
+                                <span class="checkbox custom-checkbox custom-checkbox-primary">
+                                <input type="checkbox" name="customcheckbox1" id="customcheckbox3">
+                                <label for="customcheckbox3">&nbsp;&nbsp;Fair</label>
+                                </span>
+                              </div>
+                              <div class="col-lg-3">
+                                <span class="checkbox custom-checkbox custom-checkbox-primary">
+                                <input type="checkbox" name="customcheckbox1" id="customcheckbox3">
+                                <label for="customcheckbox3">&nbsp;&nbsp;Poor</label>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <label class="col-lg-3 control-label fsize14">ISBN</label>
+                          <div class="col-lg-9">
+                            <div class="row">
+                              <div class="col-lg-4">
+                                <input type="text" class="form-control center-search" placeholder="ISBN-10">
+                              </div>
+                              <div class="col-lg-1 text-center">
+                                <p class="mt5">or</p>
+                              </div>
+                              <div class="col-lg-4">
+                                <input type="text" class="form-control center-search" placeholder="ISBN-13">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <label class="col-sm-3 control-label fsize14">Publisher</label>
+                          <div class="col-sm-4">
+                            <input type="text" class="form-control center-search" placeholder="McGraw Hill">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <label class="col-sm-3 control-label fsize14">Author</label>
+                          <div class="col-sm-4">
+                            <input type="text" class="form-control center-search" placeholder="Mark Twain">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <label class="col-sm-3 control-label fsize14">Edition</label>
+                          <div class="col-sm-2">
+                            <input type="text" class="form-control center-search" placeholder="9th">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <label class="col-sm-3 control-label fsize14">Subject</label>
+                          <div class="col-sm-3">
+                            <select class="form-control center-search">
+                              <option select>Subject</option>
+                              <option value="1">Math</option>
+                              <option value="2">Science</option>
+                              <option value="3">Arts</option>
+                              <option value="6">Language</option>
+                              <option value="4">Literature</option>
+                              <option value="5">History</option>
+                              <option value="5">Music</option>
+                              <option value="5">Biography</option>
+                              <option value="5">Autobiography</option>
+                              <option value="5">Other</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <label class="col-lg-3 control-label fsize14">Price</label>
+                          <div class="col-lg-9">
+                            <div class="row">
+                              <div class="col-lg-2">
+                                <input type="text" class="form-control center-search" placeholder="$100">
+                              </div>
+                              <div class="col-lg-1 text-center">
+                                <p class="mt5">to</p>
+                              </div>
+                              <div class="col-lg-2">
+                                <input type="text" class="form-control center-search" placeholder="$500">
+                              </div>
+                              <div class="col-lg-3">
+                                <span class="checkbox custom-checkbox custom-checkbox-primary">
+                                <input type="checkbox" name="customcheckbox1" id="customcheckbox1">
+                                <label for="customcheckbox1">&nbsp;&nbsp;High to Low</label>
+                                </span>
+                              </div>
+                              <div class="col-lg-3">
+                                <span class="checkbox custom-checkbox custom-checkbox-primary">
+                                <input type="checkbox" name="customcheckbox1" id="customcheckbox2">
+                                <label for="customcheckbox2">&nbsp;&nbsp;Low to High</label>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <label class="col-sm-3 control-label fsize14">Date Posted</label>
+                          <div class="col-sm-9">
+                            <div class="row">
+                              <div class="form-group">
+                                <div class="col-sm-9">
+                                  <div class="row">
+                                    <div class="col-md-4"><input type="text" class="form-control center-search" id="datepicker-from" placeholder="From" /></div>
+                                    <div class="col-md-4"><input type="text" class="form-control center-search" id="datepicker-to" placeholder="to" /></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <label class="col-sm-3 control-label fsize14">Keywords</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" id="selectize-tagging">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-lg btn-success" style="width:100%" onClick="alert('Filters will be applied!');window.location.replace('http://192.168.2.26/s/<%= school_name %>/housing')">Update listings</button>
+              </div>
+            </div>
+          </div>
+        </div>
