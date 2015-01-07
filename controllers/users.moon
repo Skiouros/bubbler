@@ -53,7 +53,7 @@ class Users extends lapis.Application
     [reset_password: "/reset_password/*"]: respond_to {
         GET: capture_errors {
             on_error: =>
-                    json: @errors
+                json: @errors
              =>
                 validate_password_reset @
                 render: "user.reset_password", layout: false
