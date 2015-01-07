@@ -16,7 +16,7 @@
             <div class="col-xs-10 col-sm-8 col-lg-6 col-centered">
               <div class="input-group has-icon">
                 <i class="ico-search form-control-icon text-left"style="left:0px !important"></i>
-                <input type="text" class="form-control" placeholder="<%= srch_placeholder %>" style="padding-left:40px;border-top-left-radius:4px;border-bottom-left-radius:4px">
+                <input type="text" class="form-control center-search" placeholder="<%= srch_placeholder %>" style="padding-left:40px;border-top-left-radius:4px;border-bottom-left-radius:4px">
                 <span class="input-group-btn">
                 <button class="btn btn-danger" type="button" id="open_filters" data-toggle="modal" data-target="#filter_housing_modal">Filters</button>
                 </span>
@@ -36,16 +36,16 @@
                       
                       <div class="overlay warning-overlay">
                         <div class="toolbar">
-                          <a href="/h/<%= home_link %>" class="btn btn-warning"><i class="ico-redo2"></i></a>
+                          <a href="/b/<%= home_link %>" class="btn btn-warning"><i class="ico-redo2"></i></a>
                         </div>
                       </div>
-                      <img  src="/static/img/housing/housing1.jpg"  alt="Photo" height="230px">
+                      <img  src="/static/img/books/book1.jpg"  alt="Photo" height="230px">
                     </div>
                   </header>
                   <section class="panel-body">
-                    <h4 class="font-alt mt0 ellipsis"><a href="/h/<%= home_link %>" class="text-default">Looking for a roommate!</a></h4>
+                    <h4 class="font-alt mt0 ellipsis"><a href="/b/<%= home_link %>" class="text-default">5 BD Close to Campus!</a></h4>
                     <div class="text-default">
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,&#8230;</p>
+                      <p>Lorem consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,&#8230;</p>
                     </div>
                   </section>
                   <ul class="list-table pa15" style="border-top: 1px solid #d9d9d9;">
@@ -58,7 +58,7 @@
                       </a>
                       <p class="text-muted nm">4 Days ago</p>
                     </li>
-                    <li class="text-right"><a href="/h/<%= home_link %>"><button class="btn btn-sm btn-warning">$379/m</button></a></li>
+                    <li class="text-right"><a href="/b/<%= home_link %>"><button class="btn btn-sm btn-warning">$37</button></a></li>
                   </ul>
                 </article>
               </div>
@@ -69,14 +69,14 @@
                       
                       <div class="overlay danger-overlay">
                         <div class="toolbar">
-                          <a href="/h/<%= home_link %>" class="btn btn-danger"><i class="ico-redo2"></i></a>
+                          <a href="/b/<%= home_link %>" class="btn btn-danger"><i class="ico-redo2"></i></a>
                         </div>
                       </div>
-                      <img  src="/static/img/housing/housing2.jpg"  alt="Photo" height="230px">
+                      <img  src="/static/img/books/book2.jpg"  alt="Photo" height="230px">
                     </div>
                   </header>
                   <section class="panel-body">
-                    <h4 class="font-alt mt0 ellipsis"><a href="/h/<%= home_link %>" class="text-default">Spacious Single Bedroom</a></h4>
+                    <h4 class="font-alt mt0 ellipsis"><a href="/b/<%= home_link %>" class="text-default">Spacious Single Bedroom</a></h4>
                     <div class="text-default">
                       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,&#8230;</p>
                     </div>
@@ -91,7 +91,7 @@
                       </a>
                       <p class="text-muted nm">3 Hour ago</p>
                     </li>
-                    <li class="text-right"><a href="/h/<%= home_link %>"><button class="btn btn-sm btn-danger">$278/m</button></a></li>
+                    <li class="text-right"><a href="/b/<%= home_link %>"><button class="btn btn-sm btn-danger">$20</button></a></li>
                   </ul>
                 </article>
               </div>
@@ -102,16 +102,16 @@
                       
                       <div class="overlay primary-overlay">
                         <div class="toolbar">
-                          <a href="/h/<%= home_link %>" class="btn btn-primary"><i class="ico-redo2"></i></a>
+                          <a href="/b/<%= home_link %>" class="btn btn-primary"><i class="ico-redo2"></i></a>
                         </div>
                       </div>
-                      <img  src="/static/img/housing/housing3.jpg"  alt="Photo" height="230px">
+                      <img  src="/static/img/books/book3.jpg"  alt="Photo" height="230px">
                     </div>
                   </header>
                   <section class="panel-body">
-                    <h4 class="font-alt mt0 ellipsis"><a href="/h/<%= home_link %>" class="text-default">Very Quiet Neighborhood</a></h4>
+                    <h4 class="font-alt mt0 ellipsis"><a href="/b/<%= home_link %>" class="text-default">Very Quiet Neighborhood</a></h4>
                     <div class="text-default">
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&#8230;</p>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pretium quis,&#8230;</p>
                     </div>
                   </section>
                   <ul class="list-table pa15" style="border-top: 1px solid #d9d9d9;">
@@ -124,7 +124,7 @@
                       </a>
                       <p class="text-muted nm">3 Hour ago</p>
                     </li>
-                    <li class="text-right"><a href="/h/<%= home_link %>"><button class="btn btn-sm btn-primary">$559/m</button></a></li>
+                    <li class="text-right"><a href="/b/<%= home_link %>"><button class="btn btn-sm btn-primary">$55</button></a></li>
                   </ul>
                 </article>
               </div>
@@ -135,16 +135,16 @@
                       
                       <div class="overlay primary-overlay">
                         <div class="toolbar">
-                          <a href="/h/<%= home_link %>" class="btn btn-primary"><i class="ico-redo2"></i></a>
+                          <a href="/b/<%= home_link %>" class="btn btn-primary"><i class="ico-redo2"></i></a>
                         </div>
                       </div>
-                      <img  src="/static/img/housing/housing4.jpg"  alt="Photo" height="230px">
+                      <img  src="/static/img/books/book4.jpg"  alt="Photo" height="230px">
                     </div>
                   </header>
                   <section class="panel-body">
-                    <h4 class="font-alt mt0 ellipsis"><a href="/h/<%= home_link %>" class="text-default">10 Minute Drive From Campus</a></h4>
+                    <h4 class="font-alt mt0 ellipsis"><a href="/b/<%= home_link %>" class="text-default">10 Minute Drive From Campus</a></h4>
                     <div class="text-default">
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,&#8230;</p>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus parturient montes, mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,&#8230;</p>
                     </div>
                   </section>
                   <ul class="list-table pa15" style="border-top: 1px solid #d9d9d9;">
@@ -157,7 +157,7 @@
                       </a>
                       <p class="text-muted nm">3 Hour ago</p>
                     </li>
-                    <li class="text-right"><a href="/h/<%= home_link %>"><button class="btn btn-sm btn-primary">$879/m</button></a></li>
+                    <li class="text-right"><a href="/b/<%= home_link %>"><button class="btn btn-sm btn-primary">$85</button></a></li>
                   </ul>
                 </article>
               </div>
@@ -168,14 +168,14 @@
                       
                       <div class="overlay success-overlay">
                         <div class="toolbar">
-                          <a href="/h/<%= home_link %>" class="btn btn-success"><i class="ico-redo2"></i></a>
+                          <a href="/b/<%= home_link %>" class="btn btn-success"><i class="ico-redo2"></i></a>
                         </div>
                       </div>
-                      <img  src="/static/img/housing/housing5.jpg"  alt="Photo" height="230px">
+                      <img  src="/static/img/books/book5.jpg"  alt="Photo" height="230px">
                     </div>
                   </header>
                   <section class="panel-body">
-                    <h4 class="font-alt mt0 ellipsis"><a href="/h/<%= home_link %>" class="text-default">Great Roommates</a></h4>
+                    <h4 class="font-alt mt0 ellipsis"><a href="/b/<%= home_link %>" class="text-default">Great Roommates</a></h4>
                     <div class="text-default">
                       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,&#8230;</p>
                     </div>
@@ -190,7 +190,7 @@
                       </a>
                       <p class="text-muted nm">3 Hour ago</p>
                     </li>
-                    <li class="text-right"><a href="/h/<%= home_link %>"><button class="btn btn-sm btn-success">$1,278/m</button></a></li>
+                    <li class="text-right"><a href="/b/<%= home_link %>"><button class="btn btn-sm btn-success">$125</button></a></li>
                   </ul>
                 </article>
               </div>
@@ -201,16 +201,16 @@
                       
                       <div class="overlay danger-overlay">
                         <div class="toolbar">
-                          <a href="/h/<%= home_link %>" class="btn btn-danger"><i class="ico-redo2"></i></a>
+                          <a href="/b/<%= home_link %>" class="btn btn-danger"><i class="ico-redo2"></i></a>
                         </div>
                       </div>
-                      <img  src="/static/img/housing/housing6.jpg"  alt="Photo" height="230px">
+                      <img  src="/static/img/books/book6.jpg"  alt="Photo" height="230px">
                     </div>
                   </header>
                   <section class="panel-body">
-                    <h4 class="font-alt mt0 ellipsis"><a href="/h/<%= home_link %>" class="text-default">5 BD Close to Campus!</a></h4>
+                    <h4 class="font-alt mt0 ellipsis"><a href="/b/<%= home_link %>" class="text-default">5 BD Close to Campus!</a></h4>
                     <div class="text-default">
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,&#8230;</p>
+                      <p>Lorem ipsum dolor sit amet, elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,&#8230;</p>
                     </div>
                   </section>
                   <ul class="list-table pa15" style="border-top: 1px solid #d9d9d9;">
@@ -223,7 +223,7 @@
                       </a>
                       <p class="text-muted nm">3 Hour ago</p>
                     </li>
-                    <li class="text-right"><a href="/h/<%= home_link %>"><button class="btn btn-sm btn-danger">$159/m</button></a></li>
+                    <li class="text-right"><a href="/b/<%= home_link %>"><button class="btn btn-sm btn-danger">$15</button></a></li>
                   </ul>
                 </article>
               </div>
@@ -234,14 +234,14 @@
                       
                       <div class="overlay success-overlay">
                         <div class="toolbar">
-                          <a href="/h/<%= home_link %>" class="btn btn-success"><i class="ico-redo2"></i></a>
+                          <a href="/b/<%= home_link %>" class="btn btn-success"><i class="ico-redo2"></i></a>
                         </div>
                       </div>
-                      <img  src="/static/img/housing/housing7.jpg"  alt="Photo" height="230px">
+                      <img  src="/static/img/books/book7.jpg"  alt="Photo" height="230px">
                     </div>
                   </header>
                   <section class="panel-body">
-                    <h4 class="font-alt mt0 ellipsis"><a href="/h/<%= home_link %>" class="text-default">Spacious Single Bedroom</a></h4>
+                    <h4 class="font-alt mt0 ellipsis"><a href="/b/<%= home_link %>" class="text-default">Spacious Single Bedroom</a></h4>
                     <div class="text-default">
                       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,&#8230;</p>
                     </div>
@@ -256,7 +256,7 @@
                       </a>
                       <p class="text-muted nm">3 Hour ago</p>
                     </li>
-                    <li class="text-right"><a href="/h/<%= home_link %>"><button class="btn btn-sm btn-success">$900/m</button></a></li>
+                    <li class="text-right"><a href="/b/<%= home_link %>"><button class="btn btn-sm btn-success">$450</button></a></li>
                   </ul>
                 </article>
               </div>
@@ -267,14 +267,14 @@
                       
                       <div class="overlay primary-overlay">
                         <div class="toolbar">
-                          <a href="/h/<%= home_link %>" class="btn btn-primary"><i class="ico-redo2"></i></a>
+                          <a href="/b/<%= home_link %>" class="btn btn-primary"><i class="ico-redo2"></i></a>
                         </div>
                       </div>
-                      <img  src="/static/img/housing/housing1.jpg"  alt="Photo" height="230px">
+                      <img  src="/static/img/books/book1.jpg"  alt="Photo" height="230px">
                     </div>
                   </header>
                   <section class="panel-body">
-                    <h4 class="font-alt mt0 ellipsis"><a href="/h/<%= home_link %>" class="text-default">Very Quiet Neighborhood</a></h4>
+                    <h4 class="font-alt mt0 ellipsis"><a href="/b/<%= home_link %>" class="text-default">Very Quiet Neighborhood</a></h4>
                     <div class="text-default">
                       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,&#8230;</p>
                     </div>
@@ -289,7 +289,7 @@
                       </a>
                       <p class="text-muted nm">3 Hour ago</p>
                     </li>
-                    <li class="text-right"><a href="/h/<%= home_link %>"><button class="btn btn-sm btn-primary">$559/m</button></a></li>
+                    <li class="text-right"><a href="/b/<%= home_link %>"><button class="btn btn-sm btn-primary">$55</button></a></li>
                   </ul>
                 </article>
               </div>
@@ -300,14 +300,14 @@
                       
                       <div class="overlay primary-overlay">
                         <div class="toolbar">
-                          <a href="/h/<%= home_link %>" class="btn btn-primary"><i class="ico-redo2"></i></a>
+                          <a href="/b/<%= home_link %>" class="btn btn-primary"><i class="ico-redo2"></i></a>
                         </div>
                       </div>
-                      <img  src="/static/img/housing/housing2.jpg"  alt="Photo" height="230px">
+                      <img  src="/static/img/books/book2.jpg"  alt="Photo" height="230px">
                     </div>
                   </header>
                   <section class="panel-body">
-                    <h4 class="font-alt mt0 ellipsis"><a href="/h/<%= home_link %>" class="text-default">10 Minute Drive From Campus</a></h4>
+                    <h4 class="font-alt mt0 ellipsis"><a href="/b/<%= home_link %>" class="text-default">10 Minute Drive From Campus</a></h4>
                     <div class="text-default">
                       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,&#8230;</p>
                     </div>
@@ -322,7 +322,7 @@
                       </a>
                       <p class="text-muted nm">3 Hour ago</p>
                     </li>
-                    <li class="text-right"><a href="/h/<%= home_link %>"><button class="btn btn-sm btn-primary">$879/m</button></a></li>
+                    <li class="text-right"><a href="/b/<%= home_link %>"><button class="btn btn-sm btn-primary">$80</button></a></li>
                   </ul>
                 </article>
               </div>
@@ -333,14 +333,14 @@
                       
                       <div class="overlay success-overlay">
                         <div class="toolbar">
-                          <a href="/h/<%= home_link %>" class="btn btn-success"><i class="ico-redo2"></i></a>
+                          <a href="/b/<%= home_link %>" class="btn btn-success"><i class="ico-redo2"></i></a>
                         </div>
                       </div>
-                      <img  src="/static/img/housing/housing3.jpg"  alt="Photo" height="230px">
+                      <img  src="/static/img/books/book3.jpg"  alt="Photo" height="230px">
                     </div>
                   </header>
                   <section class="panel-body">
-                    <h4 class="font-alt mt0 ellipsis"><a href="/h/<%= home_link %>" class="text-default">Cozy and Quiet Room Available</a></h4>
+                    <h4 class="font-alt mt0 ellipsis"><a href="/b/<%= home_link %>" class="text-default">Cozy and Quiet Room Available</a></h4>
                     <div class="text-default">
                       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,&#8230;</p>
                     </div>
@@ -355,7 +355,7 @@
                       </a>
                       <p class="text-muted nm">3 Hour ago</p>
                     </li>
-                    <li class="text-right"><a href="/h/<%= home_link %>"><button class="btn btn-sm btn-success">$1,199/m</button></a></li>
+                    <li class="text-right"><a href="/b/<%= home_link %>"><button class="btn btn-sm btn-success">$119</button></a></li>
                   </ul>
                 </article>
               </div>
@@ -366,14 +366,14 @@
                       
                       <div class="overlay warning-overlay">
                         <div class="toolbar">
-                          <a href="/h/<%= home_link %>" class="btn btn-warning"><i class="ico-redo2"></i></a>
+                          <a href="/b/<%= home_link %>" class="btn btn-warning"><i class="ico-redo2"></i></a>
                         </div>
                       </div>
-                      <img  src="/static/img/housing/housing4.jpg"  alt="Photo" height="230px">
+                      <img  src="/static/img/books/book4.jpg"  alt="Photo" height="230px">
                     </div>
                   </header>
                   <section class="panel-body">
-                    <h4 class="font-alt mt0 ellipsis"><a href="/h/<%= home_link %>" class="text-default">5 BD Close to Campus!</a></h4>
+                    <h4 class="font-alt mt0 ellipsis"><a href="/b/<%= home_link %>" class="text-default">5 BD Close to Campus!</a></h4>
                     <div class="text-default">
                       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,&#8230;</p>
                     </div>
@@ -388,7 +388,7 @@
                       </a>
                       <p class="text-muted nm">3 Hour ago</p>
                     </li>
-                    <li class="text-right"><a href="/h/<%= home_link %>"><button class="btn btn-sm btn-warning">$429/m</button></a></li>
+                    <li class="text-right"><a href="/b/<%= home_link %>"><button class="btn btn-sm btn-warning">$42</button></a></li>
                   </ul>
                 </article>
               </div>
@@ -399,14 +399,14 @@
                       
                       <div class="overlay danger-overlay">
                         <div class="toolbar">
-                          <a href="/h/<%= home_link %>" class="btn btn-danger"><i class="ico-redo2"></i></a>
+                          <a href="/b/<%= home_link %>" class="btn btn-danger"><i class="ico-redo2"></i></a>
                         </div>
                       </div>
-                      <img  src="/static/img/housing/housing5.jpg"  alt="Photo" height="230px">
+                      <img  src="/static/img/books/book5.jpg"  alt="Photo" height="230px">
                     </div>
                   </header>
                   <section class="panel-body">
-                    <h4 class="font-alt mt0 ellipsis"><a href="/h/<%= home_link %>" class="text-default">Spacious Single Bedroom</a></h4>
+                    <h4 class="font-alt mt0 ellipsis"><a href="/b/<%= home_link %>" class="text-default">Spacious Single Bedroom</a></h4>
                     <div class="text-default">
                       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,&#8230;</p>
                     </div>
@@ -421,7 +421,7 @@
                       </a>
                       <p class="text-muted nm">3 Hour ago</p>
                     </li>
-                    <li class="text-right"><a href="/h/<%= home_link %>"><button class="btn btn-sm btn-danger">$159/m</button></a></li>
+                    <li class="text-right"><a href="/b/<%= home_link %>"><button class="btn btn-sm btn-danger">$15</button></a></li>
                   </ul>
                 </article>
               </div>
@@ -432,14 +432,14 @@
                       
                       <div class="overlay primary-overlay">
                         <div class="toolbar">
-                          <a href="/h/<%= home_link %>" class="btn btn-primary"><i class="ico-redo2"></i></a>
+                          <a href="/b/<%= home_link %>" class="btn btn-primary"><i class="ico-redo2"></i></a>
                         </div>
                       </div>
-                      <img  src="/static/img/housing/housing6.jpg"  alt="Photo" height="230px">
+                      <img  src="/static/img/books/book6.jpg"  alt="Photo" height="230px">
                     </div>
                   </header>
                   <section class="panel-body">
-                    <h4 class="font-alt mt0 ellipsis"><a href="/h/<%= home_link %>" class="text-default">Very Quiet Neighborhood</a></h4>
+                    <h4 class="font-alt mt0 ellipsis"><a href="/b/<%= home_link %>" class="text-default">Very Quiet Neighborhood</a></h4>
                     <div class="text-default">
                       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,&#8230;</p>
                     </div>
@@ -454,7 +454,7 @@
                       </a>
                       <p class="text-muted nm">3 Hour ago</p>
                     </li>
-                    <li class="text-right"><a href="/h/<%= home_link %>"><button class="btn btn-sm btn-primary">$559/m</button></a></li>
+                    <li class="text-right"><a href="/b/<%= home_link %>"><button class="btn btn-sm btn-primary">$55</button></a></li>
                   </ul>
                 </article>
               </div>
@@ -465,14 +465,14 @@
                       
                       <div class="overlay primary-overlay">
                         <div class="toolbar">
-                          <a href="/h/<%= home_link %>" class="btn btn-primary"><i class="ico-redo2"></i></a>
+                          <a href="/b/<%= home_link %>" class="btn btn-primary"><i class="ico-redo2"></i></a>
                         </div>
                       </div>
-                      <img  src="/static/img/housing/housing7.jpg"  alt="Photo" height="230px">
+                      <img  src="/static/img/books/book7.jpg"  alt="Photo" height="230px">
                     </div>
                   </header>
                   <section class="panel-body">
-                    <h4 class="font-alt mt0 ellipsis"><a href="/h/<%= home_link %>" class="text-default">10 Minute Drive From Campus</a></h4>
+                    <h4 class="font-alt mt0 ellipsis"><a href="/b/<%= home_link %>" class="text-default">10 Minute Drive From Campus</a></h4>
                     <div class="text-default">
                       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,&#8230;</p>
                     </div>
@@ -487,7 +487,7 @@
                       </a>
                       <p class="text-muted nm">3 Hour ago</p>
                     </li>
-                    <li class="text-right"><a href="/h/<%= home_link %>"><button class="btn btn-sm btn-primary">$879/m</button></a></li>
+                    <li class="text-right"><a href="/b/<%= home_link %>"><button class="btn btn-sm btn-primary">$87</button></a></li>
                   </ul>
                 </article>
               </div>
@@ -498,14 +498,14 @@
                       
                       <div class="overlay success-overlay">
                         <div class="toolbar">
-                          <a href="/h/<%= home_link %>" class="btn btn-success"><i class="ico-redo2"></i></a>
+                          <a href="/b/<%= home_link %>" class="btn btn-success"><i class="ico-redo2"></i></a>
                         </div>
                       </div>
-                      <img  src="/static/img/housing/housing1.jpg"  alt="Photo" height="230px">
+                      <img  src="/static/img/books/book1.jpg"  alt="Photo" height="230px">
                     </div>
                   </header>
                   <section class="panel-body">
-                    <h4 class="font-alt mt0 ellipsis"><a href="/h/<%= home_link %>" class="text-default">Spacious Single Bedroom</a></h4>
+                    <h4 class="font-alt mt0 ellipsis"><a href="/b/<%= home_link %>" class="text-default">Spacious Single Bedroom</a></h4>
                     <div class="text-default">
                       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,&#8230;</p>
                     </div>
@@ -520,7 +520,7 @@
                       </a>
                       <p class="text-muted nm">3 Hour ago</p>
                     </li>
-                    <li class="text-right"><a href="/h/<%= home_link %>"><button class="btn btn-sm btn-success">$1,300/m</button></a></li>
+                    <li class="text-right"><a href="/b/<%= home_link %>"><button class="btn btn-sm btn-success">$130</button></a></li>
                   </ul>
                 </article>
               </div>

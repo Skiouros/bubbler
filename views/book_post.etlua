@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html class="no-touch">
 <% render("views.core.head") %>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/magnific-popup.css">
   <body>
 <% render("views.core.header") %>
 <% render("views.books.book_details") %>

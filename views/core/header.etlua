@@ -10,7 +10,7 @@
           <div class="navbar-left" >
             <div id="school-search" class="has-icon"style="margin-top:8px">
             <i class="ico-search form-control-icon" style="left: 0px;top:-2px"></i>
-            <input class="form-control typeahead " placeholder="<%= app.tsrch_ph %>" style="font-size:14px;" id="schoolsrch">
+            <input class="form-control typeahead " placeholder="<%= srch_default_txt %>" style="font-size:14px;" id="schoolsrch">
           </div>
          
                </div>                                     

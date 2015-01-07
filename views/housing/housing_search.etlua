@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html class="no-touch">
+	<head>
+<% render("views.core.head") %>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.11.2/css/selectize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/css/base/jquery.ui.all.min.css">
+	</head>
+  <body>
+<% render("views.core.header") %>
+<% render("views.housing.housing_search_results") %>
+<% render("views.core.footer") %>
+<% render("views.core.post_modal") %>
+<% render("views.core.filter_housing_modal") %>
+<% render("views.core.js") %>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/selectize.js/0.11.2/js/standalone/selectize.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.5/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.3.0/jquery.timepicker.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+  <script type="text/javascript" src="/static/js/housing/search.init.js"></script>
+  </body>
+</html>
