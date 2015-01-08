@@ -5,7 +5,7 @@
 	</head>
   <body>
 <% render("views.core.header") %>
-<% render("views.profile.profile_content") %>
+<% render("views.profile.public_profile_content") %>
 <% render("views.core.footer") %>
 <% render("views.modals.new_housing_post") %>
 <% render("views.core.js") %>

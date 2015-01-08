@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html class="no-touch">
+	<head>
+<% render("views.core.head") %>
+	</head>
+  <body>
+<% render("views.core.header") %>
+my listings
+<% render("views.core.footer") %>
+<% render("views.modals.post_modal") %>
+<% render("views.core.js") %>
+  </body>
+</html>
