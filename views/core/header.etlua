@@ -28,7 +28,7 @@
               </span>
               </a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#" data-toggle="modal" data-target="#post_modal"><span class="icon"><i class="ico-pencil5"></i></span> Post an item</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#new_housing_post"><span class="icon"><i class="ico-pencil5"></i></span> Post an item</a></li>
                 <li><a href="javascript:void(0);"><span class="icon"><i class="ico-eye"></i></span> I'm looking for</a></li>
                 <li><a href="javascript:void(0);"><span class="icon"><i class="ico-folder5"></i></span> Manage Listings</a></li>
                 <li><a href="/u/TestUser"><span class="icon"><i class="ico-user"></i></span> My Profile</a></li>

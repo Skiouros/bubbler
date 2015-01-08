@@ -133,9 +133,10 @@ class Users extends lapis.Application
             render: "user.forgot_password", layout: false
     }
 
-    -- TODO: remove link
-    "/profile": require_login =>
-        json: @current_user.name
+    [new_listing: "/lisitings"]: =>
+        render: "user.listings", layout: false
 
-    [profile: "/u/:profile"]: =>
-        render: true, layout: false
+    -- TODO: remove link
+    [profile: "/u/:name"]: require_login =>
+        @name = @current_user.name
+        render: "profile.profile", layout: false
