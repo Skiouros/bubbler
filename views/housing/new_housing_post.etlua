@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html class="no-touch">
+	<head>
+<% render("views.core.head") %>
+		<link rel="stylesheet" href="/static/js/owl/css/owl.carousel.min.css">
+	</head>
+  <body>
+<% render("views.core.header") %>
+<% render("views.housing.home_post_details") %>
+<% render("views.core.footer") %>
+<% render("views.modals.post_modal") %>
+<% render("views.core.js") %>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/selectize.js/0.11.2/js/standalone/selectize.min.js"></script>
+	<script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.12/gmaps.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.32/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="/static/js/housing/post_init.min.js"></script>
+  </body>
+</html>
