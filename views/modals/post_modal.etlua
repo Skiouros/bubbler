@@ -1,6 +1,5 @@
         <div id="post_modal" class="modal fade" style="display: none;" aria-hidden="true">
-          <div class="modal-dialog modal-lg" style="z-index: 9999;
-            ">
+          <div class="modal-dialog modal-lg" style="z-index: 9999;">
             <div class="modal-content">
               <div class="modal-header text-center">
                 <button type="button" class="close" data-dismiss="modal">×</button>
@@ -16,9 +15,9 @@
                       <div class="col-lg-4 col-centered">
                         <div class="row">
                           <div class="col-lg-3">
-                            <span class="checkbox custom-checkbox custom-checkbox-primary">
-                            <input type="checkbox" name="housing" id="housing">
-                            <label for="housing"></label>
+                            <span class="radio custom-radio custom-radio-primary">
+                            <input type="radio" name="_post" id="h_post">
+                            <label for="h_post"></label>
                             </span>
                           </div>
                           <div class="col-lg-9">
@@ -33,9 +32,9 @@
                       <div class="col-lg-4 col-centered">
                         <div class="row">
                           <div class="col-lg-3">
-                            <span class="checkbox custom-checkbox custom-checkbox-primary">
-                            <input type="checkbox" name="books" id="books">
-                            <label for="books"></label>
+                            <span class="radio custom-radio custom-radio-primary">
+                            <input type="radio" name="_post" id="b_post">
+                            <label for="b_post"></label>
                             </span>
                           </div>
                           <div class="col-lg-9">
@@ -52,7 +51,7 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <button id="close_modal" type="button" class="btn btn-danger">Let's get started!</button>
+                <button id="redirect_post" type="button" class="btn btn-success">Let's get started!</button>
               </div>
             </div>
           </div>

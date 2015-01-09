@@ -1,19 +1,298 @@
 <!DOCTYPE HTML>
 <html class="no-touch">
-	<head>
-<% render("views.core.head") %>
-		<link rel="stylesheet" href="/static/js/owl/css/owl.carousel.min.css">
-	</head>
+  <head>
+    <% render("views.core.head") %>
+  </head>
   <body>
-<% render("views.core.header") %>
-<% render("views.housing.home_post_details") %>
-<% render("views.core.footer") %>
-<% render("views.modals.post_modal") %>
-<% render("views.core.js") %>
-	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/selectize.js/0.11.2/js/standalone/selectize.min.js"></script>
-	<script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
-	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.12/gmaps.min.js"></script>
-	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.32/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="/static/js/housing/post_init.min.js"></script>
+    <% render("views.core.header") %>
+    <section id="main" role="main">
+      <% render("views.dashboard.top_menu") %>
+      <div id="details" role="details" style="background:#f5f5f5;margin-top:45px;">
+        <div class="container-fluid pb0" style="background:#fff;border-left: 1px solid #d9d9d9;border-right: 1px solid #d9d9d9;border-bottom:1px solid #d9d9d9">
+          <div class="row">
+            <div class="col-lg-12 mt15 mb15">
+              <h1 class="semibold text-center">List Your Space</h1>
+              <p class="text-muted semibold text-center">Fill out this form and let the world know you have something to sell.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container con-bg" style="border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9">
+          <div class="row">
+            <div class="col-lg-12">
+              <form class="form-horizontal mt15" action="">
+                  <div class="form-group">
+                      <label class="control-label col-sm-3">Title</label>
+                      <div class="col-sm-7">
+                          <input name="title" type="text" class="form-control" placeholder="Put something catchy here.">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-3">Purchase Type</label>
+                    <div class="col-sm-7">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <span class="radio custom-radio custom-radio-success">
+	                          <input type="radio" name="purchase_type" id="full_ls">
+	                          <label for="full_ls">&nbsp;&nbsp;Full Lease</label>
+                          </span>
+                        </div>
+                        <div class="col-lg-4">
+                          <span class="radio custom-radio custom-radio-success">
+	                          <input type="radio" name="purchase_type" id="sub_ls">
+	                          <label for="sub_ls">&nbsp;&nbsp;Sub Lease</label>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                   <label class="control-label col-sm-3">Home Type</label>
+                    <div class="col-sm-7">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <span class="radio custom-radio custom-radio-primary">
+                            <input type="radio" name="home_type" id="ent_hm_apt">
+                            <label for="ent_hm_apt">&nbsp;&nbsp;Entire Home / Apartment</label>
+                          </span>
+                        </div>
+                        <div class="col-lg-4">
+                          <span class="radio custom-radio custom-radio-primary">
+                          	<input type="radio" name="home_type" id="prv_rm">
+                          	<label for="prv_rm">&nbsp;&nbsp;Private Room</label>
+                          </span>
+                        </div>
+                        <div class="col-lg-4">
+                          <span class="radio custom-radio custom-radio-primary">
+                          	<input type="radio" name="home_type" id="shrd_rm">
+                          	<label for="shrd_rm">&nbsp;&nbsp;Shared Room</label>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="control-label col-sm-3">Address</label>
+                      <div class="col-sm-7">
+                      	<div class="row">
+                      		<div class="col-sm-4">
+                          	<input name="address" type="text" class="form-control" placeholder="9876 Example Street">
+                      		</div>
+                      		<div class="col-sm-4">
+                          	<input name="city" type="text" class="form-control" placeholder="Awesome City">
+                      		</div>
+                      		<div class="col-sm-4">
+                          	<input name="state" type="text" class="form-control" placeholder="State">
+                      		</div>
+                      	</div>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="control-label col-sm-3">Price</label>
+                      <div class="col-sm-2">
+                          <input name="price" type="text" class="form-control" placeholder="How much per month?">
+                      </div>
+                     	<label class="control-label col-sm-3">Lease Available On</label>
+                      <div class="col-sm-2">
+                      	<input type="text" class="form-control center-search" placeholder="Month/Year">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="control-label col-sm-3">About this place</label>
+                      <div class="col-sm-7">
+                          <textarea class="form-control" rows="2" placeholder="Just a quick description of the place, nothing too detailed." style="min-width:100%" name="about_place"></textarea>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="control-label col-sm-3">Description</label>
+                      <div class="col-sm-7">
+                          <textarea class="form-control" rows="3" placeholder="Here you can go into detail about this place. Tell the world about your wonderful place ;)" style="min-width:100%" name="description"></textarea>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="control-label col-sm-3">Lease Duration</label>
+                      <div class="col-sm-3">
+                          <select class="form-control center-search">
+                            <option select="">This place is available for</option>
+                            <option value="1">Quarter</option>
+                            <option value="2">Semester</option>
+                            <option value="3">School Year</option>
+                            <option value="6">Summer Session</option>
+                            <option value="4">Summer Stay</option>
+                            <option value="5">Multiple School Years</option>
+                          </select>
+                      </div>
+                      <label class="control-label col-sm-2">Rooms Available</label>
+                      <div class="col-sm-2">
+                            <select class="form-control center-search">
+                              <option select="">Bedrooms</option>
+                              <option value="1">1 Bedroom</option>
+                              <option value="2">2 Bedrooms</option>
+                              <option value="3">3 Bedrooms</option>
+                              <option value="4">4 Bedrooms</option>
+                              <option value="5">5 Bedrooms</option>
+                            </select>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-3">Amenities</label>
+                    <div class="col-sm-8">
+                      <div class="row">
+                        <div class="col-lg-3">
+                          <span class="checkbox custom-checkbox custom-checkbox-info">
+                          <input type="checkbox" name="amenities" id="internet">
+                          <label for="internet">&nbsp;&nbsp;Internet</label>
+                          </span>
+                        </div>
+                        <div class="col-lg-3">
+                          <span class="checkbox custom-checkbox custom-checkbox-info">
+                          <input type="checkbox" name="amenities" id="wrls_int">
+                          <label for="wrls_int">&nbsp;&nbsp;Wireless Internet</label>
+                          </span>
+                        </div>
+                        <div class="col-lg-3">
+                          <span class="checkbox custom-checkbox custom-checkbox-info">
+                          <input type="checkbox" name="amenities" id="cable_tv">
+                          <label for="cable_tv">&nbsp;&nbsp;Cable TV</label>
+                          </span>
+                        </div>
+                        <div class="col-lg-3">
+                          <span class="checkbox custom-checkbox custom-checkbox-info">
+                          <input type="checkbox" name="amenities" id="kitchen">
+                          <label for="kitchen">&nbsp;&nbsp;Kitchen</label>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="row mt15">
+                      	<div class="col-lg-3">
+                          <span class="checkbox custom-checkbox custom-checkbox-info">
+                          <input type="checkbox" name="amenities" id="washer">
+                          <label for="washer">&nbsp;&nbsp;Washer</label>
+                          </span>
+                        </div>
+                        <div class="col-lg-3">
+                          <span class="checkbox custom-checkbox custom-checkbox-info">
+                          <input type="checkbox" name="amenities" id="dryer">
+                          <label for="dryer">&nbsp;&nbsp;Dryer</label>
+                          </span>
+                        </div>
+                        <div class="col-lg-3">
+                          <span class="checkbox custom-checkbox custom-checkbox-info">
+                          <input type="checkbox" name="amenities" id="air_cond">
+                          <label for="air_cond">&nbsp;&nbsp;Air Conditioning</label>
+                          </span>
+                        </div>
+                        <div class="col-lg-3">
+                          <span class="checkbox custom-checkbox custom-checkbox-info">
+                          <input type="checkbox" name="amenities" id="heating">
+                          <label for="heating">&nbsp;&nbsp;Heating</label>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="row mt15">
+                      	<div class="col-lg-3">
+                          <span class="checkbox custom-checkbox custom-checkbox-info">
+                          <input type="checkbox" name="amenities" id="microwave">
+                          <label for="microwave">&nbsp;&nbsp;Microwave</label>
+                          </span>
+                        </div>
+                      	<div class="col-lg-3">
+                          <span class="checkbox custom-checkbox custom-checkbox-info">
+                          <input type="checkbox" name="customcheckbox1" id="free_rsrv_park">
+                          <label for="free_rsrv_park">&nbsp;&nbsp;Free Reserved Parking</label>
+                          </span>
+                        </div>
+												<div class="col-lg-3">
+                          <span class="checkbox custom-checkbox custom-checkbox-info">
+                          <input type="checkbox" name="customcheckbox1" id="fireplace">
+                          <label for="fireplace">&nbsp;&nbsp;Fireplace</label>
+                          </span>
+                        </div>
+                        <div class="col-lg-3">
+                          <span class="checkbox custom-checkbox custom-checkbox-info">
+                          <input type="checkbox" name="customcheckbox1" id="shrd_bthrm">
+                          <label for="shrd_bthrm">&nbsp;&nbsp;Shared Bathroom</label>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-3">Extra Features</label>
+                    <div class="col-sm-8">
+                      <div class="row">
+                        <div class="col-lg-3">
+                          <span class="checkbox custom-checkbox custom-checkbox-danger">
+                          <input type="checkbox" name="extra_features" id="smk_allwd">
+                          <label for="smk_allwd">&nbsp;&nbsp;Smoking Allowed</label>
+                          </span>
+                        </div>
+                        <div class="col-lg-3">
+                          <span class="checkbox custom-checkbox custom-checkbox-danger">
+                          <input type="checkbox" name="extra_features" id="pets_allwd">
+                          <label for="pets_allwd">&nbsp;&nbsp;Pets Allowed</label>
+                          </span>
+                        </div>
+                        <div class="col-lg-3">
+                          <span class="checkbox custom-checkbox custom-checkbox-danger">
+                          <input type="checkbox" name="extra_features" id="whlchr_accsble">
+                          <label for="whlchr_accsble">&nbsp;&nbsp;Wheelchair Accessible</label>
+                          </span>
+                        </div>
+                        <div class="col-lg-3">
+                          <span class="checkbox custom-checkbox custom-checkbox-danger">
+                          <input type="checkbox" name="extra_features" id="pets_live_here">
+                          <label for="pets_live_here">&nbsp;&nbsp;Pets Live Here</label>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="row mt15">
+                        <div class="col-lg-3">
+                          <span class="checkbox custom-checkbox custom-checkbox-danger">
+                          <input type="checkbox" name="extra_features" id="quiet_rmmts">
+                          <label for="quiet_rmmts">&nbsp;&nbsp;Quiet Roommates</label>
+                          </span>
+                        </div>
+                        <div class="col-lg-3">
+                          <span class="checkbox custom-checkbox custom-checkbox-danger">
+                          <input type="checkbox" name="extra_features" id="coll_dnr">
+                          <label for="coll_dnr">&nbsp;&nbsp;Collective Dinner</label>
+                          </span>
+                        </div>
+                        <div class="col-lg-3">
+                          <span class="checkbox custom-checkbox custom-checkbox-danger">
+                          <input type="checkbox" name="extra_features" id="prv_bath">
+                          <label for="prv_bath">&nbsp;&nbsp;Private Bathroom</label>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Photos</label>
+	                    <div class="col-sm-7">
+	                        <div class="input-group">
+	                            <input type="text" class="form-control" readonly="">
+	                            <span class="input-group-btn">
+	                                <div class="btn btn-primary btn-file">
+	                                    <span class="icon iconmoon-file-3"></span> Browse <input type="file">
+	                                </div>
+	                            </span>
+	                        </div>
+	                    </div>
+                	</div>
+                  <hr class="mt10 mb10">
+                  <div class="text-right">
+                  	<button class="btn btn-md btn-info mb10 semibold" style="width:100%" >List This Place</button>
+                	</div>
+                </form>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <% render("views.core.footer") %>
+    <% render("views.modals.post_modal") %>
+    <% render("views.core.js") %>
   </body>
 </html>
