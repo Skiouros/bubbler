@@ -27,6 +27,12 @@
                       </div>
                   </div>
                   <div class="form-group">
+                      <label class="control-label col-sm-3">About this book</label>
+                      <div class="col-sm-7">
+                          <textarea class="form-control" rows="2" placeholder="Just a quick description of the book, nothing too detailed." style="min-width:100%" name="about_book"></textarea>
+                      </div>
+                  </div>
+                  <div class="form-group">
                       <label class="control-label col-sm-3">Author</label>
                       <div class="col-sm-7">
                           <input name="author" type="text" class="form-control" placeholder="Author">
