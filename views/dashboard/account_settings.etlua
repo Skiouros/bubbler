@@ -1,0 +1,14 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	account settings
+	<ul>
+		<li><a href="/dashboard">home</a>
+		<li><a href="/dashboard/listings">listings</a>
+		<li><a href="/dashboard/messages">messages</a>
+		<li><a href="/dashboard/profile">edit profile</a>
+	</ul>
+</body>
+</html>
