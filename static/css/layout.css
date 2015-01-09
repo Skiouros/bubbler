@@ -22,7 +22,7 @@ html body {
   overflow: hidden;
 }
 
-@media (min-width: 1200px)
+@media (min-width: 1200px){
   .modal-lg {
     width: 1170px;
   }
