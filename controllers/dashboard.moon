@@ -13,20 +13,20 @@ class Dashboard extends lapis.Application
         @copyright = "Bubbler © #{os.date "%Y"}"
         render: "dashboard.my_listings", layout: false
 
-    [edit_profile: "/dashboard/profile"]: =>
+    [wishlist: "/dashboard/wishlist"]: =>
         @srch_default_txt = "Search by college campus"
         @copyright = "Bubbler © #{os.date "%Y"}"
-        render: "dashboard.edit_profile", layout: false
+        render: "dashboard.wishlist", layout: false
 
     [messages: "/dashboard/messages"]: =>
         @srch_default_txt = "Search by college campus"
         @copyright = "Bubbler © #{os.date "%Y"}"
         render: "dashboard.messages", layout: false
 
-    [account_settings: "/dashboard/account_settings"]: =>
+    [account_settings: "/dashboard/settings"]: =>
         @srch_default_txt = "Search by college campus"
         @copyright = "Bubbler © #{os.date "%Y"}"
-        render: "dashboard.account_settings", layout: false
+        render: "dashboard.settings", layout: false
 
     [new_housing_post: "/dashboard/new_housing_post"]: =>
         @srch_default_txt = "Search by college campus"

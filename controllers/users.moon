@@ -100,11 +100,11 @@ class Users extends lapis.Application
                 yield_error err
 
             user\write_session @
-            json: redirect_to: "/profile"
+            json: redirect_to: "/u/asdf"
 
         GET: =>
             if @current_user
-                return redirect_to: "/profile"
+                return redirect_to: "/u/adsf"
             render: "user.login", layout: false
     }
 
