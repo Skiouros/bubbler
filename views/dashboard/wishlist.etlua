@@ -1,0 +1,779 @@
+<!DOCTYPE HTML>
+<html class="no-touch">
+  <head>
+    <% render("views.core.head") %>
+  </head>
+  <body>
+    <% render("views.core.header") %>
+    <section id="main" role="main">
+      <% render("views.dashboard.top_menu") %>
+      <div id="details" role="details" style="background:#f5f5f5;">
+        <div class="container-fluid pb0" style="background:#fff;border-bottom:1px solid #d9d9d9">
+          <div class="row">
+            <div class="col-lg-12 mt15 mb15">
+              <h1 class="semibold text-center">My Wishlist</h1>
+              <p class="text-muted semibold text-center">Let us know what you need and we will let you know when its available.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container con-bg" style="border-left: 1px solid #d9d9d9;border-right: 1px solid #d9d9d9;">
+          <div class="row">
+            <div class="col-lg-3 ">
+              <div class="text-center mt15">
+                <button type="button" class="btn btn-success btn-md mb5 text-center" style="width:100%" data-toggle="modal" data-target="#post_modal"><i class="ico-pencil5"></i> New Post</button>
+              </div>
+              <div class="list-group">
+                <a href="#" class="list-group-item"><i class="ico-angle-right mr5"></i> Books</a>
+                <a href="#" class="list-group-item"><i class="ico-angle-right mr5"></i> Housing</a>
+              </div>
+            </div>
+            <div class="col-lg-9" style="border-left:1px solid #d9d9d9">
+              <div class="panel panel-primary mt15">
+                <!-- panel heading/header -->
+                <div class="panel-heading">
+                  <h3 class="panel-title"><span class="panel-icon mr5"><i class="ico-books"></i></span> Book Posts</h3>
+                  <!-- panel toolbar -->
+                  <div class="panel-toolbar text-right">
+                    <!-- option -->
+                    <div class="option">
+                      <button class="btn up" data-toggle="panelcollapse"><i class="arrow"></i></button>
+                    </div>
+                    <!--/ option -->
+                  </div>
+                  <!--/ panel toolbar -->
+                </div>
+                <!--/ panel heading/header -->
+                <!-- panel toolbar wrapper -->
+                <div class="panel-toolbar-wrapper pl0 pt5 pb5">
+                  <div class="panel-toolbar pl10">
+                    <div class="checkbox custom-checkbox pull-left">  
+                      <input type="checkbox" id="customcheckbox-one0" value="1" data-toggle="checkall" data-target="#table1">  
+                      <label for="customcheckbox-one0">&nbsp;&nbsp;Select all</label>  
+                    </div>
+                  </div>
+                  <div class="panel-toolbar text-right">
+                    <button type="button" class="btn btn-sm btn-danger"><i class="ico-remove3"></i></button>
+                  </div>
+                </div>
+                <!--/ panel toolbar wrapper -->
+                <!-- panel body with collapse capabale -->
+                <div class="table-responsive panel-collapse pull out">
+                  <table class="table table-bordered table-hover" id="table1">
+                    <thead>
+                      <tr>
+                        <th width="3%" class="text-center"><i class="ico-long-arrow-down"></i></th>
+                        <th width="10%">Image</th>
+                        <th>Title</th>
+                        <th>ISBN</th>
+                        <th>Condition</th>
+                        <th width="10%">Price</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="success">
+                        <td>
+                          <div class="checkbox custom-checkbox nm">  
+                            <input type="checkbox" id="customcheckbox-one1" value="1" data-toggle="selectrow" data-target="tr" data-contextual="success" checked="">  
+                            <label for="customcheckbox-one1"></label>   
+                          </div>
+                        </td>
+                        <td>
+                          <img src="/static/img/books/book1.jpg" alt="" width="100%">
+                        </td>
+                        <td>Short, Cheyenne E.</td>
+                        <td>978-3-16-148410-0</td>
+                        <td>quis.diam@gravida.net</td>
+                        <td>$59.99</td>
+                        <td class="text-center">
+                          <!-- button toolbar -->
+                          <div class="toolbar">
+                            <div class="btn-group">
+                              
+                              <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--/ button toolbar -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox custom-checkbox nm">  
+                            <input type="checkbox" id="customcheckbox-one2" value="1" data-toggle="selectrow" data-target="tr" data-contextual="warning">  
+                            <label for="customcheckbox-one2"></label>   
+                          </div>
+                        </td>
+                        <td>
+                          <img src="/static/img/books/book2.jpg" alt="" width="100%">
+                        </td>
+                        <td>Acosta, Isaiah V.</td>
+                        <td>978-3-16-148410-0</td>
+                        <td>ac.mattis@Maecenas.ca</td>
+                        <td>$59.99</td>
+                        <td class="text-center">
+                          <!-- button toolbar -->
+                          <div class="toolbar">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--/ button toolbar -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox custom-checkbox nm">  
+                            <input type="checkbox" id="customcheckbox-one3" value="1" data-toggle="selectrow" data-target="tr" data-contextual="danger">  
+                            <label for="customcheckbox-one3"></label>   
+                          </div>
+                        </td>
+                        <td>
+                          <img src="/static/img/books/book3.jpg" alt="" width="100%">
+                        </td>
+                        <td>Stuart, Megan W.</td>
+                        <td>978-3-16-148410-0</td>
+                        <td>enim@erat.com</td>
+                        <td>$59.99</td>
+                        <td class="text-center">
+                          <!-- button toolbar -->
+                          <div class="toolbar">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--/ button toolbar -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox custom-checkbox nm">  
+                            <input type="checkbox" id="customcheckbox-one4" value="1" data-toggle="selectrow" data-target="tr" data-contextual="info">  
+                            <label for="customcheckbox-one4"></label>   
+                          </div>
+                        </td>
+                        <td>
+                          <img src="/static/img/books/book4.jpg" alt="" width="100%">
+                        </td>
+                        <td>Pugh, Moses V.</td>
+                        <td>978-3-16-148410-0</td>
+                        <td>diam@sapienmolestie.com</td>
+                        <td>$59.99</td>
+                        <td class="text-center">
+                          <!-- button toolbar -->
+                          <div class="toolbar">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--/ button toolbar -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox custom-checkbox nm">  
+                            <input type="checkbox" id="customcheckbox-one5" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">  
+                            <label for="customcheckbox-one5"></label>   
+                          </div>
+                        </td>
+                        <td>
+                          <img src="/static/img/books/book1.jpg" alt="" width="100%">
+                        </td>
+                        <td>Lawrence, Donna B.</td>
+                        <td>978-3-16-148410-0</td>
+                        <td>arcu@onecfelis.co.uk</td>
+                        <td>$59.99</td>
+                        <td class="text-center">
+                          <!-- button toolbar -->
+                          <div class="toolbar">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--/ button toolbar -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox custom-checkbox nm">  
+                            <input type="checkbox" id="customcheckbox-one6" value="1" data-toggle="selectrow" data-target="tr">  
+                            <label for="customcheckbox-one6"></label>   
+                          </div>
+                        </td>
+                        <td>
+                          <img src="/static/img/books/book2.jpg" alt="" width="100%">
+                        </td>
+                        <td>Sharpe, Addison L.</td>
+                        <td>978-3-16-148410-0</td>
+                        <td>enim@dolor.ca</td>
+                        <td>$59.99</td>
+                        <td class="text-center">
+                          <!-- button toolbar -->
+                          <div class="toolbar">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--/ button toolbar -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox custom-checkbox nm">  
+                            <input type="checkbox" id="customcheckbox-one7" value="1" data-toggle="selectrow" data-target="tr">  
+                            <label for="customcheckbox-one7"></label>   
+                          </div>
+                        </td>
+                        <td>
+                          <img src="/static/img/books/book5.jpg" alt="" width="100%">
+                        </td>
+                        <td>Witt, Cullen T.</td>
+                        <td>978-3-16-148410-0</td>
+                        <td>dui@magna.org</td>
+                        <td>$59.99</td>
+                        <td class="text-center">
+                          <!-- button toolbar -->
+                          <div class="toolbar">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--/ button toolbar -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox custom-checkbox nm">  
+                            <input type="checkbox" id="customcheckbox-one8" value="1" data-toggle="selectrow" data-target="tr">  
+                            <label for="customcheckbox-one8"></label>   
+                          </div>
+                        </td>
+                        <td>
+                          <img src="/static/img/books/book6.jpg" alt="" width="100%">
+                        </td>
+                        <td>Cotton, Christopher S.</td>
+                        <td>978-3-16-148410-0</td>
+                        <td>tincidunt@laoreet.edu</td>
+                        <td>$59.99</td>
+                        <td class="text-center">
+                          <!-- button toolbar -->
+                          <div class="toolbar">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--/ button toolbar -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox custom-checkbox nm">  
+                            <input type="checkbox" id="customcheckbox-one9" value="1" data-toggle="selectrow" data-target="tr">  
+                            <label for="customcheckbox-one9"></label>   
+                          </div>
+                        </td>
+                        <td>
+                          <img src="/static/img/books/book7.jpg" alt="" width="100%">
+                        </td>
+                        <td>Dudley, Joan I.</td>
+                        <td>978-3-16-148410-0</td>
+                        <td>magna@sodalesnisi.net</td>
+                        <td>$59.99</td>
+                        <td class="text-center">
+                          <!-- button toolbar -->
+                          <div class="toolbar">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--/ button toolbar -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox custom-checkbox nm">  
+                            <input type="checkbox" id="customcheckbox-one10" value="1" data-toggle="selectrow" data-target="tr">  
+                            <label for="customcheckbox-one10"></label>   
+                          </div>
+                        </td>
+                        <td>
+                          <img src="/static/img/books/book7.jpg" alt="" width="100%">
+                        </td>
+                        <td>Best, Eagan R.</td>
+                        <td>978-3-16-148410-0</td>
+                        <td>sodales@odio.org</td>
+                        <td>$59.99</td>
+                        <td class="text-center">
+                          <!-- button toolbar -->
+                          <div class="toolbar">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--/ button toolbar -->
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!--/ panel body with collapse capabale -->
+              </div>
+              <hr>
+              <div class="panel panel-primary mt15">
+                <!-- panel heading/header -->
+                <div class="panel-heading">
+                  <h3 class="panel-title"><span class="panel-icon mr5"><i class="ico-books"></i></span> Housing Posts</h3>
+                  <!-- panel toolbar -->
+                  <div class="panel-toolbar text-right">
+                    <!-- option -->
+                    <div class="option">
+                      <button class="btn up" data-toggle="panelcollapse"><i class="arrow"></i></button>
+                    </div>
+                    <!--/ option -->
+                  </div>
+                  <!--/ panel toolbar -->
+                </div>
+                <!--/ panel heading/header -->
+                <!-- panel toolbar wrapper -->
+                <div class="panel-toolbar-wrapper pl0 pt5 pb5">
+                  <div class="panel-toolbar pl10">
+                    <div class="checkbox custom-checkbox pull-left">  
+                      <input type="checkbox" id="customcheckbox-one0" value="1" data-toggle="checkall" data-target="#table1">  
+                      <label for="customcheckbox-one0">&nbsp;&nbsp;Select all</label>  
+                    </div>
+                  </div>
+                  <div class="panel-toolbar text-right">
+                    <button type="button" class="btn btn-sm btn-danger"><i class="ico-remove3"></i></button>
+                  </div>
+                </div>
+                <!--/ panel toolbar wrapper -->
+                <!-- panel body with collapse capabale -->
+                <div class="table-responsive panel-collapse pull out">
+                  <table class="table table-bordered table-hover" id="table1">
+                    <thead>
+                      <tr>
+                        <th width="3%" class="text-center"><i class="ico-long-arrow-down"></i></th>
+                        <th width="10%">Image</th>
+                        <th>Title</th>
+                        <th>Place</th>
+                        <th>Type</th>
+                        <th width="10%">Price</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="success">
+                        <td>
+                          <div class="checkbox custom-checkbox nm">  
+                            <input type="checkbox" id="customcheckbox-one1" value="1" data-toggle="selectrow" data-target="tr" data-contextual="success" checked="">  
+                            <label for="customcheckbox-one1"></label>   
+                          </div>
+                        </td>
+                        <td>
+                          <img src="/static/img/housing/housing1.jpg" alt="" width="100%">
+                        </td>
+                        <td>Short, Cheyenne E.</td>
+                        <td>978-3-16-148410-0</td>
+                        <td>quis.diam@gravida.net</td>
+                        <td>$59.99</td>
+                        <td class="text-center">
+                          <!-- button toolbar -->
+                          <div class="toolbar">
+                            <div class="btn-group">
+                              
+                              <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--/ button toolbar -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox custom-checkbox nm">  
+                            <input type="checkbox" id="customcheckbox-one2" value="1" data-toggle="selectrow" data-target="tr" data-contextual="warning">  
+                            <label for="customcheckbox-one2"></label>   
+                          </div>
+                        </td>
+                        <td>
+                          <img src="/static/img/housing/housing2.jpg" alt="" width="100%">
+                        </td>
+                        <td>Acosta, Isaiah V.</td>
+                        <td>978-3-16-148410-0</td>
+                        <td>ac.mattis@Maecenas.ca</td>
+                        <td>$59.99</td>
+                        <td class="text-center">
+                          <!-- button toolbar -->
+                          <div class="toolbar">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--/ button toolbar -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox custom-checkbox nm">  
+                            <input type="checkbox" id="customcheckbox-one3" value="1" data-toggle="selectrow" data-target="tr" data-contextual="danger">  
+                            <label for="customcheckbox-one3"></label>   
+                          </div>
+                        </td>
+                        <td>
+                          <img src="/static/img/housing/housing3.jpg" alt="" width="100%">
+                        </td>
+                        <td>Stuart, Megan W.</td>
+                        <td>978-3-16-148410-0</td>
+                        <td>enim@erat.com</td>
+                        <td>$59.99</td>
+                        <td class="text-center">
+                          <!-- button toolbar -->
+                          <div class="toolbar">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--/ button toolbar -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox custom-checkbox nm">  
+                            <input type="checkbox" id="customcheckbox-one4" value="1" data-toggle="selectrow" data-target="tr" data-contextual="info">  
+                            <label for="customcheckbox-one4"></label>   
+                          </div>
+                        </td>
+                        <td>
+                          <img src="/static/img/housing/housing4.jpg" alt="" width="100%">
+                        </td>
+                        <td>Pugh, Moses V.</td>
+                        <td>978-3-16-148410-0</td>
+                        <td>diam@sapienmolestie.com</td>
+                        <td>$59.99</td>
+                        <td class="text-center">
+                          <!-- button toolbar -->
+                          <div class="toolbar">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--/ button toolbar -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox custom-checkbox nm">  
+                            <input type="checkbox" id="customcheckbox-one5" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">  
+                            <label for="customcheckbox-one5"></label>   
+                          </div>
+                        </td>
+                        <td>
+                          <img src="/static/img/housing/housing1.jpg" alt="" width="100%">
+                        </td>
+                        <td>Lawrence, Donna B.</td>
+                        <td>978-3-16-148410-0</td>
+                        <td>arcu@onecfelis.co.uk</td>
+                        <td>$59.99</td>
+                        <td class="text-center">
+                          <!-- button toolbar -->
+                          <div class="toolbar">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--/ button toolbar -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox custom-checkbox nm">  
+                            <input type="checkbox" id="customcheckbox-one6" value="1" data-toggle="selectrow" data-target="tr">  
+                            <label for="customcheckbox-one6"></label>   
+                          </div>
+                        </td>
+                        <td>
+                          <img src="/static/img/housing/housing2.jpg" alt="" width="100%">
+                        </td>
+                        <td>Sharpe, Addison L.</td>
+                        <td>978-3-16-148410-0</td>
+                        <td>enim@dolor.ca</td>
+                        <td>$59.99</td>
+                        <td class="text-center">
+                          <!-- button toolbar -->
+                          <div class="toolbar">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--/ button toolbar -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox custom-checkbox nm">  
+                            <input type="checkbox" id="customcheckbox-one7" value="1" data-toggle="selectrow" data-target="tr">  
+                            <label for="customcheckbox-one7"></label>   
+                          </div>
+                        </td>
+                        <td>
+                          <img src="/static/img/housing/housing5.jpg" alt="" width="100%">
+                        </td>
+                        <td>Witt, Cullen T.</td>
+                        <td>978-3-16-148410-0</td>
+                        <td>dui@magna.org</td>
+                        <td>$59.99</td>
+                        <td class="text-center">
+                          <!-- button toolbar -->
+                          <div class="toolbar">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--/ button toolbar -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox custom-checkbox nm">  
+                            <input type="checkbox" id="customcheckbox-one8" value="1" data-toggle="selectrow" data-target="tr">  
+                            <label for="customcheckbox-one8"></label>   
+                          </div>
+                        </td>
+                        <td>
+                          <img src="/static/img/housing/housing6.jpg" alt="" width="100%">
+                        </td>
+                        <td>Cotton, Christopher S.</td>
+                        <td>978-3-16-148410-0</td>
+                        <td>tincidunt@laoreet.edu</td>
+                        <td>$59.99</td>
+                        <td class="text-center">
+                          <!-- button toolbar -->
+                          <div class="toolbar">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--/ button toolbar -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox custom-checkbox nm">  
+                            <input type="checkbox" id="customcheckbox-one9" value="1" data-toggle="selectrow" data-target="tr">  
+                            <label for="customcheckbox-one9"></label>   
+                          </div>
+                        </td>
+                        <td>
+                          <img src="/static/img/housing/housing7.jpg" alt="" width="100%">
+                        </td>
+                        <td>Dudley, Joan I.</td>
+                        <td>978-3-16-148410-0</td>
+                        <td>magna@sodalesnisi.net</td>
+                        <td>$59.99</td>
+                        <td class="text-center">
+                          <!-- button toolbar -->
+                          <div class="toolbar">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--/ button toolbar -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox custom-checkbox nm">  
+                            <input type="checkbox" id="customcheckbox-one10" value="1" data-toggle="selectrow" data-target="tr">  
+                            <label for="customcheckbox-one10"></label>   
+                          </div>
+                        </td>
+                        <td>
+                          <img src="/static/img/housing/housing7.jpg" alt="" width="100%">
+                        </td>
+                        <td>Best, Eagan R.</td>
+                        <td>978-3-16-148410-0</td>
+                        <td>sodales@odio.org</td>
+                        <td>$59.99</td>
+                        <td class="text-center">
+                          <!-- button toolbar -->
+                          <div class="toolbar">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--/ button toolbar -->
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!--/ panel body with collapse capabale -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <% render("views.core.footer") %>
+    <% render("views.modals.post_modal") %>
+    <% render("views.core.js") %>
+  </body>
+</html>

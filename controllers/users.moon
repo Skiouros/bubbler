@@ -100,11 +100,11 @@ class Users extends lapis.Application
                 yield_error err
 
             user\write_session @
-            json: redirect_to: "/profile"
+            json: redirect_to: "/u/asdf"
 
         GET: =>
             if @current_user
-                return redirect_to: "/profile"
+                return redirect_to: "/u/adsf"
             render: "user.login", layout: false
     }
 
@@ -133,9 +133,6 @@ class Users extends lapis.Application
             render: "user.forgot_password", layout: false
     }
 
-    -- TODO: remove link
-    "/profile": require_login =>
-        json: @current_user.name
-
-    [profile: "/u/:profile"]: =>
-        render: true, layout: false
+    [profile: "/u/:name"]: require_login =>
+        @name = @current_user.name
+        render: "profile.public_profile", layout: false

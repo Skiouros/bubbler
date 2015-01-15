@@ -8,7 +8,7 @@
 <% render("views.core.header") %>
 <% render("views.housing.home_post_details") %>
 <% render("views.core.footer") %>
-<% render("views.core.post_modal") %>
+<% render("views.modals.post_modal") %>
 <% render("views.core.js") %>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/selectize.js/0.11.2/js/standalone/selectize.min.js"></script>
 	<script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>

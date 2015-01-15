@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html class="no-touch">
+  <head>
+    <% render("views.core.head") %>
+  </head>
+  <body>
+    <% render("views.core.header") %>
+    <section id="main" role="main">
+      <% render("views.dashboard.top_menu") %>
+      <div id="details" role="details" style="background:#f5f5f5;">
+        <div class="container-fluid pb0" style="background:#fff;border-left: 1px solid #d9d9d9;border-right: 1px solid #d9d9d9;border-bottom:1px solid #d9d9d9">
+          <div class="row">
+            <div class="col-lg-12 mt15 mb15">
+              <h1 class="semibold text-center">List Your Book</h1>
+              <p class="text-muted semibold text-center">Fill out this form and let the world know you have something to sell.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container con-bg" style="border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9">
+          <div class="row">
+            <div class="col-lg-12">
+              <form class="form-horizontal mt15" action="">
+                  <div class="form-group">
+                      <label class="control-label col-sm-3">Title</label>
+                      <div class="col-sm-7">
+                          <input name="title" type="text" class="form-control" placeholder="Name of the book or something catchy">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="control-label col-sm-3">About this book</label>
+                      <div class="col-sm-7">
+                          <textarea class="form-control" rows="2" placeholder="Just a quick description of the book, nothing too detailed." style="min-width:100%" name="about_book"></textarea>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="control-label col-sm-3">Author</label>
+                      <div class="col-sm-7">
+                          <input name="author" type="text" class="form-control" placeholder="Author">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="control-label col-sm-3">ISBN-10</label>
+                      <div class="col-sm-3">
+                          <input name="isbn10" type="text" class="form-control" placeholder="ISBN-10 | Leave blank if N/A">
+                      </div>
+                      <label class="control-label col-sm-1">ISBN-13</label>
+                      <div class="col-sm-3">
+                          <input name="isbn13" type="text" class="form-control" placeholder="ISBN-13 | Leave blank if N/A">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="control-label col-sm-3">Publisher</label>
+                      <div class="col-sm-7">
+                          <input name="publisher" type="text" class="form-control" placeholder="Publisher">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="control-label col-sm-3">Condition</label>
+                      <div class="col-sm-3">
+                          <select class="form-control center-search" name="condition">
+                            <option select>Book Condition</option>
+                            <option value="new">New</option>
+                            <option value="like_new">Like New</option>
+                            <option value="very_good">Very Good</option>
+                            <option value="good">Good</option>
+                            <option value="acceptable">Acceptable</option>
+                            <option value="poor">Poor</option>
+                          </select>
+                      </div>
+                      <label class="control-label col-sm-1">Edition</label>
+                      <div class="col-sm-3">
+                        <input name="edition" type="text" class="form-control" placeholder="Edition">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-3">Book Type</label>
+                    <div class="col-sm-7">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <span class="radio custom-radio custom-radio-success">
+                          <input type="radio" name="book_type" id="hardcover">
+                          <label for="hardcover">&nbsp;&nbsp;Hardcover</label>
+                          </span>
+                        </div>
+                        <div class="col-lg-4">
+                          <span class="radio custom-radio custom-radio-success">
+                          <input type="radio" name="book_type" id="paperback">
+                          <label for="paperback">&nbsp;&nbsp;Paperback</label>
+                          </span>
+                        </div>
+                        <div class="col-lg-4">
+                          <span class="radio custom-radio custom-radio-success">
+                          <input type="radio" name="book_type" id="binder_sheets">
+                          <label for="binder_sheets">&nbsp;&nbsp;Binder Sheets</label>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="control-label col-sm-3">Subject</label>
+                      <div class="col-sm-3">
+                          <select class="form-control center-search">
+                            <option select="">Book Subject</option>
+                            <option value="1">Math</option>
+                            <option value="2">Science</option>
+                            <option value="3">Literature</option>
+                            <option value="6">Language</option>
+                            <option value="4">History</option>
+                            <option value="5">Art</option>
+                            <option value="5">Music</option>
+                          </select>
+                      </div>
+                      <label class="control-label col-sm-1">Course</label>
+                      <div class="col-sm-3">
+                            <input name="course" type="text" class="form-control" placeholder="Course | Example: COMM 127">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Photos</label>
+	                    <div class="col-sm-7">
+	                        <div class="input-group">
+	                            <input type="text" class="form-control" readonly="">
+	                            <span class="input-group-btn">
+	                                <div class="btn btn-primary btn-file">
+	                                    <span class="icon iconmoon-file-3"></span> Browse <input type="file">
+	                                </div>
+	                            </span>
+	                        </div>
+	                    </div>
+                	</div>
+                  <hr class="mt10 mb10">
+                  <button class="btn btn-md btn-info mb10 semibold" style="width:100%" >List This Book</button>
+                </form>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <% render("views.core.footer") %>
+    <% render("views.modals.post_modal") %>
+    <% render("views.core.js") %>
+  </body>
+</html>

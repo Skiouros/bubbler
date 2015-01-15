@@ -9,7 +9,7 @@
 <% render("views.core.header") %>
 <% render("views.books.book_post_details") %>
 <% render("views.core.footer") %>
-<% render("views.core.post_modal") %>
+<% render("views.modals.post_modal") %>
 <% render("views.core.js") %>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/jquery.magnific-popup.min.js"></script>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.32/owl.carousel.min.js"></script>

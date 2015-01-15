@@ -1,0 +1,28 @@
+      <nav class="navbar navbar-default" style="background:#565a5c;margin-bottom:0px;position:relative;width:100%;z-index:1000;box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1),0 1px 0 0 rgba(0, 0, 0, 0.1);border-color:transparent;border-radius:0px">
+        <div class="container">
+          <div class="row">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="/dashboard" class="navbar-brand text-white" style="padding-top:10px;padding-bottom:9px;height:43px;margin-left:0px">Dashboard</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="menu_active"><a href="/dashboard/listings" style="background:transparent;padding-top:10px;padding-bottom:9px" class="semibold text-white" style="padding-top:10px;padding-bottom:9px">Listings</a></li>
+                <li><a href="/dashboard/wishlist" class="semibold text-white" style="padding-top:10px;padding-bottom:9px">Wishlist</a></li>
+                <li><a href="/dashboard/messages" class="semibold text-white" style="padding-top:10px;padding-bottom:9px">Messages</a></li>
+                <li><a href="/dashboard/settings" class="semibold text-white" style="padding-top:10px;padding-bottom:9px">Settings</a></li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </div>
+        </div>
+        <!-- /.container-fluid -->
+      </nav>

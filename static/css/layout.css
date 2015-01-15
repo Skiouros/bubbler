@@ -22,9 +22,10 @@ html body {
   overflow: hidden;
 }
 
-@media (min-width: 1200px)
-.modal-lg {
-width: 1170px;
+@media (min-width: 1200px){
+  .modal-lg {
+    width: 1170px;
+  }
 }
 /*===================================== END GLOBAL LAYOUT ========================================*/
 /*===================================== START BACKEND LAYOUT =====================================*/
@@ -1849,3 +1850,6 @@ section.section .section-header {
  *
  * --------------------------- */
 /*===================================== END BACKEND LAYOUT ======================================*/
+.menu_active {
+  border-bottom:4px solid #00b1e1;
+}

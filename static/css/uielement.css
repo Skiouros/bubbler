@@ -3697,10 +3697,10 @@ a.thumbnail.active {
   right: 0px;
   top: 0px;
   height: 40px;
-  background-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 15%, rgba(255, 255, 255, 0) 100%);
+  /*background-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 15%, rgba(255, 255, 255, 0) 100%);
   background-image: -moz-linear-gradient(top, #ffffff 0%, #ffffff 15%, rgba(255, 255, 255, 0) 100%);
   background-image: -o-linear-gradient(top, #ffffff 0%, #ffffff 15%, rgba(255, 255, 255, 0) 100%);
-  background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 15%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 15%, rgba(255, 255, 255, 0) 100%);*/
 }
 .panel .viewport:before {
   pointer-events: none;
@@ -3711,10 +3711,10 @@ a.thumbnail.active {
   right: 0px;
   bottom: 0px;
   height: 40px;
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 85%, #ffffff 100%);
+  /*background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 85%, #ffffff 100%);
   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 85%, #ffffff 100%);
   background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 85%, #ffffff 100%);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 85%, #ffffff 100%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 85%, #ffffff 100%);*/
 }
 .touch .panel-body.slimscroll {
   overflow-x: hidden;
@@ -4699,13 +4699,13 @@ a.list-group-item:focus {
  * --------------------------- */
 .scrollrail {
   opacity: 1 !important;
-  background-color: rgba(181, 181, 181, 0.15) !important;
+  background-color: transparent !important;
   border: 0px !important;
   border-radius: 0px !important;
 }
 .scrollbar {
   opacity: 1 !important;
-  background-color: rgba(181, 181, 181, 0.9) !important;
+  background-color: transparent !important;
   border: 0px !important;
   border-radius: 0px !important;
 }

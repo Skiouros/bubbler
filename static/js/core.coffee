@@ -65,3 +65,12 @@ $ ->
     # `ttAdapter` wraps the suggestion engine in an adapter that
     # is compatible with the typeahead jQuery plugin
     source: schools.ttAdapter()
+
+  # New Post Modal logic
+  $("#redirect_post").on "click", ->
+    if $("#h_post").is(":checked")
+      window.location.replace "/dashboard/new_housing_post"
+    else window.location.replace "/dashboard/new_book_post"  if $("#b_post").is(":checked")
+    return
+
+  return

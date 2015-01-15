@@ -28,11 +28,10 @@
               </span>
               </a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#" data-toggle="modal" data-target="#post_modal"><span class="icon"><i class="ico-pencil5"></i></span> Post an item</a></li>
-                <li><a href="javascript:void(0);"><span class="icon"><i class="ico-eye"></i></span> I'm looking for</a></li>
-                <li><a href="javascript:void(0);"><span class="icon"><i class="ico-folder5"></i></span> Manage Listings</a></li>
+                <li><a href="javascript:void(0);" data-toggle="modal" data-target="#post_modal"><span class="icon"><i class="ico-pencil5"></i></span> Post an item</a></li>
+                <li><a href="/dashboard"><span class="icon"><i class="ico-folder5"></i></span> Dashboard</a></li>
                 <li><a href="/u/TestUser"><span class="icon"><i class="ico-user"></i></span> My Profile</a></li>
-                <li><a href="/u/1001234/settings"><span class="icon"><i class="ico-cog4"></i></span> Settings</a></li>
+                <li><a href="/settings"><span class="icon"><i class="ico-cog4"></i></span> Settings</a></li>
                 <li><a href="/logout"><span class="icon"><i class="ico-exit"></i></span> Sign Out</a></li>
               </ul>
             </li>
