@@ -9,6 +9,7 @@ import after_dispatch from require "lapis.nginx.context"
 class App extends lapis.Application
     @enable "etlua"
     @include "controllers.users", name: "user_"
+    @include "controllers.school", name: "school_"
     @include "controllers.dashboard", name: "dashboard_"
     @include "controllers.housing", name: "housing_"
     @include "controllers.books", name: "books_"
