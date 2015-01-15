@@ -1,15 +1,15 @@
 <!DOCTYPE HTML>
 <html class="no-touch">
 	<head>
-<% render("views.core.head") %>
+    <% render("views.core.head") %>
 	</head>
   <body>
-<% render("views.core.header") %>
-<% render("views.profile.public_profile_content") %>
-<% render("views.core.footer") %>
-<% render("views.modals.new_housing_post") %>
-<% render("views.core.js") %>
-		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.5/masonry.pkgd.min.js"></script>
-		<script type="text/javascript" src="/static/js/profile/profile_init.min.js"></script>
+    <% render("views.core.header") %>
+    <% render("views.profile.public_profile_content") %>
+    <% render("views.core.footer") %>
+    <% render("views.modals.post_modal") %>
+    <% render("views.core.js") %>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.5/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="/static/js/profile/profile_init.min.js"></script>
   </body>
 </html>
