@@ -368,7 +368,7 @@
   box-shadow: none;
   border-color: #aaa;
 }
-.center-search:focus {
+.border-primary:focus {
   border-color: #66afe9;
 }
 .input-group {
