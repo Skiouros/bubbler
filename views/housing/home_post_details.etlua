@@ -1,19 +1,19 @@
     <section id="main" role="main">
       <div class="gallery-post owl-carousel carousel-lg nm">
         <div class="image">
-          <div data-stellar-background-ratio="0.4" style="min-height:500px;min-width:100%;background-image: url('/static/img/housing/housing_lg1.jpg');background-position:50% 50%;-webkit-background-size: cover;
+          <div data-stellar-background-ratio="0.4" style="min-height:600px;min-width:100%;background-image: url('/static/img/housing/housing_lg1.jpg');background-position:50% 50%;-webkit-background-size: cover;
             background-size: cover;position:relative"></div>
           <div class="overlay-light pattern">
           </div>
         </div>
         <div class="image">
-          <div data-stellar-background-ratio="0.4" style="min-height:500px;min-width:100%;background-image: url('/static/img/housing/housing_lg2.jpg');background-position:50% 50%;-webkit-background-size: cover;
+          <div data-stellar-background-ratio="0.4" style="min-height:600px;min-width:100%;background-image: url('/static/img/housing/housing_lg2.jpg');background-position:50% 50%;-webkit-background-size: cover;
             background-size: cover;position:relative"></div>
           <div class="overlay-light pattern">
           </div>
         </div>
         <div class="image">
-          <div data-stellar-background-ratio="0.4" style="min-height:500px;min-width:100%;background-image: url('/static/img/housing/housing_lg3.jpg');background-position:50% 50%;-webkit-background-size: cover;
+          <div data-stellar-background-ratio="0.4" style="min-height:600px;min-width:100%;background-image: url('/static/img/housing/housing_lg3.jpg');background-position:50% 50%;-webkit-background-size: cover;
             background-size: cover;position:relative"></div>
           <div class="overlay-light pattern">
           </div>
@@ -36,7 +36,7 @@
                   <p class="pt5 mb0">Campus: <a href="/s/uop/" class="text-primary semibold">University of the Pacific</a></p>
                   <p class="pb0">Address: <a href="javascript:void()" class="text-success semibold">123 Creek Drive Stockton, California 95211</a></p>
                   <hr class="mt0 mb10"/>
-                  <div class="row">
+                  <div class="row pt15">
                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
                       <i class="ico ico-bed2 text-primary fsize32"></i>
                       <p class="semibold text-muted">2 Bedrooms</p>
@@ -97,6 +97,37 @@
                   <div class="col-lg-4">
                     <ul>
                       <li>Kitchen</li>
+                      <li>Internet Access</li>
+                      <li>TV</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4">
+                    <ul>
+                      <li>Washer / Dryer</li>
+                      <li>Air Conditioning</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4">
+                    <ul>
+                      <li>Washer / Dryer</li>
+                      <li>Air Conditioning</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="mb5 mt5"/>
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-9">
+                <h4 class="semibold mb15">Extra Features</h4>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <ul>
+                      <li>Smoking Allowed</li>
                       <li>Internet Access</li>
                       <li>TV</li>
                     </ul>

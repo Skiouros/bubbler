@@ -32,13 +32,13 @@
                       <div class="row">
                         <div class="col-lg-4">
                           <span class="radio custom-radio custom-radio-success">
-	                          <input type="radio" name="purchase_type" id="full_ls">
+	                          <input type="radio" name="purchase_type" value="full_lease" id="full_ls">
 	                          <label for="full_ls">&nbsp;&nbsp;Full Lease</label>
                           </span>
                         </div>
                         <div class="col-lg-4">
                           <span class="radio custom-radio custom-radio-success">
-	                          <input type="radio" name="purchase_type" id="sub_ls">
+	                          <input type="radio" name="purchase_type" value="sub_lease" id="sub_ls">
 	                          <label for="sub_ls">&nbsp;&nbsp;Sub Lease</label>
                           </span>
                         </div>
@@ -51,19 +51,19 @@
                       <div class="row">
                         <div class="col-lg-4">
                           <span class="radio custom-radio custom-radio-primary">
-                            <input type="radio" name="home_type" id="ent_hm_apt">
+                            <input type="radio" name="home_type" value="entire_home_apartment" id="ent_hm_apt">
                             <label for="ent_hm_apt">&nbsp;&nbsp;Entire Home / Apartment</label>
                           </span>
                         </div>
                         <div class="col-lg-4">
                           <span class="radio custom-radio custom-radio-primary">
-                          	<input type="radio" name="home_type" id="prv_rm">
+                          	<input type="radio" name="home_type" value="private_room" id="prv_rm">
                           	<label for="prv_rm">&nbsp;&nbsp;Private Room</label>
                           </span>
                         </div>
                         <div class="col-lg-4">
                           <span class="radio custom-radio custom-radio-primary">
-                          	<input type="radio" name="home_type" id="shrd_rm">
+                          	<input type="radio" name="home_type" value="shared_room" id="shrd_rm">
                           	<label for="shrd_rm">&nbsp;&nbsp;Shared Room</label>
                           </span>
                         </div>
@@ -89,11 +89,11 @@
                   <div class="form-group">
                       <label class="control-label col-sm-3">Price</label>
                       <div class="col-sm-2">
-                          <input name="price" type="text" class="form-control" placeholder="How much per month?">
+                          <input type="text" class="form-control" name="price" placeholder="How much per month?">
                       </div>
                      	<label class="control-label col-sm-3">Lease Available On</label>
                       <div class="col-sm-2">
-                      	<input type="text" class="form-control center-search" placeholder="Month/Year">
+                      	<input type="text" class="form-control center-search" name="lease_available_on" placeholder="Month/Year">
                       </div>
                   </div>
                   <div class="form-group">
@@ -112,135 +112,136 @@
                       <label class="control-label col-sm-3">Lease Duration</label>
                       <div class="col-sm-3">
                           <select class="form-control center-search">
-                            <option select="">This place is available for</option>
-                            <option value="1">Quarter</option>
-                            <option value="2">Semester</option>
-                            <option value="3">School Year</option>
-                            <option value="6">Summer Session</option>
-                            <option value="4">Summer Stay</option>
-                            <option value="5">Multiple School Years</option>
+                            <option select="">This place is available for...</option>
+                            <option value="one_semester">One Semester</option>
+                            <option value="entire_school_year">Entire School Year</option>
+                            <option value="multiple_school_years">Multiple School Years</option>
+                            <option value="individual_summer_session">Individual Summer Session</option>
+                            <option value="multiple_summer_sessions">Multiple Summer Sessions</option>
+                            <option value="entire_summer">Entire Summer</option>
                           </select>
                       </div>
                       <label class="control-label col-sm-2">Rooms Available</label>
                       <div class="col-sm-2">
                             <select class="form-control center-search">
-                              <option select="">Bedrooms</option>
-                              <option value="1">1 Bedroom</option>
-                              <option value="2">2 Bedrooms</option>
-                              <option value="3">3 Bedrooms</option>
-                              <option value="4">4 Bedrooms</option>
-                              <option value="5">5 Bedrooms</option>
+                              <option select>Bedrooms</option>
+                              <option value="1_bedroom">1 Bedroom</option>
+                              <option value="2_bedrooms">2 Bedrooms</option>
+                              <option value="3_bedrooms">3 Bedrooms</option>
+                              <option value="4_bedrooms">4 Bedrooms</option>
+                              <option value="5_bedrooms">5 Bedrooms</option>
                             </select>
                       </div>
                   </div>
                   <div class="form-group">
                     <label class="control-label col-sm-3">Amenities</label>
-                    <div class="col-sm-8">
+                    <div class="col-sm-9">
                       <div class="row">
                         <div class="col-lg-3">
                           <span class="checkbox custom-checkbox custom-checkbox-info">
-                          <input type="checkbox" name="amenities" id="internet">
+                          <input type="checkbox" name="amenities" value="internet" id="internet">
                           <label for="internet">&nbsp;&nbsp;Internet</label>
                           </span>
                         </div>
                         <div class="col-lg-3">
                           <span class="checkbox custom-checkbox custom-checkbox-info">
-                          <input type="checkbox" name="amenities" id="wrls_int">
+                          <input type="checkbox" name="amenities" value="wireless_internet" id="wrls_int">
                           <label for="wrls_int">&nbsp;&nbsp;Wireless Internet</label>
                           </span>
                         </div>
                         <div class="col-lg-3">
                           <span class="checkbox custom-checkbox custom-checkbox-info">
-                          <input type="checkbox" name="amenities" id="cable_tv">
+                          <input type="checkbox" name="amenities" value="cable_tv" id="cable_tv">
                           <label for="cable_tv">&nbsp;&nbsp;Cable TV</label>
                           </span>
                         </div>
                         <div class="col-lg-3">
                           <span class="checkbox custom-checkbox custom-checkbox-info">
-                          <input type="checkbox" name="amenities" id="kitchen">
+                          <input type="checkbox" name="amenities" value="kitchen" id="kitchen">
                           <label for="kitchen">&nbsp;&nbsp;Kitchen</label>
                           </span>
                         </div>
                       </div>
                       <div class="row mt15">
-                      	<div class="col-lg-3">
+                        <div class="col-lg-3">
                           <span class="checkbox custom-checkbox custom-checkbox-info">
-                          <input type="checkbox" name="amenities" id="washer">
+                          <input type="checkbox" name="amenities" value="washer" id="washer">
                           <label for="washer">&nbsp;&nbsp;Washer</label>
                           </span>
                         </div>
                         <div class="col-lg-3">
                           <span class="checkbox custom-checkbox custom-checkbox-info">
-                          <input type="checkbox" name="amenities" id="dryer">
+                          <input type="checkbox" name="amenities" value="dryer" id="dryer">
                           <label for="dryer">&nbsp;&nbsp;Dryer</label>
                           </span>
                         </div>
                         <div class="col-lg-3">
                           <span class="checkbox custom-checkbox custom-checkbox-info">
-                          <input type="checkbox" name="amenities" id="air_cond">
+                          <input type="checkbox" name="amenities" value="air_conditioning" id="air_cond">
                           <label for="air_cond">&nbsp;&nbsp;Air Conditioning</label>
                           </span>
                         </div>
                         <div class="col-lg-3">
                           <span class="checkbox custom-checkbox custom-checkbox-info">
-                          <input type="checkbox" name="amenities" id="heating">
+                          <input type="checkbox" name="amenities" value="heating" id="heating">
                           <label for="heating">&nbsp;&nbsp;Heating</label>
                           </span>
                         </div>
                       </div>
                       <div class="row mt15">
-                      	<div class="col-lg-3">
+                        <div class="col-lg-3">
                           <span class="checkbox custom-checkbox custom-checkbox-info">
-                          <input type="checkbox" name="amenities" id="microwave">
+                          <input type="checkbox" name="amenities" value="microwave" id="microwave">
                           <label for="microwave">&nbsp;&nbsp;Microwave</label>
                           </span>
                         </div>
-                      	<div class="col-lg-3">
+                        <div class="col-lg-3">
                           <span class="checkbox custom-checkbox custom-checkbox-info">
-                          <input type="checkbox" name="customcheckbox1" id="free_rsrv_park">
+                          <input type="checkbox" name="amenities" value="free_reserved_parking" id="free_rsrv_park">
                           <label for="free_rsrv_park">&nbsp;&nbsp;Free Reserved Parking</label>
                           </span>
                         </div>
-												<div class="col-lg-3">
+                        <div class="col-lg-3">
                           <span class="checkbox custom-checkbox custom-checkbox-info">
-                          <input type="checkbox" name="customcheckbox1" id="fireplace">
+                          <input type="checkbox" name="amenities" value="fireplace" id="fireplace">
                           <label for="fireplace">&nbsp;&nbsp;Fireplace</label>
                           </span>
                         </div>
                         <div class="col-lg-3">
                           <span class="checkbox custom-checkbox custom-checkbox-info">
-                          <input type="checkbox" name="customcheckbox1" id="shrd_bthrm">
+                          <input type="checkbox" name="amenities" value="shared_bathroom" id="shrd_bthrm">
                           <label for="shrd_bthrm">&nbsp;&nbsp;Shared Bathroom</label>
                           </span>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <hr />
                   <div class="form-group">
                     <label class="control-label col-sm-3">Extra Features</label>
-                    <div class="col-sm-8">
+                    <div class="col-sm-9">
                       <div class="row">
                         <div class="col-lg-3">
                           <span class="checkbox custom-checkbox custom-checkbox-danger">
-                          <input type="checkbox" name="extra_features" id="smk_allwd">
+                          <input type="checkbox" name="extra_features" value="smoking_allowed" id="smk_allwd">
                           <label for="smk_allwd">&nbsp;&nbsp;Smoking Allowed</label>
                           </span>
                         </div>
                         <div class="col-lg-3">
                           <span class="checkbox custom-checkbox custom-checkbox-danger">
-                          <input type="checkbox" name="extra_features" id="pets_allwd">
+                          <input type="checkbox" name="extra_features" value="pets_allowed" id="pets_allwd">
                           <label for="pets_allwd">&nbsp;&nbsp;Pets Allowed</label>
                           </span>
                         </div>
                         <div class="col-lg-3">
                           <span class="checkbox custom-checkbox custom-checkbox-danger">
-                          <input type="checkbox" name="extra_features" id="whlchr_accsble">
+                          <input type="checkbox" name="extra_features" value="wheelchair_accessible" id="whlchr_accsble">
                           <label for="whlchr_accsble">&nbsp;&nbsp;Wheelchair Accessible</label>
                           </span>
                         </div>
                         <div class="col-lg-3">
                           <span class="checkbox custom-checkbox custom-checkbox-danger">
-                          <input type="checkbox" name="extra_features" id="pets_live_here">
+                          <input type="checkbox" name="extra_features" value="pets_live_here" id="pets_live_here">
                           <label for="pets_live_here">&nbsp;&nbsp;Pets Live Here</label>
                           </span>
                         </div>
@@ -248,19 +249,19 @@
                       <div class="row mt15">
                         <div class="col-lg-3">
                           <span class="checkbox custom-checkbox custom-checkbox-danger">
-                          <input type="checkbox" name="extra_features" id="quiet_rmmts">
+                          <input type="checkbox" name="extra_features" value="quiet_roommates" id="quiet_rmmts">
                           <label for="quiet_rmmts">&nbsp;&nbsp;Quiet Roommates</label>
                           </span>
                         </div>
                         <div class="col-lg-3">
                           <span class="checkbox custom-checkbox custom-checkbox-danger">
-                          <input type="checkbox" name="extra_features" id="coll_dnr">
+                          <input type="checkbox" name="extra_features" value="collective_dinner" id="coll_dnr">
                           <label for="coll_dnr">&nbsp;&nbsp;Collective Dinner</label>
                           </span>
                         </div>
                         <div class="col-lg-3">
                           <span class="checkbox custom-checkbox custom-checkbox-danger">
-                          <input type="checkbox" name="extra_features" id="prv_bath">
+                          <input type="checkbox" name="extra_features" value="private_bathroom" id="prv_bath">
                           <label for="prv_bath">&nbsp;&nbsp;Private Bathroom</label>
                           </span>
                         </div>

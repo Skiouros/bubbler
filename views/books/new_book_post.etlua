@@ -100,15 +100,15 @@
                   <div class="form-group">
                       <label class="control-label col-sm-3">Subject</label>
                       <div class="col-sm-3">
-                          <select class="form-control center-search">
+                          <select class="form-control center-search" name="subject">
                             <option select="">Book Subject</option>
-                            <option value="1">Math</option>
-                            <option value="2">Science</option>
-                            <option value="3">Literature</option>
-                            <option value="6">Language</option>
-                            <option value="4">History</option>
-                            <option value="5">Art</option>
-                            <option value="5">Music</option>
+                            <option value="math">Math</option>
+                            <option value="science">Science</option>
+                            <option value="literature">Literature</option>
+                            <option value="language">Language</option>
+                            <option value="history">History</option>
+                            <option value="art">Art</option>
+                            <option value="music">Music</option>
                           </select>
                       </div>
                       <label class="control-label col-sm-1">Course</label>

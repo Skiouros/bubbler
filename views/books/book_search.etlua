@@ -9,7 +9,7 @@
 <% render("views.books.book_search_results") %>
 <% render("views.core.footer") %>
 <% render("views.modals.post_modal") %>
-<% render("views.modals.filter_housing_modal") %>
+<% render("views.modals.filter_books_modal") %>
 <% render("views.core.js") %>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/selectize.js/0.11.2/js/standalone/selectize.min.js"></script>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.5/masonry.pkgd.min.js"></script>
