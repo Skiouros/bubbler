@@ -103,8 +103,7 @@ class Users extends lapis.Application
             json: redirect_to: "/u/asdf"
 
         GET: =>
-            if @current_user
-                return redirect_to: "/u/adsf"
+            return redirect_to: "/u/adsf" if @current_user
             render: "user.login", layout: false
     }
 
@@ -135,4 +134,13 @@ class Users extends lapis.Application
 
     [profile: "/u/:name"]: require_login =>
         @name = @current_user.name
+        @books = {
+            {
+                img: "/static/img/books/book1.jpg"
+                owner: @current_user
+            }
+        }
+        @houses = {
+            {}
+        }
         render: "profile.public_profile", layout: false
