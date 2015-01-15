@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+REDIS_IP=$(docker inspect bubbler_cache | grep IPAddress | awk '{ print $2 }' | tr -d ',"')
+redis-cli -h $REDIS_IP
