@@ -17,5 +17,5 @@ class Books extends lapis.Application
         @home_link = "v31adv"
         @school_name = "University of Somewhere"
         @srch_default_txt = "Search by college campus"
-        @srch_placeholder = "Search for books by title, author, isbn, etc..."
+        @srch_placeholder = "Search for books..."
         render: "books.book_search", layout: false

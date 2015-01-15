@@ -17,5 +17,5 @@ class Housing extends lapis.Application
         @home_link = "v31adv"
         @school_name = "University of Somewhere"
         @srch_default_txt = "Search by college campus"
-        @srch_placeholder = "Search for housing by type, keywords, etc..."
+        @srch_placeholder = "Search for housing..."
         render: "housing.housing_search", layout: false
