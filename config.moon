@@ -13,11 +13,20 @@ config "development", ->
     measure_performance true
     secret os.getenv "SECRET"
 
-    email_key "api:#{os.getenv("MAILGUN_APIKEY")}"
-    email_sender "bubb@bubbler.in"
-    email_domain "bubbler.in"
+    email ->
+        key "#{os.getenv("MAILGUN_APIKEY")}"
+        sender "bubb@bubbler.in"
+        domain "bubbler.in"
 
-    redis_host os.getenv "CACHE_PORT_6379_TCP_ADDR"
+    honcho ->
+        delay 5
+        workers_per_thread 5
+        job_dir "jobs"
+        hostname os.getenv "HOSTNAME"
+
+    redis ->
+        host os.getenv "CACHE_PORT_6379_TCP_ADDR"
+        port 6379
 
     postgres ->
         host os.getenv "DB_PORT_5432_TCP_ADDR"
