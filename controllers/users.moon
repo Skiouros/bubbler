@@ -100,10 +100,10 @@ class Users extends lapis.Application
                 yield_error err
 
             user\write_session @
-            json: redirect_to: "/u/asdf"
+            json: redirect_to: "/u/#{user.id}"
 
         GET: =>
-            return redirect_to: "/u/adsf" if @current_user
+            return redirect_to: "/u/#{@current_user.id}" if @current_user
             render: "user.login", layout: false
     }
 
@@ -132,15 +132,24 @@ class Users extends lapis.Application
             render: "user.forgot_password", layout: false
     }
 
-    [profile: "/u/:name"]: require_login =>
-        @name = @current_user.name
-        @books = {
-            {
-                img: "/static/img/books/book1.jpg"
-                owner: @current_user
+    [profile: "/u/:id"]: require_login capture_errors {
+        on_error: =>
+            redirect_to: @url_for "landing"
+        =>
+            assert_valid @params, {
+                { "id", is_integer: true }
             }
-        }
-        @houses = {
-            {}
-        }
-        render: "profile.public_profile", layout: false
+            @user = models.Users\find @params.id
+            yield_error "invalid user" unless @user
+
+            @books = {
+                {
+                    img: "/static/img/books/book1.jpg"
+                    owner: @current_user
+                }
+            }
+            @houses = {
+                {}
+            }
+            render: "profile.public_profile", layout: false
+    }

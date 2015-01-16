@@ -18,7 +18,7 @@
                         </li>
                         <li class="text-left">
                             <h5 class="semibold ellipsis">
-                                <%= name %><br>
+                                <%= user.name %><br>
                                 <small class="text-muted">@johndoe</small>
                             </h5>
                         </li>
