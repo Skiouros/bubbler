@@ -12,9 +12,9 @@
             <i class="ico-search form-control-icon" style="left: 0px;top:-2px"></i>
             <input class="form-control typeahead " placeholder="<%= srch_default_txt %>" style="font-size:14px;" id="schoolsrch">
           </div>
-         
-               </div>                                     
-                 
+
+               </div>
+
           <!-- START navbar form -->
           <!-- START Right nav -->
           <ul class="nav navbar-nav navbar-right">
@@ -23,16 +23,16 @@
               <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
               <span class="meta">
               <span class="avatar"><img src="/static/img/avatars/avatar6.jpg" class="img-circle" alt="" style="width:34px;height:34px;border:1px solid #fff"></span>
-              <span class="text hidden-xs hidden-sm pl5">John Doe</span>
+              <span class="text hidden-xs hidden-sm pl5"><%= current_user.name %></span>
               <span class="caret"></span>
               </span>
               </a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="javascript:void(0);" data-toggle="modal" data-target="#post_modal"><span class="icon"><i class="ico-pencil5"></i></span> Post an item</a></li>
-                <li><a href="/dashboard"><span class="icon"><i class="ico-folder5"></i></span> Dashboard</a></li>
-                <li><a href="/u/TestUser"><span class="icon"><i class="ico-user"></i></span> My Profile</a></li>
-                <li><a href="/settings"><span class="icon"><i class="ico-cog4"></i></span> Settings</a></li>
-                <li><a href="/logout"><span class="icon"><i class="ico-exit"></i></span> Sign Out</a></li>
+                <li><a href="<%= url_for 'dashboard_home' %>"><span class="icon"><i class="ico-folder5"></i></span> Dashboard</a></li>
+                <li><a href="/u/<%= current_user.id %>"><span class="icon"><i class="ico-user"></i></span> My Profile</a></li>
+                <li><a href="<%= url_for 'dashboard_settings' %>"><span class="icon"><i class="ico-cog4"></i></span> Settings</a></li>
+                <li><a href="<%= url_for 'user_logout' %>"><span class="icon"><i class="ico-exit"></i></span> Sign Out</a></li>
               </ul>
             </li>
             <!-- Profile dropdown -->
@@ -68,7 +68,7 @@
                     <span class="media-body">
                         <span class="media-heading">{{name}}</span>
                         <span class="media-text ellipsis nm">{{text}}</span>
-                
+
                         {{#meta.star}}<span class="media-meta"><i class="ico-star3"></i></span>{{/meta.star}}
                         {{#meta.reply}}<span class="media-meta"><i class="ico-reply"></i></span>{{/meta.reply}}
                         {{#meta.attachment}}<span class="media-meta"><i class="ico-attachment"></i></span>{{/meta.attachment}}
@@ -76,7 +76,7 @@
                     </span>
                 </a>
                 {{/data}}
-                
+
               </script>
               <!--/ mustache template -->
               <!-- Dropdown menu -->
@@ -200,7 +200,7 @@
                     </span>
                 </a>
                 {{/data}}
-                
+
               </script>
               <!--/ mustache template -->
               <!-- Dropdown menu -->
