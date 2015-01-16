@@ -14,9 +14,8 @@ $ ->
         # the typeahead jQuery plugin expects suggestions to a
         # JavaScript object, refer to typeahead docs for more info
         matches.push value: str  if substrRegex.test(str)
-        return
+
       cb matches
-      return
 
   schools = [
     "University of the Pacific"
@@ -69,8 +68,6 @@ $ ->
   # New Post Modal logic
   $("#redirect_post").on "click", ->
     if $("#h_post").is(":checked")
-      window.location.replace "/dashboard/new_housing_post"
-    else window.location.replace "/dashboard/new_book_post"  if $("#b_post").is(":checked")
-    return
-
-  return
+        window.location = $("#h_post").attr "location"
+    else if $("#b_post").is(":checked")
+        window.location = $("#b_post").attr "location"

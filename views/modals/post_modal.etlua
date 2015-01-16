@@ -1,58 +1,58 @@
-        <div id="post_modal" class="modal fade" style="display: none;" aria-hidden="true">
-          <div class="modal-dialog modal-lg" style="z-index: 9999;">
-            <div class="modal-content">
-              <div class="modal-header text-center">
-                <button type="button" class="close" data-dismiss="modal">×</button>
-                <div class="mb15 mt15" ><img src="/static/img/icons/affiliatemarketing.png" alt="" width="65px" height="65px"></div>
-                <h3 class="semibold modal-title text-primary">Post an item</h3>
-                <p class="text-muted">What better way to get the word out about your post than with a community of people who are looking for exactly what you are posting!</p>
-              </div>
-              <div class="modal-body">
-                <h4 class="semibold mt0 text-center">Choose your post category</h4>
-                <div class="row row-centered mt15">
-                  <div class="col-lg-9 col-centered">
-                    <div class="row row-centered">
-                      <div class="col-lg-4 col-centered">
-                        <div class="row">
-                          <div class="col-lg-3">
-                            <span class="radio custom-radio custom-radio-primary">
-                            <input type="radio" name="_post" id="h_post">
-                            <label for="h_post"></label>
-                            </span>
-                          </div>
-                          <div class="col-lg-9">
-                            <div class="row">
-                              <div class="col-lg-12">
-                                <i class="ico ico-home10 fsize24 text-primary"></i>&nbsp;&nbsp;&nbsp; Housing
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 col-centered">
-                        <div class="row">
-                          <div class="col-lg-3">
-                            <span class="radio custom-radio custom-radio-primary">
-                            <input type="radio" name="_post" id="b_post">
-                            <label for="b_post"></label>
-                            </span>
-                          </div>
-                          <div class="col-lg-9">
-                            <div class="row">
-                              <div class="col-lg-12">
-                                <i class="ico ico-books fsize24 text-primary"></i>&nbsp;&nbsp;&nbsp; Books
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+<div id="post_modal" class="modal fade" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog modal-lg" style="z-index: 9999;">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <div class="mb15 mt15" ><img src="/static/img/icons/affiliatemarketing.png" alt="" width="65px" height="65px"></div>
+        <h3 class="semibold modal-title text-primary">Post an item</h3>
+        <p class="text-muted">What better way to get the word out about your post than with a community of people who are looking for exactly what you are posting!</p>
+      </div>
+      <div class="modal-body">
+        <h4 class="semibold mt0 text-center">Choose your post category</h4>
+        <div class="row row-centered mt15">
+          <div class="col-lg-9 col-centered">
+            <div class="row row-centered">
+              <div class="col-lg-4 col-centered">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <span class="radio custom-radio custom-radio-primary">
+                      <input type="radio" name="_post" id="h_post" location="<%= url_for 'dashboard_new_house' %>">
+                      <label for="h_post"></label>
+                    </span>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <i class="ico ico-home10 fsize24 text-primary"></i>&nbsp;&nbsp;&nbsp; Housing
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="modal-footer">
-                <button id="redirect_post" type="button" class="btn btn-success">Let's get started!</button>
+              <div class="col-lg-4 col-centered">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <span class="radio custom-radio custom-radio-primary">
+                      <input type="radio" name="_post" id="b_post" location="<%= url_for 'dashboard_new_book' %>">
+                      <label for="b_post"></label>
+                    </span>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <i class="ico ico-books fsize24 text-primary"></i>&nbsp;&nbsp;&nbsp; Books
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="modal-footer">
+        <button id="redirect_post" type="button" class="btn btn-success">Let's get started!</button>
+      </div>
+    </div>
+  </div>
+</div>
