@@ -60,7 +60,10 @@ class Dashboard extends lapis.Application
                 { "subject", exists: true }
                 { "price", exists: true, is_integer: true, "price must be a number" }
             }
-            -- TODO: custom validation for isbn
+
+            if @params.isbn_10 == "" and @params.isbn_13 == ""
+                yield_error "isbn need at least one"
+
             data =
                 condition: @params.condition
                 author: @params.author
