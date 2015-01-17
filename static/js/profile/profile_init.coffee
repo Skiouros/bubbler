@@ -1,4 +1,5 @@
 $ ->
+    $("p.timeago").timeago()
 	if $(".masonry").length > 0
 	    $(".masonry").masonry
 	      itemSelector: ".post"
