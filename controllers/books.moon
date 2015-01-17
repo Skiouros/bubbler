@@ -1,6 +1,8 @@
 lapis = require "lapis"
 models = require "models"
 
+import require_login from require "helpers.auth"
+
 class Books extends lapis.Application
 
     [details: "/b/:id"]: require_login =>
