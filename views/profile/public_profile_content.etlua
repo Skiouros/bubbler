@@ -37,7 +37,7 @@
                         <p class="nm text-muted">Following</p>
                     </li>
                     <li class="text-center">
-                        <h4 class="nm">12</h4>
+                        <h4 class="nm"><%= #books + #houses %></h4>
                         <p class="nm text-muted">Listings</p>
                     </li>
                 </ul>
@@ -57,7 +57,7 @@
                     <p class="semibold mb0">College Campus</p>
                     <div class="col-lg-12 mb5" style="padding-left: 0px;padding-right: 0px;">
                         <div class="mr5">
-                            <a href="#">University of the Pacific</a>
+                            <a href="#"><%= user:get_school() %></a>
                         </div>
                     </div>
                     <p class="semibold mb0">Major</p>
