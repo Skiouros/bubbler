@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default" style="background:#566a5c;margin-bottom:0px;position:relative;width:100%;z-index:1000;box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1),0 1px 0 0 rgba(0, 0, 0, 0.1);border-color:transparent;border-radius:0px">
+<nav class="navbar navbar-default" style="background:#5A5A5A;margin-bottom:0px;position:relative;width:100%;z-index:1000;box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1),0 1px 0 0 rgba(0, 0, 0, 0.1);border-color:transparent;border-radius:0px">
     <div class="container">
         <div class="row">
             <div class="navbar-header">
@@ -13,7 +13,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li <%= active_menu "listings" %> ><a href="<%= url_for 'dashboard_listings' %>" style="background:transparent;padding-top:10px;padding-bottom:9px" class="semibold text-white" style="padding-top:10px;padding-bottom:9px">Listings</a></li>
-                    <li <%= active_menu "wishlist" %>><a href="<%= url_for 'dashboard_wishlist' %>" class="semibold text-white" style="padding-top:10px;padding-bottom:9px">Wishlist</a></li>
+                    <li <%= active_menu "wishlist" %>><a href="<%= url_for 'dashboard_wishlist' %>" class="semibold text-white" style="padding-top:10px;padding-bottom:9px">Wish List</a></li>
                     <li <%= active_menu "messages" %>><a href="<%= url_for 'dashboard_messages' %>" class="semibold text-white" style="padding-top:10px;padding-bottom:9px">Messages</a></li>
                     <li <%= active_menu "settings" %>><a href="<%= url_for 'dashboard_settings' %>" class="semibold text-white" style="padding-top:10px;padding-bottom:9px">Settings</a></li>
                 </ul>
