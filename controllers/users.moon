@@ -139,6 +139,7 @@ class Users extends lapis.Application
             @user = models.Users\find @params.id
             yield_error "invalid user" unless @user
 
+            @user_profile = @url_for("user_profile") .. @params.id
             @books = @user\get_posts "book"
             @houses = { {} }
             render: "profile.public_profile", layout: false
