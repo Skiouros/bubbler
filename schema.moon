@@ -25,8 +25,8 @@ make_schema = ->
         {"email", varchar}
         {"school", foreign_key}
 
-        {"created_at", time}
-        {"updated_at", time}
+        {"created_at", time timezone: true}
+        {"updated_at", time timezone: true}
 
         "PRIMARY KEY (id)"
     }
@@ -46,4 +46,26 @@ make_schema = ->
     }
     create_index "schools", db.raw("lower(name)"), unique: true
 
+    create_table "images", {
+        {"post_id", foreign_key}
+        {"location", varchar}
+
+        "PRIMARY KEY (post_id, location)"
+    }
+
+    create_table "posts", {
+        {"id", serial}
+        {"user_id", foreign_key}
+        {"title", varchar}
+        {"description", varchar}
+        {"type", varchar}
+        {"hash", varchar}
+        "price money"
+        "data jsonb not null"
+
+        {"created_at", time timezone: true}
+        {"updated_at", time timezone: true}
+
+        "PRIMARY KEY (user_id, title)"
+    }
 { :make_schema }
