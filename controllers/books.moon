@@ -1,16 +1,21 @@
 lapis = require "lapis"
-util = require "lapis.util"
+models = require "models"
 
 class Books extends lapis.Application
 
-    [book_details: "/b/:id"]: =>
+    [details: "/b/:id"]: =>
+        book = models.Posts\get type: "book", hash: @params.id
+        return redirect_to: @url_for "landing" unless book
+        @user = models.Users\find book.user_id
+
         @copyright = "Bubbler © #{os.date "%Y"}"
         @seller_profile = "Test User"
         @seller_name = "John Doe"
         @home_link = "v31adv"
+        @book = book
         render: "books.book_post", layout: false
 
-    [books_search: "/s/:school/books"]: =>
+    [search: "/s/:school/books"]: =>
         @copyright = "Bubbler © #{os.date "%Y"}"
         @seller_profile = "Test User"
         @seller_name = "John Doe"
