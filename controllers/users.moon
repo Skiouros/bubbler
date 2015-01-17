@@ -104,7 +104,7 @@ class Users extends lapis.Application
             render: "user.login", layout: false
     }
 
-    [logout: "/logout"]: =>
+    [logout: "/logout"]: require_login =>
         @session.user = nil
         redirect_to: @url_for "user_login"
 

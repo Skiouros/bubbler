@@ -3,7 +3,7 @@ models = require "models"
 
 class Books extends lapis.Application
 
-    [details: "/b/:id"]: =>
+    [details: "/b/:id"]: require_login =>
         book = models.Posts\get type: "book", hash: @params.id
         return redirect_to: @url_for "landing" unless book
 
