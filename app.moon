@@ -16,6 +16,7 @@ class App extends lapis.Application
     @include "controllers.books", name: "book_"
 
     @before_filter =>
+        @copyright = "Bubbler © #{os.date "%Y"}"
         if @session.user and entity_exists "users"
             @current_user = Users\find @session.user.id
 
