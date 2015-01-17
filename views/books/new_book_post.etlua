@@ -19,7 +19,7 @@
         <div class="container con-bg" style="border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9">
           <div class="row">
             <div class="col-lg-12">
-              <form class="form-horizontal mt15" action="">
+                <form id="form" class="form-horizontal mt15" method="POST" action="<%= url_for 'dashboard_new_book' %>">
                   <div class="form-group">
                       <label class="control-label col-sm-3">Title</label>
                       <div class="col-sm-7">
@@ -29,23 +29,27 @@
                   <div class="form-group">
                       <label class="control-label col-sm-3">About this book</label>
                       <div class="col-sm-7">
-                          <textarea class="form-control" rows="2" placeholder="Just a quick description of the book, nothing too detailed." style="min-width:100%" name="about_book"></textarea>
+                          <textarea class="form-control" rows="2" placeholder="Just a quick description of the book, nothing too detailed." style="min-width:100%" name="description"></textarea>
                       </div>
                   </div>
-                  <div class="form-group">
+                    <div class="form-group">
                       <label class="control-label col-sm-3">Author</label>
-                      <div class="col-sm-7">
-                          <input name="author" type="text" class="form-control" placeholder="Author">
+                      <div class="col-sm-3">
+                          <input name="author" type="text" class="form-control" placeholder="Author...">
+                      </div>
+                      <label class="control-label col-sm-1">Price</label>
+                      <div class="col-sm-3">
+                          <input name="price" type="text" class="form-control" placeholder="$50">
                       </div>
                   </div>
                   <div class="form-group">
                       <label class="control-label col-sm-3">ISBN-10</label>
                       <div class="col-sm-3">
-                          <input name="isbn10" type="text" class="form-control" placeholder="ISBN-10 | Leave blank if N/A">
+                          <input name="isbn_10" type="text" class="form-control" placeholder="ISBN-10 | Leave blank if N/A">
                       </div>
                       <label class="control-label col-sm-1">ISBN-13</label>
                       <div class="col-sm-3">
-                          <input name="isbn13" type="text" class="form-control" placeholder="ISBN-13 | Leave blank if N/A">
+                          <input name="isbn_13" type="text" class="form-control" placeholder="ISBN-13 | Leave blank if N/A">
                       </div>
                   </div>
                   <div class="form-group">
@@ -58,13 +62,12 @@
                       <label class="control-label col-sm-3">Condition</label>
                       <div class="col-sm-3">
                           <select class="form-control center-search" name="condition">
-                            <option select>Book Condition</option>
-                            <option value="new">New</option>
-                            <option value="like_new">Like New</option>
-                            <option value="very_good">Very Good</option>
-                            <option value="good">Good</option>
-                            <option value="acceptable">Acceptable</option>
-                            <option value="poor">Poor</option>
+                            <option select value="New">New</option>
+                            <option value="Like New">Like New</option>
+                            <option value="Very Good">Very Good</option>
+                            <option value="Good">Good</option>
+                            <option value="Acceptable">Acceptable</option>
+                            <option value="Poor">Poor</option>
                           </select>
                       </div>
                       <label class="control-label col-sm-1">Edition</label>
@@ -78,19 +81,19 @@
                       <div class="row">
                         <div class="col-lg-4">
                           <span class="radio custom-radio custom-radio-success">
-                          <input type="radio" name="book_type" id="hardcover">
+                          <input type="radio" value="Hardcover" name="type" id="hardcover">
                           <label for="hardcover">&nbsp;&nbsp;Hardcover</label>
                           </span>
                         </div>
                         <div class="col-lg-4">
                           <span class="radio custom-radio custom-radio-success">
-                          <input type="radio" name="book_type" id="paperback">
+                          <input type="radio" value="Paperback" name="type" id="paperback">
                           <label for="paperback">&nbsp;&nbsp;Paperback</label>
                           </span>
                         </div>
                         <div class="col-lg-4">
                           <span class="radio custom-radio custom-radio-success">
-                          <input type="radio" name="book_type" id="binder_sheets">
+                          <input type="radio" value="Binder Sheets" name="type" id="binder_sheets">
                           <label for="binder_sheets">&nbsp;&nbsp;Binder Sheets</label>
                           </span>
                         </div>
@@ -101,14 +104,13 @@
                       <label class="control-label col-sm-3">Subject</label>
                       <div class="col-sm-3">
                           <select class="form-control center-search" name="subject">
-                            <option select="">Book Subject</option>
-                            <option value="math">Math</option>
-                            <option value="science">Science</option>
-                            <option value="literature">Literature</option>
-                            <option value="language">Language</option>
-                            <option value="history">History</option>
-                            <option value="art">Art</option>
-                            <option value="music">Music</option>
+                            <option select value="Math">Math</option>
+                            <option value="Science">Science</option>
+                            <option value="Literature">Literature</option>
+                            <option value="Language">Language</option>
+                            <option value="History">History</option>
+                            <option value="Art">Art</option>
+                            <option value="Music">Music</option>
                           </select>
                       </div>
                       <label class="control-label col-sm-1">Course</label>
@@ -118,21 +120,23 @@
                   </div>
                   <div class="form-group">
                     <label class="col-sm-3 control-label">Photos</label>
-	                    <div class="col-sm-7">
-	                        <div class="input-group">
-	                            <input type="text" class="form-control" readonly="">
-	                            <span class="input-group-btn">
-	                                <div class="btn btn-primary btn-file">
-	                                    <span class="icon iconmoon-file-3"></span> Browse <input type="file">
-	                                </div>
-	                            </span>
-	                        </div>
-	                    </div>
-                	</div>
+                        <div class="col-sm-7">
+                            <div class="input-group">
+                                <input type="text" class="form-control" readonly="">
+                                <span class="input-group-btn">
+                                    <div class="btn btn-primary btn-file">
+                                        <span class="icon iconmoon-file-3"></span> Browse <input type="file">
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                   <hr class="mt10 mb10">
+                  <div id="error-container">
+                  </div>
                   <button class="btn btn-md btn-info mb10 semibold" style="width:100%" >List This Book</button>
                 </form>
-              
+
             </div>
           </div>
         </div>
@@ -141,5 +145,6 @@
     <% render("views.core.footer") %>
     <% render("views.modals.post_modal") %>
     <% render("views.core.js") %>
+    <script type="text/javascript" src="/static/js/books/new.min.js"></script>
   </body>
 </html>
