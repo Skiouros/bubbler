@@ -1,17 +1,19 @@
 lapis = require "lapis"
-util = require "lapis.util"
+models = require "models"
+
+import require_login from require "helpers.auth"
 
 class Books extends lapis.Application
 
-    [book_details: "/b/:id"]: =>
-        @copyright = "Bubbler © #{os.date "%Y"}"
-        @seller_profile = "Test User"
-        @seller_name = "John Doe"
-        @home_link = "v31adv"
+    [details: "/b/:id"]: require_login =>
+        book = models.Posts\get type: "book", hash: @params.id
+        return redirect_to: @url_for "landing" unless book
+
+        @user = models.Users\find book.user_id
+        @book = book
         render: "books.book_post", layout: false
 
-    [books_search: "/s/:school/books"]: =>
-        @copyright = "Bubbler © #{os.date "%Y"}"
+    [search: "/s/:school/books"]: =>
         @seller_profile = "Test User"
         @seller_name = "John Doe"
         @home_link = "v31adv"

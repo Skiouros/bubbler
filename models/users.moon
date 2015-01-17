@@ -1,10 +1,8 @@
 import Model from require "lapis.db.model"
 
 db = require "lapis.db"
-util = require "lapis.util"
 bcrypt = require "bcrypt"
-
-models = util.autoload "models"
+models = require "models"
 
 class Users extends Model
     @table_name: => "users"
@@ -43,6 +41,17 @@ class Users extends Model
             nil, "must activate account"
         else
             nil, "Incorrect email or password"
+
+    get_school: =>
+        models.Schools\find(id: @school).name
+
+    get_posts: (typ) =>
+        posts = models.Posts\get_all @id, typ
+        post.user = @ for post in *posts
+        posts
+
+    get_link: =>
+
 
     get_data: =>
         return if @data
