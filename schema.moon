@@ -68,4 +68,5 @@ make_schema = ->
 
         "PRIMARY KEY (user_id, title)"
     }
+    create_index "posts", "data", method: "GIN"
 { :make_schema }
