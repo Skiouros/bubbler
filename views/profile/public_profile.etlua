@@ -9,6 +9,7 @@
     <% render("views.core.footer") %>
     <% render("views.modals.post_modal") %>
     <% render("views.core.js") %>
+    <script type="text/javascript" src="//cdnjs.buttflare.com/ajax/libs/jquery-timeago/1.4.1/jquery.timeago.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.5/masonry.pkgd.min.js"></script>
     <script type="text/javascript" src="/static/js/profile/profile_init.min.js"></script>
   </body>
