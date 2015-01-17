@@ -1,7 +1,5 @@
 lapis = require "lapis"
-util = require "lapis.util"
-
-models = util.autoload "models"
+models = require "models"
 encoding = require "lapis.util.encoding"
 
 import validate_functions, assert_valid from require "lapis.validate"
@@ -19,16 +17,15 @@ validate_functions.college_exists = (input) ->
 
 validate_token = =>
     encoded_str = encoding.decode_base64 @params.splat
-    unless encoded_str
-        yield_error "invalid link"
+    yield_error "invalid link" unless encoded_str
+
     obj = assert_error encoding.decode_with_secret(encoded_str), "invalid link"
     user = models.Users\find obj.id
-    unless user
-        yield_error "invalid link"
+    yield_error "invalid link" unless user
 
     -- if its been over 24 hour since issued
     if ((os.time! - obj.time) / 60) > (60 * 24)
-       assert_error false, "link expired"
+       assert_error false, "invalid link"
 
     return user, obj
 
@@ -142,14 +139,7 @@ class Users extends lapis.Application
             @user = models.Users\find @params.id
             yield_error "invalid user" unless @user
 
-            @books = {
-                {
-                    img: "/static/img/books/book1.jpg"
-                    owner: @current_user
-                }
-            }
-            @houses = {
-                {}
-            }
+            @books = @user\get_posts "book"
+            @houses = { {} }
             render: "profile.public_profile", layout: false
     }
