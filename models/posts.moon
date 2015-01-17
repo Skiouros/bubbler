@@ -13,7 +13,8 @@ class Posts extends Model
         info =
             user_id: user.id, data: to_json data
             :price, :title, description: desc, type: typ
-        info.hash = string.sub ngx.md5(to_json data), 1, 8
+
+        info.hash = string.sub ngx.md5(to_json info), 1, 8
         ok, res = pcall Model.create, @, info
         return nil, res unless ok
         res
