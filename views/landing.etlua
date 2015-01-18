@@ -214,8 +214,8 @@
           <div class="col-xs-12 col-sm-12 col-lg-4 social-wrap">
             <div class="footer-title">Company Info</div>
             <ul class="list-inline socials">
-              <li><a href="#"><span>Blog</span></a></li>
-              <li><a data-toggle="modal" data-target="#not_exists"><span>Terms and Conditions</span></a></li>
+              <li><a href="#" style="cursor:pointer"><span>Blog</span></a></li>
+              <li><a href="#" style="cursor:pointer" data-toggle="modal" data-target="#terms_and_conditions"><span>Terms and Conditions</span></a></li>
             </ul>
             <div class="footer-title">Connect With Us</div>
             <ul class="list-inline socials" style="margin-bottom:25px">
@@ -302,6 +302,9 @@
             <p>Bubbler does not investigate, endorse, or feedback the tenantability or validility of the listings on our website or the suitability for those responding to the listings. We reserve the right to remove, edit, or withhold any listing. By signing up to our service, you are giving your consent for us to retain and post all of the information you provide us on our website. Currently, you are limited to 5 book posts and 1 housing post a month. Your listing will be posted for 30 days. You, the user, also agrees that we are not responsible for failed transactions between you and the party who intends to sell to or buy from you. We reserve the right to terminate your account indefinelty if you demonstrate vulgar, offensive, or malicious behavior while using our service either through the messaging system or through individual listings. <br /><br />
 
             Now that that's out of the way, enjoy our site :)</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
