@@ -1,21 +1,11 @@
     <footer id="footer" role="contentinfo" style="padding: 10px;background:rgba(249, 249, 249, 0.5); border-top: 1px solid rgba(213, 213, 213, 0.75)">
-      <!-- bottom footer -->
       <div class="footer-bottom">
-        <!-- container -->
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <!-- copyright -->
               <p class="nm text-muted"><%= copyright %></p>
-              <!--/ copyright -->
             </div>
-            <!--
-            <div class="col-xs-6 col-sm-6 text-right">
-              <a href="javascript:void(0);" class="text-muted">Terms of Service</a>
-            </div>-->
           </div>
         </div>
-        <!--/ container -->
       </div>
-      <!--/ bottom footer -->
     </footer>
