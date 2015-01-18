@@ -1,17 +1,18 @@
 lapis = require "lapis"
-util = require "lapis.util"
+models = require "models"
 
 class Housing extends lapis.Application
 
-    [home_details: "/h/:id"]: =>
-        @copyright = "Bubbler © #{os.date "%Y"}"
-        @seller_profile = "Test User"
-        @seller_name = "John Doe"
-        @home_link = "v31adv"
+    [details: "/h/:id"]: =>
+        house = models.Posts\get type: "house", hash: @params.id
+        return redirect_to: @url_for "landing" unless house
+
+        @user = models.Users\find house.user_id
+        @house = house
+        @address = "#{@house.address}, #{@house.city} #{@house.state}"
         render: "housing.home_post", layout: false
 
-    [housing_search: "/s/:school/housing"]: =>
-        @copyright = "Bubbler © #{os.date "%Y"}"
+    [search: "/s/:school/housing"]: =>
         @seller_profile = "Test User"
         @seller_name = "John Doe"
         @home_link = "v31adv"
