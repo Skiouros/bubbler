@@ -26,7 +26,7 @@
                 </a>
                 <p class="text-muted nm">4 Days ago</p>
             </li>
-            <li class="text-right"><a href="<%= url_for('housing_details') .. hash %>"><button class="btn btn-sm btn-warning">$379/m</button></a></li>
+            <li class="text-right"><a href="<%= url_for('housing_details') .. hash %>"><button class="btn btn-sm btn-warning"><%= price %>/m</button></a></li>
         </ul>
     </article>
 </div>
