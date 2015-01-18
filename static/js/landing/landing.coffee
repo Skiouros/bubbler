@@ -63,3 +63,21 @@ $(document).ready ->
                         "
 
         e.preventDefault()
+
+    form = $ "#feedback-form"
+    $("#send_feedback").click ->
+        $.ajax
+            type: form.attr "method"
+            url: form.attr "action"
+            data: form.serialize()
+            success: (data) ->
+                console.log form.serializeArray()
+                $("#feedback-errors").empty()
+                if data.msg == "ok"
+                    $("#feedback_form").modal("toggle")
+                else if data.errors
+                    console.log "errors!"
+                    for err in data.errors
+                        $("#feedback-errors").append "
+                        <p>#{err}</p>
+                        "
