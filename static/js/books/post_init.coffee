@@ -36,3 +36,13 @@ $ ->
 	    stopOnHover: true
 	    
 	$(".auto-play").owlCarousel autoPlay: true  if $(".auto-play").length > 0
+
+	# Change UTC to New Date Format
+	if $("#post_date")
+    dateTime = $("#post_date").text()
+    date = new Date(dateTime)
+    year = date.getFullYear()
+    month = parseInt(date.getMonth()) + 1
+    day = date.getDate()
+    $("#post_date").text month + "/" + day + "/" + year
+  return
