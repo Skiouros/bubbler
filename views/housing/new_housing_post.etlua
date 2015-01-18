@@ -19,7 +19,7 @@
         <div class="container con-bg" style="border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9">
           <div class="row">
             <div class="col-lg-12">
-              <form class="form-horizontal mt15" action="">
+                <form id="form" class="form-horizontal mt15" action="<%= url_for 'dashboard_new_house' %>" method="POST">
                   <div class="form-group">
                       <label class="control-label col-sm-3">Title</label>
                       <div class="col-sm-7">
@@ -32,14 +32,14 @@
                       <div class="row">
                         <div class="col-lg-4">
                           <span class="radio custom-radio custom-radio-success">
-	                          <input type="radio" name="purchase_type" value="full_lease" id="full_ls">
-	                          <label for="full_ls">&nbsp;&nbsp;Full Lease</label>
+                              <input type="radio" name="purchase_type" value="full_lease" id="full_ls">
+                              <label for="full_ls">&nbsp;&nbsp;Full Lease</label>
                           </span>
                         </div>
                         <div class="col-lg-4">
                           <span class="radio custom-radio custom-radio-success">
-	                          <input type="radio" name="purchase_type" value="sub_lease" id="sub_ls">
-	                          <label for="sub_ls">&nbsp;&nbsp;Sub Lease</label>
+                              <input type="radio" name="purchase_type" value="sub_lease" id="sub_ls">
+                              <label for="sub_ls">&nbsp;&nbsp;Sub Lease</label>
                           </span>
                         </div>
                       </div>
@@ -51,20 +51,20 @@
                       <div class="row">
                         <div class="col-lg-4">
                           <span class="radio custom-radio custom-radio-primary">
-                            <input type="radio" name="home_type" value="entire_home_apartment" id="ent_hm_apt">
+                            <input type="radio" name="home_type" value="home_appartment" id="ent_hm_apt">
                             <label for="ent_hm_apt">&nbsp;&nbsp;Entire Home / Apartment</label>
                           </span>
                         </div>
                         <div class="col-lg-4">
                           <span class="radio custom-radio custom-radio-primary">
-                          	<input type="radio" name="home_type" value="private_room" id="prv_rm">
-                          	<label for="prv_rm">&nbsp;&nbsp;Private Room</label>
+                            <input type="radio" name="home_type" value="private_room" id="prv_rm">
+                            <label for="prv_rm">&nbsp;&nbsp;Private Room</label>
                           </span>
                         </div>
                         <div class="col-lg-4">
                           <span class="radio custom-radio custom-radio-primary">
-                          	<input type="radio" name="home_type" value="shared_room" id="shrd_rm">
-                          	<label for="shrd_rm">&nbsp;&nbsp;Shared Room</label>
+                            <input type="radio" name="home_type" value="shared_room" id="shrd_rm">
+                            <label for="shrd_rm">&nbsp;&nbsp;Shared Room</label>
                           </span>
                         </div>
                       </div>
@@ -73,17 +73,17 @@
                   <div class="form-group">
                       <label class="control-label col-sm-3">Address</label>
                       <div class="col-sm-7">
-                      	<div class="row">
-                      		<div class="col-sm-4">
-                          	<input name="address" type="text" class="form-control" placeholder="9876 Example Street">
-                      		</div>
-                      		<div class="col-sm-4">
-                          	<input name="city" type="text" class="form-control" placeholder="Awesome City">
-                      		</div>
-                      		<div class="col-sm-4">
-                          	<input name="state" type="text" class="form-control" placeholder="State">
-                      		</div>
-                      	</div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                            <input name="address" type="text" class="form-control" placeholder="9876 Example Street">
+                            </div>
+                            <div class="col-sm-4">
+                            <input name="city" type="text" class="form-control" placeholder="Awesome City">
+                            </div>
+                            <div class="col-sm-4">
+                            <input name="state" type="text" class="form-control" placeholder="State">
+                            </div>
+                        </div>
                       </div>
                   </div>
                   <div class="form-group">
@@ -91,15 +91,15 @@
                       <div class="col-sm-2">
                           <input type="text" class="form-control" name="price" placeholder="How much per month?">
                       </div>
-                     	<label class="control-label col-sm-3">Lease Available On</label>
+                        <label class="control-label col-sm-3">Lease Available On</label>
                       <div class="col-sm-2">
-                      	<input type="text" class="form-control center-search" name="lease_available_on" placeholder="Month/Year">
+                        <input type="text" class="form-control center-search" name="lease" placeholder="Month/Year">
                       </div>
                   </div>
                   <div class="form-group">
                       <label class="control-label col-sm-3">About this place</label>
                       <div class="col-sm-7">
-                          <textarea class="form-control" rows="2" placeholder="Just a quick description of the place, nothing too detailed." style="min-width:100%" name="about_place"></textarea>
+                          <textarea class="form-control" rows="2" placeholder="Just a quick description of the place, nothing too detailed." style="min-width:100%" name="about"></textarea>
                       </div>
                   </div>
                   <div class="form-group">
@@ -111,8 +111,7 @@
                   <div class="form-group">
                       <label class="control-label col-sm-3">Lease Duration</label>
                       <div class="col-sm-3">
-                          <select class="form-control center-search">
-                            <option select="">This place is available for...</option>
+                          <select class="form-control center-search" name="lease_duration">
                             <option value="one_semester">One Semester</option>
                             <option value="entire_school_year">Entire School Year</option>
                             <option value="multiple_school_years">Multiple School Years</option>
@@ -123,8 +122,7 @@
                       </div>
                       <label class="control-label col-sm-2">Rooms Available</label>
                       <div class="col-sm-2">
-                            <select class="form-control center-search">
-                              <option select>Bedrooms</option>
+                            <select class="form-control center-search" name="rooms">
                               <option value="1_bedroom">1 Bedroom</option>
                               <option value="2_bedrooms">2 Bedrooms</option>
                               <option value="3_bedrooms">3 Bedrooms</option>
@@ -270,23 +268,26 @@
                   </div>
                   <div class="form-group">
                     <label class="col-sm-3 control-label">Photos</label>
-	                    <div class="col-sm-7">
-	                        <div class="input-group">
-	                            <input type="text" class="form-control" readonly="">
-	                            <span class="input-group-btn">
-	                                <div class="btn btn-primary btn-file">
-	                                    <span class="icon iconmoon-file-3"></span> Browse <input type="file">
-	                                </div>
-	                            </span>
-	                        </div>
-	                    </div>
-                	</div>
+                        <div class="col-sm-7">
+                            <div class="input-group">
+                                <input type="text" class="form-control" readonly="">
+                                <span class="input-group-btn">
+                                    <div class="btn btn-primary btn-file">
+                                        <span class="icon iconmoon-file-3"></span> Browse <input type="file">
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                   <hr class="mt10 mb10">
+                      <div id="error-container">
+
+                      </div>
                   <div class="text-right">
-                  	<button class="btn btn-md btn-info mb10 semibold" style="width:100%" >List This Place</button>
-                	</div>
+                    <button class="btn btn-md btn-info mb10 semibold" style="width:100%" >List This Place</button>
+                  </div>
                 </form>
-              
+
             </div>
           </div>
         </div>
@@ -295,5 +296,6 @@
     <% render("views.core.footer") %>
     <% render("views.modals.post_modal") %>
     <% render("views.core.js") %>
+    <script type="text/javascript" src="/static/js/housing/new.min.js"></script>
   </body>
 </html>
