@@ -19,7 +19,7 @@ book_fields = {
 }
 
 house_fields = {
-    "purchase_type", "home_type", "address", "city", "state",
+    "purchase_type", "home_type", "address", "city", "state", "zipcode"
     "lease", "lease_duration", "rooms", "about"
 }
 
@@ -69,6 +69,7 @@ class Dashboard extends lapis.Application
                 { "address", exists: true }
                 { "city", exists: true }
                 { "state", exists: true }
+                { "zipcode", exists: true, is_integer: true, "zipcode must be a number" }
                 { "price", exists: true, is_integer: true, "price must be a number" }
                 { "lease", exists: true }
                 { "lease_duration", exists: true }
