@@ -141,6 +141,6 @@ class Users extends lapis.Application
 
             @user_profile = @url_for("user_profile") .. @params.id
             @books = @user\get_posts "book"
-            @houses = { {} }
+            @houses = @user\get_posts "house"
             render: "profile.public_profile", layout: false
     }
