@@ -32,6 +32,7 @@
                 <li><a href="<%= url_for 'dashboard_home' %>"><span class="icon"><i class="ico-folder5"></i></span> Dashboard</a></li>
                 <li><a href="/u/<%= current_user.id %>"><span class="icon"><i class="ico-user"></i></span> My Profile</a></li>
                 <li><a href="<%= url_for 'dashboard_settings' %>"><span class="icon"><i class="ico-cog4"></i></span> Settings</a></li>
+                <li><a href="#"><span class="icon"><i class="ico-bullhorn"></i></span> Help</a></li>
                 <li><a href="<%= url_for 'user_logout' %>"><span class="icon"><i class="ico-exit"></i></span> Sign Out</a></li>
               </ul>
             </li>

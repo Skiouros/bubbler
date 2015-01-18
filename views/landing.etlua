@@ -36,7 +36,6 @@
           <div class="navigation-navbar">
             <ul class="navigation-bar navigation-bar-left">
               <li class="active"><a href="#landing-page">Home</a></li>
-              <li><a href="#about">About</a></li>
               <li><a href="#features-list">Features</a></li>
               <li><a href="#guarantee">Feedback</a></li>
               <li><a href="#footer">Contact</a></li>
@@ -53,7 +52,7 @@
         </div>
       <div class="text-heading">
         <h1 class="animated hiding txt-shadow" data-animation="bounceInDown" data-delay="0"><span class="highlight">Discover</span> More.</h1>
-        <p class="animated hiding txt-shadow" data-animation="fadeInDown" data-delay="500">Bubbler is an online book & housing exchange network made exclusively for college students.</p>
+        <p class="animated hiding txt-shadow" data-animation="fadeInDown" data-delay="500">Exchange books & housing exclusively with college students.</p>
       </div>
       <div class="container">
         <div class="signup-wrapper animated hiding" data-animation="bounceInUp" data-delay="0">
@@ -96,6 +95,7 @@
             </div>
           </div>
             </form>
+            <p style="font-size:12px">Creating an account means you are okay with our <a style="cursor:pointer;color:#1ac6ff" data-toggle="modal" data-target="#terms_and_conditions">terms and conditions.</a></p>
           </div>
           </div>
           </div>
@@ -103,108 +103,24 @@
         </div>
       </div>
     </div>
-    <div id="clients">
-      <div class="container">
-          <div class="section-header animated hiding" data-animation="fadeInDown">
-          <h3><span class="highlight">Bubbler</span> - Discover More.</h3>
-        </div>
-      </div>
-      </div>
     <a id="showHere"></a>
-    <section id="about" class="section dark">
+    <section class="dark">
       <div class="container">
         <div class="section-content row">
-          <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">
-            <img src="/static/img/people.jpg" class="img-responsive" alt="process 3" />
-          </div>
-          <div class="col-sm-6 animated hiding" data-animation="fadeInRight">
+          <div class="col-sm-12 animated hiding" data-animation="fadeInRight">
             <br/>
             <article class="center">
-              <h3>It's So Easy To <span class="highlight">Use</span></h3>
-              <div class="sub-title">"Do you know if anyone has this book?"</div>
-              <p>
-                Bubbler is the easiest way for you to exchange books and housing around your campus and others also! <br/>The day's of asking around and advertising by word of mouth are over.<br/>
-                You don't have time to do it so let us do it for you!
-              </p>
+              <h1>Built Just For <span class="highlight">You</span></h1>
+              <div class="sub-title">Bubbler is an online book & housing exchange network made exclusively for college students.</div>
               <br/>
               <a href="javascript:void(0);" class="btn btn-secondary animated hiding scroll-top" data-animation="bounceIn" data-delay="700">Sign Up Today!</a>
             </article>
           </div>
         </div>
-
       </div>
     </section>
-    <hr class="clearfix" style="margin-top:0px"/>
-    <section id="feedback-controls" class="section light">
-      <div class="container">
-        <div class="col-md-10 col-md-offset-1">
-          <div class="flex-manual">
-            <div class="col-xs-12 col-sm-4 wrap">
-              <div class="switch flex-active">
-                <img alt="client" src="/static/img/avatars/avatar4.jpg" class="sm-pic img-circle pull-left" width="70" height="70">
-                <p>
-                  <span>AMY WARNER</span><br/><span class="highlight">@amywarner</span>
-                </p>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 wrap">
-              <div class="switch pull-left">
-                <img alt="client" src="/static/img/avatars/avatar2.jpg" class="sm-pic img-circle pull-left" width="70" height="70">
-                <p>
-                  <span class="highlight">JOHN DOESOME</span><br/><span class="highlight">@johndoesome</span>
-                </p>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 wrap">
-              <div class="switch">
-                <img alt="client" src="/static/img/avatars/avatar6.jpg" class="sm-pic img-circle pull-left" width="70" height="70">
-                <p>
-                  <span class="highlight">PETER MOOSOME</span><br/><span class="highlight">@petermoosome</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="feedback" class="section light">
-      <div class="overlay pattern"></div>
-      <div class="container">
-        <div class="section-header animated hiding" data-animation="fadeInDown">
-          <h2><span class="highlight">USER</span> TESTIMONIES</h2>
-        </div>
-        <div class="section-content">
-          <div class="col-sm-10 col-sm-offset-1">
-            <div class="flexslider testimonials-slider center animated hiding" data-animation="fadeInTop">
-              <ul class="slides">
-                <li>
-                  <div class="testimonial resp-center clearfix">
-                    <blockquote>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non bibendum metus. Aenean vel rutrum velit. Duis aliquet augue non augue volutpat, ut viverra est sagittis. Duis elementum mi mauris, nec rhoncus dolor consectetur vitae lorem ipsum.
-                    </blockquote>
-                  </div>
-                </li>
-                <li>
-                  <div class="testimonial resp-center clearfix">
-                    <blockquote>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non bibendum metus. Aenean vel rutrum velit. Duis aliquet augue non augue volutpat, ut viverra est sagittis. Duis elementum mi mauris, nec rhoncus dolor consectetur vitae lorem ipsum.
-                    </blockquote>
-                  </div>
-                </li>
-                <li>
-                  <div class="testimonial resp-center clearfix">
-                    <blockquote>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non bibendum metus. Aenean vel rutrum velit. Duis aliquet augue non augue volutpat, ut viverra est sagittis. Duis elementum mi mauris, nec rhoncus dolor consectetur vitae lorem ipsum.
-                    </blockquote>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="features-list" class="section dark">
+    <hr class="clearfix" style="margin-top:25px"/>
+    <section id="features-list" class="section dark" style="padding-top:30px !important;padding-bottom:30px !important;">
       <div class="section-header animated hiding" data-animation="fadeInDown">
           <h2><span class="highlight">FEATURED</span> HIGHLIGHTS</h2>
         </div>
@@ -214,7 +130,7 @@
             <article class="center">
               <i class="icon icon-faces-users-04 icon-active"></i>
               <span class="h7">It's Exclusive</span>
-              <p class="thin">Thats right, you are only dealing with colleagues, not random people from craiglist.</p>
+              <p class="thin">Thats right, you are only dealing with colleagues, not random people from craigslist.</p>
             </article>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
@@ -281,7 +197,7 @@
           </article>
         </div>
         <div class="col-md-12 col-lg-3">
-          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#feedbackModal">Click Here!</button>
+          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#feeback_form">Click Here!</button>
         </div>
       </div>
     </section>
@@ -291,18 +207,16 @@
         <div class="footer-content row">
           <div class="col-xs-12 col-sm-12 col-lg-4">
             <div class="logo-wrapper">
-              <!-- <img src="/static/landing/assets/img/logo.png" alt="logo" /> -->
+              <img src="/static/img/logo.png" alt="logo" />
             </div>
             <p>Bubbler is an online book & housing exchange network made exclusively for college students.</p>
-            <p>Special thanks to <a href="//www.wdwlive.com">WDWLive</a> for the background image.</p>
+            <p style="font-size:10px">Special thanks to <a href="//www.wdwlive.com">WDWLive</a> for the background image.</p>
           </div>
           <div class="col-xs-12 col-sm-12 col-lg-4 social-wrap">
             <div class="footer-title">Company Info</div>
             <ul class="list-inline socials">
               <li><a href="#"><span>Blog</span></a></li>
-              <li><a href="#"><span>Press Release</span></a></li>
-              <li><a href="#"><span>Terms</span></a></li>
-              <li><a href="#"><span>Privacy</span></a></li>
+              <li><a data-toggle="modal" data-target="#not_exists"><span>Terms and Conditions</span></a></li>
             </ul>
             <div class="footer-title">Connect With Us</div>
             <ul class="list-inline socials" style="margin-bottom:25px">
@@ -325,7 +239,7 @@
       </div>
       <div class="copyright"><%= copyright %></div>
     </footer>
-    <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="feedback_form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -350,7 +264,47 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="not_exists" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center highlight">We do not support your school yet :(</h4>
+            <p class="text-center">Great news though! <br/>Let us know the name of your school bellow and we will add it very soon.</p>
+          </div>
+          <div class="modal-body">
+            <form class="form">
+              <div class="form-group">
+                <label for="recipient-name" class="control-label">School name:</label>
+                <input type="text" class="form-control" id="school_add">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="school_submit">Send!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="terms_and_conditions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center highlight">Terms and Conditions</h4>
+            <p class="text-center">Please read the following before creating an account.</p>
+          </div>
+          <div class="modal-body">
+            <p>Bubbler does not investigate, endorse, or guarantee the tenantability or validility of the listings on our website or the suitability for those responding to the listings. We reserve the right to remove, edit, or withhold any listing. By signing up to our service, you are giving your consent for us to retain and post all of the information you provide us on our website. Currently, you are limited to 5 book posts and 1 housing post a month. Your listing will be posted for 30 days. We reserve the right to terminate your account indefinelty if you demonstrate vulgar, offensive, or malicious behavior while using our service either through the messaging system or through individual listings. <br /><br />
+
+            Now that that's out of the way, enjoy our site :)</p>
+          </div>
+          <div class="modal-footer">
             <button type="button" class="btn btn-primary">Send!</button>
           </div>
         </div>

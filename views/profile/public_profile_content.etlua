@@ -17,13 +17,12 @@
                             <img class="img-circle" src="/static/img/avatars/avatar6.jpg" alt="" width="45px" height="45px">
                         </li>
                         <li class="text-left">
-                            <h5 class="semibold ellipsis">
+                            <h5 class="semibold">
                                 <%= user.name %><br>
-                                <small class="text-muted">@johndoe</small>
                             </h5>
                         </li>
                         <li class="text-left">
-                            <button class="btn btn-sm btn-info" data-toggle="class"><i class="ico-user-plus2"></i> Follow Me</button>
+                            <button class="btn btn-sm btn-info" data-toggle="class"><i class="ico-envelope"></i> Message Me</button>
                         </li>
                     </ul>
                 </div>
@@ -66,7 +65,6 @@
                             Computer Science
                         </div>
                     </div>
-                    <a href="#" class="btn btn-sm btn-primary mt15"><i class="ico-envelope"></i> Message Me</a>
                 </div>
                 <hr class="mt0">
                 <!--horizontal line -->
