@@ -209,7 +209,6 @@
               <img src="/static/img/logo.png" alt="logo" />
             </div>
             <p>Bubbler is an online book & housing exchange network made exclusively for college students.</p>
-            <p style="font-size:10px">Special thanks to <a href="//www.wdwlive.com">WDWLive</a> for the background image.</p>
           </div>
           <div class="col-xs-12 col-sm-12 col-lg-4 social-wrap">
             <div class="footer-title">Company Info</div>
