@@ -95,7 +95,7 @@
                         <p class="semibold mb0 fsize14">ISBN-13</p>
                         <div class="col-lg-12 mb5" style="padding-left: 0px;padding-right: 0px;">
                             <div class="mr5">
-                                <a href="javascript:void(0);" class="semibold fsize12"<%= book.isbn_13 %>></a>
+                                <a href="javascript:void(0);" class="semibold fsize12"><%= book.isbn_13 %></a>
                             </div>
                             <hr class="mt5 mb5">
                         </div>
