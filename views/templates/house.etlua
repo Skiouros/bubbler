@@ -24,7 +24,7 @@
                 <a href="<%= user_profile %>">
                     <p class="ellipsis nm"><span class="semibold"><%= user.name %></span></p>
                 </a>
-                <p class="text-muted nm">4 Days ago</p>
+                <p class="timeago text-muted" title="<%= created_at %>"></p>
             </li>
             <li class="text-right"><a href="<%= url_for('housing_details') .. hash %>"><button class="btn btn-sm btn-warning"><%= price %>/m</button></a></li>
         </ul>
