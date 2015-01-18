@@ -37,7 +37,7 @@
             <ul class="navigation-bar navigation-bar-left">
               <li class="active"><a href="#landing-page">Home</a></li>
               <li><a href="#features-list">Features</a></li>
-              <li><a href="#guarantee">Feedback</a></li>
+              <li><a href="#feedback">Feedback</a></li>
               <li><a href="#footer">Contact</a></li>
             </ul>
             <ul class="navigation-bar navigation-bar-right">
@@ -95,7 +95,7 @@
             </div>
           </div>
             </form>
-            <p style="font-size:12px">Creating an account means you are okay with our <a style="cursor:pointer;color:#1ac6ff" data-toggle="modal" data-target="#terms_and_conditions">terms and conditions.</a></p>
+            <p style="font-size:14px">Creating an account means you are okay with our <a style="cursor:pointer;color:#1ac6ff" data-toggle="modal" data-target="#terms_and_conditions">terms and conditions.</a></p>
           </div>
           </div>
           </div>
@@ -103,7 +103,6 @@
         </div>
       </div>
     </div>
-    <a id="showHere"></a>
     <section class="dark">
       <div class="container">
         <div class="section-content row">
@@ -187,7 +186,7 @@
         </div>
       </div>
     </section>
-    <section id="guarantee" class="long-block light">
+    <section id="feedback" class="long-block light">
       <div class="container">
         <div class="col-md-12 col-lg-9">
           <i class="icon icon-seo-icons-24 pull-left"></i>
@@ -197,7 +196,7 @@
           </article>
         </div>
         <div class="col-md-12 col-lg-3">
-          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#feeback_form">Click Here!</button>
+          <button type="button" class="btn btn-default light" data-toggle="modal" data-target="#feedback_form">Click Here!</button>
         </div>
       </div>
     </section>
@@ -300,12 +299,9 @@
             <p class="text-center">Please read the following before creating an account.</p>
           </div>
           <div class="modal-body">
-            <p>Bubbler does not investigate, endorse, or guarantee the tenantability or validility of the listings on our website or the suitability for those responding to the listings. We reserve the right to remove, edit, or withhold any listing. By signing up to our service, you are giving your consent for us to retain and post all of the information you provide us on our website. Currently, you are limited to 5 book posts and 1 housing post a month. Your listing will be posted for 30 days. We reserve the right to terminate your account indefinelty if you demonstrate vulgar, offensive, or malicious behavior while using our service either through the messaging system or through individual listings. <br /><br />
+            <p>Bubbler does not investigate, endorse, or feedback the tenantability or validility of the listings on our website or the suitability for those responding to the listings. We reserve the right to remove, edit, or withhold any listing. By signing up to our service, you are giving your consent for us to retain and post all of the information you provide us on our website. Currently, you are limited to 5 book posts and 1 housing post a month. Your listing will be posted for 30 days. You, the user, also agrees that we are not responsible for failed transactions between you and the party who intends to sell to or buy from you. We reserve the right to terminate your account indefinelty if you demonstrate vulgar, offensive, or malicious behavior while using our service either through the messaging system or through individual listings. <br /><br />
 
             Now that that's out of the way, enjoy our site :)</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Send!</button>
           </div>
         </div>
       </div>
@@ -322,7 +318,6 @@
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.0/js/toastr.min.js"></script>
     <script type="text/javascript" src="/static/js/jquery.appear.js"></script>
-    <script type="text/javascript" src="/static/js/headhesive.min.js"></script>
     <script type="text/javascript" src="/static/js/landing/landing.min.js"></script>
   </body>
 </html>
