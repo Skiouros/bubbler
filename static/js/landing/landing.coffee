@@ -9,13 +9,6 @@ $(document).ready ->
             direction: "horizontal"
             animation: "slide"
 
-    fixmenu = new Headhesive ".navigation-header",
-        offset: "#showHere"
-        classes:
-            clone: "fixmenu-clone"
-            stick: "fixmenu-stick"
-            unstick: "fixmenu-unstick"
-
     $('.navigation-bar').onePageNav
         currentClass: "active"
         changeHash: true
