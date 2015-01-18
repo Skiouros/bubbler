@@ -15,7 +15,7 @@ config "development", ->
 
     email ->
         key "#{os.getenv("MAILGUN_APIKEY")}"
-        sender "bubb@bubbler.in"
+        sender "bubbs@bubbler.in"
         domain "bubbler.in"
 
     honcho ->
