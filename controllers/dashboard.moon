@@ -5,6 +5,15 @@ import validate_functions, assert_valid from require "lapis.validate"
 import respond_to, assert_error, capture_errors, capture_errors_json, yield_error from require "lapis.application"
 import require_login from require "helpers.auth"
 
+validate_functions.is_price = (input) ->
+    -- regex to match dollar amounts
+    -- allowed: 40, 40.5, 40.40
+    res = ngx.re.match input, [[(\d{1,2}(\.\d{1,2})?)]]
+    err = "%s must be a dollar amount"
+
+    return false, err unless res
+    #res[0] == #input, err
+
 book_errors = {
     ['duplicate key value violates unique constraint']: "post with title already exists"
 }
@@ -70,7 +79,7 @@ class Dashboard extends lapis.Application
                 { "city", exists: true }
                 { "state", exists: true }
                 { "zipcode", exists: true, is_integer: true, "zipcode must be a number" }
-                { "price", exists: true, is_integer: true, "price must be a number" }
+                { "price", exists: true, is_price: true }
                 { "lease", exists: true }
                 { "lease_duration", exists: true }
                 { "rooms", exists: true }
@@ -106,7 +115,7 @@ class Dashboard extends lapis.Application
                 { "condition", exists: true }
                 { "description", exists: true }
                 { "subject", exists: true }
-                { "price", exists: true, is_integer: true, "price must be a number" }
+                { "price", exists: true, is_price: true }
             }
 
             if @params.isbn_10 == "" and @params.isbn_13 == ""
