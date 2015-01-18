@@ -1,11 +1,13 @@
 <!DOCTYPE HTML>
-<html>
-<head>
-	<title>School Homepage</title>
-</head>
-<body>
-	<a href="/s/<%= school_name %>/books">Books</a>
-	<br/>
-	<a href="/s/<%= school_name %>/housing">Housing</a>
-</body>
+<html class="no-touch">
+	<head>
+<% render("views.core.head") %>
+	</head>
+  <body>
+<% render("views.core.header") %>
+<% render("views.school.school_home_details") %>
+<% render("views.core.footer") %>
+<% render("views.modals.post_modal") %>
+<% render("views.core.js") %>
+  </body>
 </html>
