@@ -6,7 +6,7 @@ models = require "models"
 
 class Posts extends Model
     @table_name: => "posts"
-    @primary_key: {"user_id", "title"}
+    @primary_key: {"user_id", "title", "type"}
     @timestamp: true
 
     @create: (user, title, desc, price, typ, data) =>
