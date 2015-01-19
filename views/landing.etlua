@@ -60,40 +60,40 @@
             <div class="col-lg-12">
               <div class="row">
                   <form class="form-inline form-register form-register-small" method="post" action="<%= url_for 'user_register' %>">
-              <div class="col-lg-10">
+                  <div class="col-lg-10">
+                    <div class="row">
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <input type="text" class="form-control required" name="fullname" id="fullname" placeholder="Full Name" style="min-width:215px;width:100%">
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <input type="email" class="form-control required email" name="email" id="email" placeholder="College Email" style="min-width:215px;width:100%">
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-group password-wrapper">
+                      <input type="password" class="form-control required" name="password" id="password" placeholder="Password" style="min-width:215px;width:100%">
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-group password-wrapper">
+                      <input type="text" class="form-control required" name="college" id="college" placeholder="College You Attend" style="min-width:215px;width:100%">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2">
                 <div class="row">
-              <div class="col-lg-3">
-                <div class="form-group">
-                  <input type="text" class="form-control required" name="fullname" id="fullname" placeholder="Full Name" style="min-width:215px;width:100%">
+                  <div class="col-lg-10">
+                    <div class="form-group submit-wrap">
+                      <input type="hidden" name="small-form"/>
+                      <button type="submit" class="btn btn-primary btn-md">Join The Network!</button>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-lg-3">
-                <div class="form-group">
-                  <input type="email" class="form-control required email" name="email" id="email" placeholder="College Email" style="min-width:215px;width:100%">
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="form-group password-wrapper">
-                  <input type="password" class="form-control required" name="password" id="password" placeholder="Password" style="min-width:215px;width:100%">
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="form-group password-wrapper">
-                  <input type="text" class="form-control required" name="college" id="college" placeholder="College You Attend" style="min-width:215px;width:100%">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="row">
-              <div class="col-lg-10">
-                <div class="form-group submit-wrap">
-                  <input type="hidden" name="small-form"/>
-                  <button type="submit" class="btn btn-primary btn-md">Join The Network!</button>
-                </div>
-              </div>
-            </div>
-          </div>
             </form>
             <p style="font-size:14px">Creating an account means you are okay with our <a style="cursor:pointer;color:#1ac6ff" data-toggle="modal" data-target="#terms_and_conditions">terms and conditions.</a></p>
           </div>
@@ -246,7 +246,7 @@
             <p class="text-center">Your feedback is very important to us. <br/>Let us know on how and or what we can improve on.</p>
           </div>
           <div class="modal-body">
-              <form id="feedback-form" class="form" action="<%= url_for 'feedback' %>" method="POST">
+              <form class="form feedback-form" action="<%= url_for 'feedback' %>" method="POST">
               <div class="form-group">
                 <label for="recipient-name" class="control-label">Your Name:</label>
                 <input type="text" class="form-control" name="from">
@@ -259,12 +259,12 @@
                 <label for="message-text" class="control-label">Message:</label>
                 <textarea style="min-height:150px" class="form-control" name="message"></textarea>
               </div>
+              <div class="text-right">
+                <button type="submit" type="button" class="btn btn-primary">Send!</button>
+              </div>
             </form>
           </div>
           <div id="feedback-errors">
-          </div>
-          <div class="modal-footer">
-            <button id="send_feedback" type="button" class="btn btn-primary">Send!</button>
           </div>
         </div>
       </div>
