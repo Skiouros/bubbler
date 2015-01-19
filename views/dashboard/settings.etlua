@@ -129,7 +129,7 @@
                                                 <div class="col-sm-9">
                                                     <div class="row">
                                                         <div class="col-sm-12">
-                                                            <span class="checkbox custom-checkbox">
+                                                            <span class="checkbox custom-checkbox custom-checkbox-primary">
                                                             <input type="checkbox" name="customcheckbox1" id="customcheckbox1">
                                                             <label for="customcheckbox1">&nbsp;&nbsp;Receive emails letting me know if selections in my wish list are available.</label>
                                                             </span>
@@ -186,7 +186,7 @@
                                             </div>
                                         </div>
                                         <div class="panel-footer text-right">
-                                            <button type="submit" class="btn btn-primary">Save change</button>
+                                            <button type="submit" class="btn btn-danger">Update Password</button>
                                         </div>
                                     </form>
                                 </div>
