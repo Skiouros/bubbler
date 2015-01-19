@@ -68,13 +68,13 @@
                     </div>
                     <hr class="mt0 mb15"/>
                     <div class="row">
-                        <div class="masonry">
+                        <div class="masonry-books">
                             <% if #books > 0 then %>
                                 <% for i, book in ipairs(books) do %>
                                     <% render("views.templates.book", book) %>
                                 <% end %>
                             <% else %>
-                                <p>No books</p>
+                                <h4 class="ml15" id="no_books">No books</h4>
                             <% end %>
                         </div>
                     </div>
@@ -85,13 +85,13 @@
                     </div>
                     <hr class="mt5 mb15"/>
                     <div class="row">
-                        <div class="masonry">
+                        <div class="masonry-housing">
                             <% if #houses > 0 then %>
                                 <% for i, house in ipairs(houses) do %>
                                     <% render("views.templates.house", house) %>
                                 <% end %>
                             <% else %>
-                                <h4 class="pl15 pb15">No houses</h4>
+                                <h4 id="no_houses" class="ml15" >No houses</h4>
                             <% end %>
                         </div>
                     </div>
