@@ -4176,9 +4176,9 @@ hr {
     text-shadow: black 0.1em 0.1em 0.2em;
   }
   .jumbotron h4,
-.jumbotron .h4 {
-  text-shadow: black 0.1em 0.1em 0.2em;
-}
+  .jumbotron .h4 {
+    text-shadow: black 0.1em 0.1em 0.2em;
+  }
 }
 /* ----------------------------
  *
