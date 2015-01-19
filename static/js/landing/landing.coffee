@@ -39,12 +39,12 @@ $(document).ready ->
 
     toastr.options = positionClass: "toast-top-full-width"
 
-    form = $ ".form-register"
-    form.submit (e) ->
+    form_register = $ ".form-register"
+    form_register.submit (e) ->
         $.ajax
-            type: form.attr "method"
-            url: form.attr "action"
-            data: form.serialize()
+            type: form_register.attr "method"
+            url: form_register.attr "action"
+            data: form_register.serialize()
             success: (data) ->
                 console.log data
                 # clear errors
@@ -64,20 +64,20 @@ $(document).ready ->
 
         e.preventDefault()
 
-    form = $ "#feedback-form"
-    $("#send_feedback").click ->
+    form_feedback = $ ".feedback-form"
+    form_feedback.submit (e) ->
         $.ajax
-            type: form.attr "method"
-            url: form.attr "action"
-            data: form.serialize()
+            type: form_feedback.attr "method"
+            url: form_feedback.attr "action"
+            data: form_feedback.serialize()
             success: (data) ->
-                console.log form.serializeArray()
+                console.log data
+                console.log form_feedback.serializeArray()
                 $("#feedback-errors").empty()
                 if data.msg == "ok"
-                    $("#feedback_form").modal("toggle")
+                    $("feedback_form").modal("toggle")
                 else if data.errors
                     console.log "errors!"
                     for err in data.errors
-                        $("#feedback-errors").append "
-                        <p>#{err}</p>
-                        "
+                        $("#feedback-errors").append "<p>#{err}</p>"
+        e.preventDefault()
