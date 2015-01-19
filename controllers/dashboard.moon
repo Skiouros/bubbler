@@ -8,7 +8,7 @@ import require_login from require "helpers.auth"
 validate_functions.is_price = (input) ->
     -- regex to match dollar amounts
     -- allowed: 40, 40.5, 40.40
-    res = ngx.re.match input, [[(\d{1,2}(\.\d{1,2})?)]]
+    res = ngx.re.match input, [[(\d*(\.\d{1,2})?)]]
     err = "%s must be a dollar amount"
 
     return false, err unless res

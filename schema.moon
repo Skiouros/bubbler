@@ -66,7 +66,7 @@ make_schema = ->
         {"created_at", time timezone: true}
         {"updated_at", time timezone: true}
 
-        "PRIMARY KEY (user_id, title)"
+        "PRIMARY KEY (user_id, title, type)"
     }
     create_index "posts", "data", method: "GIN"
 { :make_schema }
